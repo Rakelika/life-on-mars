@@ -1,12 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './AllHousesComponent.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { getHouses } from '../../store/houses/actions';
 
-const AllHousesComponent = () => (
+const AllHousesComponent = () => {
+
+  const dispatch = useDispatch()
+  const {houses,loadingHouses} = useSelector((state)=> state.HousesReducer)
+
+  useEffect(()=>{
+    dispatch(getHouses())
+  },[])
+
+  if(loadingHouses){
+    return (
+      <div>
+        <p>searching for houses</p>
+      </div>
+    )
+  }
+  
+  return(
   <div className="AllHousesComponent">
-    AllHousesComponent Component
+    {houses.map(house=>{
+      return (
+        <div>
+          <img src={house.image} alt={house.name}/>
+          <h3>{house.name}</h3>
+        </div>
+      )
+    })}
   </div>
-);
+)};
 
 AllHousesComponent.propTypes = {};
 

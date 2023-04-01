@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import SingUpComponent from "../../components/SingUpComponent/SingUpComponent";
 
 export default function SignUpPage() {
     return (
         <div>
-            <p>Aquí irá el formulario para registrarse</p>
+            <SingUpComponent></SingUpComponent>
             <p>Already have an account? Please <Link to="/login">Login</Link></p>
         </div>
     )

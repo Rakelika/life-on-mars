@@ -1,5 +1,8 @@
 
 import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 //Pages: 
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
@@ -11,12 +14,13 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import SingleHousePage from './pages/SingleHousePage/SingleHousePage';
 
-
 //Components:
 import NavComponent from './core/NavComponent/NavComponent'
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
+
+  const {user} = useSelector((state) => state.UserReducer);
+
   return (
     <div className="App">
     <NavComponent></NavComponent>
@@ -27,7 +31,7 @@ function App() {
         <Route exact path="/houses" element={<HousesPage />}></Route>
         <Route exact path="/login" element={<LoginPage />}></Route>
         <Route exact path="/signup" element={<SignUpPage />}></Route>
-        <Route exact path="/profile" element={<ProfilePage />}></Route>
+        <Route exact path="/profile" element= {user && user.id ? (<ProfilePage />) : (<Navigate to="/" replace></Navigate>)} ></Route>
         <Route exact path="/single-house" element={<SingleHousePage />}></Route>
         <Route exact path="/house-form" element={<HouseFormPage />}></Route>
       </Routes>

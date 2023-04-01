@@ -45,6 +45,24 @@ export default function UserReducer(state = initialState, action) {
         case LOGOUT_OK:
             state = {...state, user: {}};
             break;
+        case SIGNUP:
+            state = {...state, loadingUser:true};
+            break;
+        case SIGNUP_OK:
+            state = {...state, loadingUser:false, user: action.payload};
+            break;
+        case SIGNUP_FAIL:
+            state = {...state, loadingUser:false, user: {}, error: {message:action.payload}}
+            break;
+        case EDIT_USER_INFO:
+            state = {...state, loadingUser: true};
+            break;
+        case EDIT_USER_INFO_OK:
+            state = {...state, loadingUser: false, user: action.payload};
+            break;
+        case EDIT_USER_INFO_FAIL:
+            state = {...state, loadingUser: false, user: {}, error: {message: action.payload}};
+            break;
         default:
             break;
     }

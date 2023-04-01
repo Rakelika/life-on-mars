@@ -21,7 +21,7 @@ import {
 } from "./actionTypes";
 import axios from "axios";
 
-//Funciones LOGIN:
+//Funciones LOGIN - GET:
 
 export function actionDoLogin(){
     return {
@@ -101,9 +101,10 @@ export function actionDoLogout() {
     };
   }
   
-  export function actionSignUpOk() {
+  export function actionSignUpOk(newUser) {
     return {
       type: SIGNUP_OK,
+      payload: newUser
     };
   }
   
@@ -114,18 +115,33 @@ export function actionDoLogout() {
     };
   }
 
+  export function doSignUp(newUserData) {
+    return async (dispatch) => {
+      dispatch(actionSignUp());
+      try {
+        await axios.post("http://localhost:3000/users", newUserData);
+        dispatch(actionSignUpOk())
+        const { email, password } = newUserData;
+        const loginData = { email, password };
+        dispatch(doLogin(loginData));
+      } catch (error) {
+        dispatch(actionSignUpFail(error))
+      }
+  }}
+  
+
   // Funciones editar información usuario: 
 
-  export function actionsEditUserInfo(){
+  export function actionEditUserInfo(){
     return {
         type: EDIT_USER_INFO
     }
   }
 
-  export function actionsEditUserInfoOk(){
+  export function actionEditUserInfoOk(userNewData){
     return {
         type: EDIT_USER_INFO_OK,
-        
+        payload: userNewData
     }
   }
 
@@ -136,7 +152,18 @@ export function actionDoLogout() {
     }
   }
 
-  //Funciones eliminar perfil de usuario:
+  export function editUser(userData) {
+    return async (dispatch) => {
+      dispatch(actionEditUserInfo(userData));
+      try {
+        const res = await axios.patch("http://localhost:3000/users", userData);
+        dispatch(actionEditUserInfoOk(res.data))
+      } catch (error) {
+        dispatch(actionEditUserInfoFail(error))
+      }
+  }}
+
+  //DELETE: Funciones eliminar perfil de usuario:
 
   export function actionDeleteUser(){
     return {
@@ -157,3 +184,16 @@ export function actionDoLogout() {
         payload: error
     }
   }
+
+  export function deleteUser(userId) {
+    return async (dispatch) => {
+      dispatch(actionDeleteUser());
+      try {
+        await axios.delete(`http://localhost:3000/users/${userId}`);
+        dispatch(actionDeleteUserOk());
+      } catch (error) {
+        dispatch(actionDeleteUserFail(error));
+      }
+    }
+  }
+  

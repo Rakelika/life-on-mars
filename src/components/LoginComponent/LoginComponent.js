@@ -11,8 +11,8 @@ const LoginComponent = () => {
     return state.UserReducer;
   });
 
-  const [email, setEmail] = useState("angela@lifeonmars.com");
-  const [password, setPassword] = useState("12345Ab");
+  const [email, setEmail] = useState("andrea@lifeonmars.com");
+  const [password, setPassword] = useState("111");
 
   const dispatch = useDispatch();
 
@@ -21,13 +21,13 @@ const LoginComponent = () => {
   }
 
   if (loadingUser) {
-    return <div>Cargando...</div>;
+    return <div>Loading...</div>;
   }
 
   if (user && user.id) {
     console.log("usuario ok", user);
     return <Navigate to="/profile" replace></Navigate>;
-  }
+  } 
 
   return (
     <div className="LoginComponent">

@@ -1,9 +1,18 @@
 {
-    "houses": [
-
-    ],
-
-    "users": [
-
-    ]
+  "houses": [],
+  "users": [
+    {
+      "id": 1,
+      "username": "jupiter231",
+      "email": "maria@lifeonmars.com",
+      "password": "222",
+      "name": "Maria",
+      "lastname": "García",
+      "birthyear": 1993,
+      "currentcity": "Barcelona",
+      "occupation": "Student",
+      "userabout": "Looking for a new brand home in mars",
+      "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    }
+  ]
 }

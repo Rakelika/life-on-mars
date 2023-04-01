@@ -82,6 +82,17 @@ export function actionDoLogout() {
     };
   }
 
+  export function doLogout() {
+    return (dispatch) => {
+      try {
+        dispatch(actionDoLogout());
+        dispatch(actionDoLogoutOk());
+      } catch (error) {
+        dispatch(actionDoLoginFail(error));
+      }
+    };
+  }
+
   // Funciones registro (signup):
 
   export function actionSignUp() {

@@ -39,6 +39,12 @@ export default function UserReducer(state = initialState, action) {
         case LOGIN_FAIL:
             state = {...state, loadingUser: false, user: {}, error: {message: action.payload}}
             break;
+        case LOGOUT:
+            state = {...state};
+            break;
+        case LOGOUT_OK:
+            state = {...state, user: {}};
+            break;
         default:
             break;
     }

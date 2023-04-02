@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../../store/houses/actions';
+import { Link } from 'react-router-dom';
 
 const AllHousesComponent = () => {
 
@@ -25,8 +26,10 @@ const AllHousesComponent = () => {
   <div className="AllHousesComponent">
     {houses.map(house=>{
       return (
-        <div>
-          <img src={house.image} alt={house.name}/>
+        <div key={house.id}>
+          <Link to={`/houses/${house.id}`}>
+            <img src={house.image} alt={house.name}/>
+          </Link>
           <h3>{house.name}</h3>
         </div>
       )

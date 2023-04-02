@@ -11,6 +11,8 @@ import {
 const initialState = {
     houses: [],
     loadingHouses: false,
+    singleHouse: {},
+    loadingSingleHouse: false,
     error: {
         message: ""
     }
@@ -28,6 +30,18 @@ export default function HousesReducer(state = initialState, action) {
 
         case GET_HOUSES_FAIL:
             state = {...state, loadingHouses: false, houses: [], error: {message: action.payload}}
+            break
+
+        case GET_SINGLE_HOUSE:
+            state = {...state, loadingSingleHouse: true}
+            break
+    
+        case GET_SINGLE_HOUSE_OK:
+            state = {...state, loadingSingleHouse: false, singleHouse: action.payload}
+            break
+    
+        case GET_SINGLE_HOUSE_FAIL:
+            state = {...state, loadingSingleHouse: false, singleHouse: {}, error: {message: action.payload}}
             break
 
         default:

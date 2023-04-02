@@ -5,7 +5,10 @@
       "name": "La Casa del cráter",
       "architects": "Amey Kandalgaonkar",
       "image": "assets/houses/casa-crater.webp",
-      "material": ["elementos geológicos","piedra"],
+      "material": [
+        "elementos geológicos",
+        "piedra"
+      ],
       "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
     },
     {
@@ -13,7 +16,10 @@
       "name": "Zopherus",
       "architects": "Zopherus of Rogers",
       "image": "assets/houses/zopherus.webp",
-      "material": ["impresión 3D","elementos geológicos"],
+      "material": [
+        "impresión 3D",
+        "elementos geológicos"
+      ],
       "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
     },
     {
@@ -21,7 +27,11 @@
       "name": "Marsha",
       "architects": "AI SpaceFactory",
       "image": "assets/houses/marsha.webp",
-      "material": ["impresión 3D","fibra de basalto","bioplástico renovable"],
+      "material": [
+        "impresión 3D",
+        "fibra de basalto",
+        "bioplástico renovable"
+      ],
       "description": "The Marsha Project de AI SpaceFactory es la propuesta de la NASA de una casa impresa en 3D optimizada para su construcción en Marte.  La empresa ha investigado y desarrollado un compuesto de fibra de basalto (que puede extraerse de las rocas de Marte) y un bioplástico renovable que puede obtenerse de plantas que se pueden cultivar en el planeta rojo."
     },
     {
@@ -29,7 +39,10 @@
       "name": "Ice House",
       "architects": "SEArch y Clouds AO",
       "image": "assets/houses/ice-house.webp",
-      "material": ["hielo","elementos geológicos"],
+      "material": [
+        "hielo",
+        "elementos geológicos"
+      ],
       "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
     },
     {
@@ -37,7 +50,10 @@
       "name": "Mars Incubator",
       "architects": "La Nasa",
       "image": "assets/houses/mars-incubator.webp",
-      "material": ["plástico de regolito","fibra de basalto"],
+      "material": [
+        "plástico de regolito",
+        "fibra de basalto"
+      ],
       "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
     },
     {
@@ -45,7 +61,9 @@
       "name": "Kahn Yatees",
       "architects": "Kahn Yatees",
       "image": "assets/houses/kahn-yatees.webp",
-      "material": ["impresión 3D"],
+      "material": [
+        "impresión 3D"
+      ],
       "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
     },
     {
@@ -53,7 +71,10 @@
       "name": "Sfero by Fabulous",
       "architects": "Fabulous",
       "image": "assets/houses/sfero-faboluous.webp",
-      "material": ["impresión 3D","óxido de hierro"],
+      "material": [
+        "impresión 3D",
+        "óxido de hierro"
+      ],
       "description": "La empresa francesa de impresión 3D Fabulous diseñó una casa burbuja que una vez aterrizada en Marte empezaría a construirse a partir del óxido de hierro que se encuentra en la superficie del planeta. Una estructura futurista con escalera helicoidal que conectaría 2 pisos."
     },
     {
@@ -61,7 +82,9 @@
       "name": "Xiaomi Mars Case",
       "architects": "OPEN Architecture & Xiaomi",
       "image": "assets/houses/xiaomi-mars-case.webp",
-      "material": ["bioplástico renovable"],
+      "material": [
+        "bioplástico renovable"
+      ],
       "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
     },
     {
@@ -69,7 +92,10 @@
       "name": "Mars Ice Home",
       "architects": "Clouds AO",
       "image": "assets/houses/mars-ice-home.webp",
-      "material": ["hielo","estructura inflable"],
+      "material": [
+        "hielo",
+        "estructura inflable"
+      ],
       "description": "El diseño de Clouds AO, Mars Ice Home ha sido desarrollado por un equipo de expertos y el Centro de Investigación Langley de la NASA. Es un concepto de hábitat desplegable. Está basado en una estructura inflable que incorpora hielo, de agua obtenida del propio planeta rojo, como blindaje contra la radiación y como componente estructural."
     },
     {
@@ -77,7 +103,9 @@
       "name": "XArc",
       "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
       "image": "assets/houses/XArc.webp",
-      "material": ["impresión 3D"],
+      "material": [
+        "impresión 3D"
+      ],
       "description": "Este diseño ha sido uno de los 10 finalistas en la fase 3 (modelado virtual) del concurso de la NASA de hábitats impresos en 3D. Pese a que parece una cúpula redondeada, se basa en un diseño hexagonal y, en su interior, cuenta con todo el equipamiento necesario, como habitaciones, cocina y área de trabajo, dividido en varias plantas."
     },
     {
@@ -85,7 +113,9 @@
       "name": "ArcHab",
       "architects": "XArc (Exploration Architecture corporation)",
       "image": "assets/houses/arc-hab.webp",
-      "material": ["óxido de hierro"],
+      "material": [
+        "óxido de hierro"
+      ],
       "description": "El equipo de XArc también ha diseñado ArcHab, con un diseño más robusto y eficiente. Este diseño en forma de arco, proporciona una protección sólida contra la radiación, a la vez que ofrece un refugio adicional para cualquier habitante del planeta rojo."
     },
     {
@@ -93,11 +123,12 @@
       "name": "Spacehabs",
       "architects": "Bryan Versteeg",
       "image": "assets/houses/spacehabs.webp",
-      "material": ["piedra"],
+      "material": [
+        "piedra"
+      ],
       "description": "Este artista conceptual, que ha trabajado como diseñador industrial durante más de 20 años, también ha imaginado y diseñado su propia base marciana. Desde 2011, con su proyecto Spacehabs, hace diseños conceptuales sobre posibles hábitats para explorar el espacio. Su diseño no dejará indiferente a nadie."
     }
   ],
-
   "users": [
     {
       "id": 1,
@@ -111,6 +142,19 @@
       "occupation": "Student",
       "userabout": "Looking for a new brand home in mars",
       "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "firstname": "",
+      "lastname": "",
+      "birthyear": "",
+      "currentcity": "",
+      "occupation": "",
+      "userabout": "",
+      "useravatar": "",
+      "id": 2
     }
   ]
 }

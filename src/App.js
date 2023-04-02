@@ -29,6 +29,7 @@ function App() {
         <Route exact path="/about" element={<AboutPage />}></Route>
         <Route exact path="/contact" element={<ContactPage />}></Route>
         <Route exact path="/houses" element={<HousesPage />}></Route>
+        <Route exact path="/houses/:id" element={<SingleHousePage/>}></Route>
         <Route exact path="/login" element={<LoginPage />}></Route>
         <Route exact path="/signup" element={<SignUpPage />}></Route>
         <Route exact path="/profile" element= {user && user.id ? (<ProfilePage />) : (<Navigate to="/" replace></Navigate>)} ></Route>

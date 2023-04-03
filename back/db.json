@@ -4,7 +4,7 @@
       "id": 1,
       "name": "La Casa del cráter",
       "architects": "Amey Kandalgaonkar",
-      "image": "assets/houses/casa-crater.webp",
+      "image": "/assets/houses/casa-crater.webp",
       "material": [
         "elementos geológicos",
         "piedra"
@@ -15,7 +15,7 @@
       "id": 2,
       "name": "Zopherus",
       "architects": "Zopherus of Rogers",
-      "image": "assets/houses/zopherus.webp",
+      "image": "/assets/houses/zopherus.webp",
       "material": [
         "impresión 3D",
         "elementos geológicos"
@@ -26,7 +26,7 @@
       "id": 3,
       "name": "Marsha",
       "architects": "AI SpaceFactory",
-      "image": "assets/houses/marsha.webp",
+      "image": "/assets/houses/marsha.webp",
       "material": [
         "impresión 3D",
         "fibra de basalto",
@@ -38,7 +38,7 @@
       "id": 4,
       "name": "Ice House",
       "architects": "SEArch y Clouds AO",
-      "image": "assets/houses/ice-house.webp",
+      "image": "/assets/houses/ice-house.webp",
       "material": [
         "hielo",
         "elementos geológicos"
@@ -49,7 +49,7 @@
       "id": 5,
       "name": "Mars Incubator",
       "architects": "La Nasa",
-      "image": "assets/houses/mars-incubator.webp",
+      "image": "/assets/houses/mars-incubator.webp",
       "material": [
         "plástico de regolito",
         "fibra de basalto"
@@ -60,7 +60,7 @@
       "id": 6,
       "name": "Kahn Yatees",
       "architects": "Kahn Yatees",
-      "image": "assets/houses/kahn-yatees.webp",
+      "image": "/assets/houses/kahn-yatees.webp",
       "material": [
         "impresión 3D"
       ],
@@ -70,7 +70,7 @@
       "id": 7,
       "name": "Sfero by Fabulous",
       "architects": "Fabulous",
-      "image": "assets/houses/sfero-faboluous.webp",
+      "image": "/assets/houses/sfero-faboluous.webp",
       "material": [
         "impresión 3D",
         "óxido de hierro"
@@ -81,7 +81,7 @@
       "id": 8,
       "name": "Xiaomi Mars Case",
       "architects": "OPEN Architecture & Xiaomi",
-      "image": "assets/houses/xiaomi-mars-case.webp",
+      "image": "/assets/houses/xiaomi-mars-case.webp",
       "material": [
         "bioplástico renovable"
       ],
@@ -91,7 +91,7 @@
       "id": 9,
       "name": "Mars Ice Home",
       "architects": "Clouds AO",
-      "image": "assets/houses/mars-ice-home.webp",
+      "image": "/assets/houses/mars-ice-home.webp",
       "material": [
         "hielo",
         "estructura inflable"
@@ -102,7 +102,7 @@
       "id": 10,
       "name": "XArc",
       "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
-      "image": "assets/houses/XArc.webp",
+      "image": "/assets/houses/XArc.webp",
       "material": [
         "impresión 3D"
       ],
@@ -112,7 +112,7 @@
       "id": 11,
       "name": "ArcHab",
       "architects": "XArc (Exploration Architecture corporation)",
-      "image": "assets/houses/arc-hab.webp",
+      "image": "/assets/houses/arc-hab.webp",
       "material": [
         "óxido de hierro"
       ],
@@ -122,7 +122,7 @@
       "id": 12,
       "name": "Spacehabs",
       "architects": "Bryan Versteeg",
-      "image": "assets/houses/spacehabs.webp",
+      "image": "/assets/houses/spacehabs.webp",
       "material": [
         "piedra"
       ],

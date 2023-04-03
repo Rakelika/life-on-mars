@@ -1,7 +1,9 @@
+import AllHousesComponent from "../../components/AllHousesComponent/AllHousesComponent";
+
 export default function HousesPage() {
     return (
         <div>
-            Houses Page
+           <AllHousesComponent></AllHousesComponent>
         </div>
     )
 }

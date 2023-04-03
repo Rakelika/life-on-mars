@@ -28,7 +28,7 @@ const SingUpComponent = () => {
 
   function submitLogin(){
     dispatch(doSignUp(newUser)).then(()=> {
-      navigate('/')
+      navigate('/profile')
     });    
   }
 

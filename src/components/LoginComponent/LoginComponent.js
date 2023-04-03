@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './LoginComponent.scss';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { doLogin } from '../../store/users/actions';
 
@@ -11,23 +11,19 @@ const LoginComponent = () => {
     return state.UserReducer;
   });
 
-  const [email, setEmail] = useState("pablo@mars.com");
-  const [password, setPassword] = useState("1234");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   function submitLogin() {
-    dispatch(doLogin({ email: email, password: password }));
+    dispatch(doLogin({ email: email, password: password })).then(()=> {navigate('/profile')});
   }
 
   if (loadingUser) {
     return <div>Loading...</div>;
   }
-
-  if (user && user.id) {
-    console.log("usuario ok", user);
-    return <Navigate to="/profile" replace></Navigate>;
-  } 
 
   return (
     <div className="LoginComponent">

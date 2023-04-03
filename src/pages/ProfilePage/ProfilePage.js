@@ -34,17 +34,7 @@ export default function ProfilePage() {
     if (loadingUser) {
         return <div>Cargando...</div>;
       }
-
-      if (showEditForm) {
-        return (
-          <div>
-            <EditUserFormComponent
-              user={user}
-            ></EditUserFormComponent>
-          </div>
-        );
-      }
-
+      
     return (
         <div>
         {user && user.id ? (
@@ -63,9 +53,11 @@ export default function ProfilePage() {
         ) : (
           <div>No estás logeado</div>
         )}
-
         <button onClick={() => setShowEditForm(true)}>Edit my profile</button>
-
+        {showEditForm === true ? 
+        <div>
+            <EditUserFormComponent user={user}></EditUserFormComponent>
+        </div> : ""}
       </div>
     );
 }

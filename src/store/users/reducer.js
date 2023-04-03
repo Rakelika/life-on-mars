@@ -20,8 +20,16 @@ import {
     DELETE_USER_FAIL
 } from "./actionTypes";
 
+function recoverUser(){
+    try {
+        return JSON.parse(localStorage.getItem("_user"))
+    } catch (fail) {
+        return {}
+    }
+}
+
 const initialState = {
-    user: {},
+    user: recoverUser(),
     loadingUser: false,
     error: {
         message: "",

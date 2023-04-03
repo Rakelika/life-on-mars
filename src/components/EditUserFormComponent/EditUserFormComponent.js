@@ -1,37 +1,45 @@
 import React, { useState } from 'react';
 import './EditUserFormComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { editUser } from '../../store/users/actions';
+import { useNavigate } from 'react-router';
 
 const EditUserFormComponent = () => {
 
-  const user = useSelector((state) => state.UserReducer)
+  const userId = useSelector((state) => state.UserReducer.user.id)
+
+  const navigate = useNavigate()
   const dispatch = useDispatch();
+  
   const [userData, setUserData] = useState({
     // username: user.username,
-    firstname: user.firstname, 
+    firstname: '', 
     // birthyear: user.birthyear,
-    currentcity: user.currentcity,
+    currentcity: '',
     // occupation: user.occupation,
     // userabout: user.userabout
   })
 
   const updateChange = (e) => {
-    setUserData({
-      ...userData,
-      [e.target.name]: e.target.value,
-    })
+    const {name, value} = e.target
+    setUserData({...userData, [name]: value })
+    console.log(userData)
   }
 
-  function submitChanges(){
-    dispatch(editUser(userData))
+  function submitChanges(event){
+    if (userId && userData) {
+      dispatch(editUser(userId, userData)).then(()=> {
+        navigate('/')
+        alert("has modificado tu perfil con éxito! :D")
+      })
+    }
+    event.preventDefault()
   }
 
   return (
     <div className="EditUserFormComponent">
     Edit UserForm Component
-    <form>
+    <form onSubmit={submitChanges}>
       <fieldset>
         <label>Name:</label>
         <input 
@@ -50,7 +58,7 @@ const EditUserFormComponent = () => {
           onChange={updateChange}
         />
       </fieldset>
-      <button onClick={submitChanges}>Update Data</button>
+      <button type='submit'>Update Data</button>
     </form>
   </div>
   )

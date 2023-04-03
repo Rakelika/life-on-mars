@@ -11,8 +11,8 @@ const LoginComponent = () => {
     return state.UserReducer;
   });
 
-  const [email, setEmail] = useState("andrea@lifeonmars.com");
-  const [password, setPassword] = useState("111");
+  const [email, setEmail] = useState("pablo@mars.com");
+  const [password, setPassword] = useState("1234");
 
   const dispatch = useDispatch();
 

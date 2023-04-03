@@ -135,7 +135,7 @@
       "username": "jupiter231",
       "email": "maria@lifeonmars.com",
       "password": "222",
-      "name": "Maria",
+      "firstname": "Maria",
       "lastname": "García",
       "birthyear": 1993,
       "currentcity": "Barcelona",
@@ -144,16 +144,16 @@
       "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
     },
     {
-      "username": "",
-      "email": "",
-      "password": "",
-      "firstname": "",
-      "lastname": "",
-      "birthyear": "",
-      "currentcity": "",
-      "occupation": "",
-      "userabout": "",
-      "useravatar": "",
+      "username": "plutonexists",
+      "email": "pablo@mars.com",
+      "password": "1234",
+      "firstname": "Pablo",
+      "lastname": "Valls",
+      "birthyear": "1990",
+      "currentcity": "Valencia",
+      "occupation": "Teacher",
+      "userabout": "Something ",
+      "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "id": 2
     }
   ]

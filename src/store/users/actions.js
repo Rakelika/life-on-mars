@@ -134,7 +134,7 @@ export function actionDoLogout() {
 
   export function actionEditUserInfo(){
     return {
-        type: EDIT_USER_INFO
+        type: EDIT_USER_INFO,
     }
   }
 
@@ -152,11 +152,11 @@ export function actionDoLogout() {
     }
   }
 
-  export function editUser(userData) {
+  export function editUser(userId, userData) {
     return async (dispatch) => {
-      dispatch(actionEditUserInfo(userData));
+      dispatch(actionEditUserInfo());
       try {
-        const res = await axios.patch("http://localhost:3000/users", userData);
+        const res = await axios.patch(`http://localhost:3000/users/${userId}`, userData);
         dispatch(actionEditUserInfoOk(res.data))
       } catch (error) {
         dispatch(actionEditUserInfoFail(error))

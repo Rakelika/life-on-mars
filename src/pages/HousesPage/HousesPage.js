@@ -3,7 +3,7 @@ import AllHousesComponent from "../../components/AllHousesComponent/AllHousesCom
 export default function HousesPage() {
     return (
         <div>
-           <AllHousesComponent></AllHousesComponent>
+            <AllHousesComponent></AllHousesComponent>
         </div>
     )
 }

@@ -21,7 +21,7 @@ import {
 } from "./actionTypes";
 import axios from "axios";
 
-//Funciones LOGIN - GET:
+//Funciones LOGIN - POST:
 
 export function actionDoLogin(){
     return {
@@ -45,17 +45,18 @@ export function actionDoLoginFail(error){
 
 export function doLogin(loginUserData) {
   return async (dispatch) => {
-    dispatch(actionDoLogin());
+    dispatch(actionDoLogin(loginUserData));
     try {
-      const users = await axios.get("http://localhost:3000/users");
-      const user = users.data.find((user) => {
-        return user.email === loginUserData.email && user.password === loginUserData.password;
-      });
-      if (user) {
-        dispatch(actionDoLoginOk(user));
+      const res = await axios.post("http://localhost:3000/login", loginUserData);
+      if (res) {
+        dispatch(actionDoLoginOk(res.data.user));
+        console.log(res.data.user)
+        window.alert("LOGIN OK")
       } 
     } catch (error) {
       dispatch(actionDoLoginFail(error));
+      console.log(error)
+      window.alert("usted quien es")
     }
   };
 }
@@ -119,7 +120,7 @@ export function actionDoLogout() {
     return async (dispatch) => {
       dispatch(actionSignUp());
       try {
-        await axios.post("http://localhost:3000/users", newUserData);
+        await axios.post("http://localhost:3000/register", newUserData);
         dispatch(actionSignUpOk())
         const { email, password } = newUserData;
         const loginData = { email, password };
@@ -134,7 +135,7 @@ export function actionDoLogout() {
 
   export function actionEditUserInfo(){
     return {
-        type: EDIT_USER_INFO
+        type: EDIT_USER_INFO,
     }
   }
 
@@ -152,11 +153,11 @@ export function actionDoLogout() {
     }
   }
 
-  export function editUser(userData) {
+  export function editUser(userId, userData) {
     return async (dispatch) => {
-      dispatch(actionEditUserInfo(userData));
+      dispatch(actionEditUserInfo());
       try {
-        const res = await axios.patch("http://localhost:3000/users", userData);
+        const res = await axios.patch(`http://localhost:3000/users/${userId}`, userData);
         dispatch(actionEditUserInfoOk(res.data))
       } catch (error) {
         dispatch(actionEditUserInfoFail(error))

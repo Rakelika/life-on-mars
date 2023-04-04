@@ -1,84 +1,158 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useFormik } from 'formik';
 import './SingUpComponent.scss';
 import { useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { doSignUp } from '../../store/users/actions';
 
 const SingUpComponent = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [newUser, setNewUser] = useState({
-    username: '',
-    email: '',
-    password: '',
-    firstname: '',
-    lastname: '',
-    birthyear: '',
-    currentcity: '',
-    occupation: '',
-    userabout: '',
-    useravatar: ''
+
+  const validate = values => {
+    const errors = {};
+
+    if (!values.username) {
+      errors.username = 'Required';
+    } else if (values.username.length < 3) {
+      errors.username = 'Must be 3 characters or more'
+    }
+
+    if (!values.email) {
+      errors.email = 'Required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      errors.email = 'Invalid email address';
+    }
+
+    if (!values.password) {
+      errors.password = 'Required';
+    } else if (!/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
+      errors.password = 'Must be at least 5 characters and only contain letters and numbers';
+    }
+
+    if (!values.firstname) {
+      errors.firstname = 'Required';
+    } else if (values.firstname.length > 15) {
+      errors.firstname = 'Must be 15 characters or less';
+    }
+  
+    if (!values.lastname) {
+      errors.lastname = 'Required';
+    } else if (values.lastname.length > 20) {
+      errors.lastname = 'Must be 20 characters or less';
+    }
+  
+    return errors;
+  };
+
+  const formik = useFormik({
+    initialValues: {
+      username: '',
+      email: '',
+      password: '',
+      firstname: '',
+      lastname: '',
+      currentcity: '',
+    },
+    validate,
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2))
+      console.log('hola')
+      dispatch(doSignUp(values)).then(() => {
+        navigate('/profile');
+      });
+    },
   });
 
-  const saveFormChanges = (e) => {
-    const { name, value } = e.target;
-    setNewUser({...newUser, [name]: value })
-  } 
-
-  function submitLogin(){
-    dispatch(doSignUp(newUser)).then(()=> {
-      navigate('/')
-    });    
-  }
-
   return (
-      <div className="SingUpComponent">
-      <form>
-        <fieldset>
-          <label>Username:</label>
-          <input type="text" name="username" value={newUser.username} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Email:</label>
-          <input type="email" name="email" value={newUser.email} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Password:</label>
-          <input type="password" name="password" value={newUser.password} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Firstname:</label>
-          <input type="text" name="firstname" value={newUser.firstrname} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Lastname:</label>
-          <input type="text" name="lastname" value={newUser.lastname} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Birthyear:</label>
-          <input type="number" name="birthyear" value={newUser.birthyear} onChange={saveFormChanges} />
-        </fieldset>
-        <fieldset>
-          <label>Currentcity:</label>
-          <input type="text" name="currentcity" value={newUser.currentcity} onChange={saveFormChanges} required />
-        </fieldset>
-        <fieldset>
-          <label>Occupation:</label>
-          <input type="text" name="occupation" value={newUser.occupation} onChange={saveFormChanges}  />
-        </fieldset>
-        <fieldset>
-          <label>About me:</label>
-          <input type="text" name="userabout" value={newUser.userabout} onChange={saveFormChanges} />
-        </fieldset>
-        <fieldset>
-          <label>My Avatar:</label>
-          <input type="text" name="useravatar" value={newUser.useravatar} placeholder='Paste an URL' onChange={saveFormChanges} />
-        </fieldset>
-        <Link onClick={submitLogin}>SignUp</Link>
-      </form>
-      </div>
-  )
-};
+    <div className="SingUpComponent">
+      <form onSubmit={formik.handleSubmit}>
 
-export default SingUpComponent;
+       {/* USERNAME */}
+       <fieldset>
+       <label htmlFor="username">Username</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.username}
+        />
+      {formik.touched.username && formik.errors.username ? (<div>{formik.errors.username}</div>) : null}
+      </fieldset>
+
+      {/* EMAIL */}
+      <fieldset>
+      <label htmlFor="email">Email Address</label>
+       <input
+         id="email"
+         name="email"
+         type="email"
+         onChange={formik.handleChange}
+         onBlur={formik.handleBlur}
+         value={formik.values.email}
+       />
+       {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+      </fieldset>
+
+      {/* PASSWORD */}
+      <fieldset>
+        <label htmlFor="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.password}
+        />
+        {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+      </fieldset>
+
+       {/* FIRST NAME */}
+       <fieldset>
+        <label htmlFor="firstname">First name</label>
+          <input
+            id="firstname"
+            name="firstname"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.firstname}
+          />
+          {formik.touched.firstname && formik.errors.firstname ? (<div>{formik.errors.firstname}</div>) : null}
+        </fieldset>
+        
+       {/* LAST NAME */}
+       <fieldset>
+        <label htmlFor="lastname">Last name</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.lastname}
+          />
+          {formik.touched.lastname && formik.errors.lastname ? (<div>{formik.errors.lastname}</div>) : null}
+      </fieldset>
+
+      {/* CURRENT CITY */}
+      <fieldset>
+        <label htmlFor="currentcity">Current city</label>
+          <input
+            id="currentcity"
+            name="currentcity"
+            type="text"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            value={formik.values.currentcity}
+          />
+      </fieldset>
+      <button type="submit">Sign Up</button>
+    </form>
+    </div>
+  )}
+
+  export default SingUpComponent

@@ -27,7 +27,7 @@ const AllHousesComponent = () => {
     {houses.map(house=>{
       return (
         <div key={house.id}>
-          <Link to={`/houses/${house.id}`}>
+          <Link to={`/house/${house.id}`}>
             <img src={house.image} alt={house.name}/>
           </Link>
           <h3>{house.name}</h3>

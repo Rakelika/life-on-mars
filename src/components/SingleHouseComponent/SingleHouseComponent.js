@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './SingleHouseComponent.scss';
 import { useSelector } from 'react-redux';
 
+
 const SingleHouseComponent = () => {
 
   const {singleHouse,loadingSingleHouse} = useSelector ((state) => state.HousesReducer)
@@ -17,9 +18,12 @@ const SingleHouseComponent = () => {
 
 return(
   <div className="SingleHouseComponent">
-    <img src={singleHouse.image} alt={singleHouse.name}/>
-    <h2>{singleHouse.name}</h2>
-    <p>{singleHouse.description}</p>
+
+    <div>
+      <img src={singleHouse.image} alt={singleHouse.name}/>
+      <h2>{singleHouse.name}</h2>
+      <p>{singleHouse.description}</p>
+    </div>
   </div>
 )
 };

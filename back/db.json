@@ -129,6 +129,52 @@
       "description": "Este artista conceptual, que ha trabajado como diseñador industrial durante más de 20 años, también ha imaginado y diseñado su propia base marciana. Desde 2011, con su proyecto Spacehabs, hace diseños conceptuales sobre posibles hábitats para explorar el espacio. Su diseño no dejará indiferente a nadie."
     }
   ],
+  "favorites": [
+    {
+      "house": {
+        "id": 1,
+        "name": "La Casa del cráter",
+        "architects": "Amey Kandalgaonkar",
+        "image": "/assets/houses/casa-crater.webp",
+        "material": [
+          "elementos geológicos",
+          "piedra"
+        ],
+        "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
+      },
+      "userId": 6,
+      "id": 1
+    },
+    {
+      "house": {
+        "id": 4,
+        "name": "Ice House",
+        "architects": "SEArch y Clouds AO",
+        "image": "/assets/houses/ice-house.webp",
+        "material": [
+          "hielo",
+          "elementos geológicos"
+        ],
+        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+      },
+      "userId": 6,
+      "id": 2
+    },
+    {
+      "house": {
+        "id": 6,
+        "name": "Kahn Yatees",
+        "architects": "Kahn Yatees",
+        "image": "/assets/houses/kahn-yatees.webp",
+        "material": [
+          "impresión 3D"
+        ],
+        "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
+      },
+      "userId": 6,
+      "id": 3
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -196,14 +242,14 @@
       "id": 5
     },
     {
-      "email": "angela@harta.com",
-      "password": "$2a$10$jbs6OmKg40DsxxO8VFE.Ce3E6qPJOqC7i3ymrlpVgOsPqCe5AOBLi",
-      "username": "leave.the.kids.aloud",
-      "firstname": "Angela",
-      "lastname": "Garcia",
-      "currentcity": "Barcelona",
-      "birthyear": 1989,
-      "id": 7
+      "email": "exito@petandolo.com",
+      "password": "$2a$10$nUFd52QvLwbBxNg6.LOBuOMe3yb9AAKmyPLZlKSXOR3UwSZJ62q8.",
+      "username": "exitosas",
+      "firstname": "Exito",
+      "lastname": "García",
+      "currentcity": "La luna",
+      "birthyear": 1990,
+      "id": 6
     }
   ]
 }

@@ -9,7 +9,11 @@ import {
 
     POST_FAVORITES,
     POST_FAVORITES_OK,
-    POST_FAVORITES_FAIL
+    POST_FAVORITES_FAIL,
+
+    GET_FAVORITES,
+    GET_FAVORITES_OK,
+    GET_FAVORITES_FAIL
 } from './actionTypes'
 
 const initialState = {
@@ -19,6 +23,8 @@ const initialState = {
     loadingSingleHouse: false,
     favorites: {},
     loadingFavorites: false,
+    userFavorites: [],
+    loadingUserFavorites: false,
     error: {
         message: ""
     }
@@ -60,6 +66,17 @@ export default function HousesReducer(state = initialState, action) {
     
         case POST_FAVORITES_FAIL:
             state = {...state, loadingFavorites: false, favorites: {}, error: {message: action.payload}}
+            break
+        case GET_FAVORITES:
+            state = {...state, loadingUserFavorites: true}
+            break
+        
+        case GET_FAVORITES_OK:
+            state = {...state, loadingUserFavorites: false, userFavorites: action.payload}
+            break
+        
+        case GET_FAVORITES_FAIL:
+            state = {...state, loadingUserFavorites: false, userFavorites: [], error: {message: action.payload}}
             break
 
         default:

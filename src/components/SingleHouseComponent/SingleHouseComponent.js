@@ -11,14 +11,14 @@ const SingleHouseComponent = () => {
   const {user} = useSelector((state) => state.UserReducer)
 
   const dispatch = useDispatch();
-  const houseID = singleHouse.id;
+  // const houseID = singleHouse.id;
   const userID = user.id;
 
-  console.log(houseID + 'house id')
+  // console.log(houseID + 'house id')
   console.log(userID + 'user id')
 
   function sendFavorites(){
-    dispatch(addFavorites({houseId: houseID, userId: userID}))
+    dispatch(addFavorites({house: singleHouse, userId: userID}))
   }
 
   if(loadingSingleHouse){

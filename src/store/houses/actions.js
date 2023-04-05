@@ -11,7 +11,11 @@ import {
 
     POST_FAVORITES,
     POST_FAVORITES_OK,
-    POST_FAVORITES_FAIL
+    POST_FAVORITES_FAIL,
+
+    GET_FAVORITES,
+    GET_FAVORITES_OK,
+    GET_FAVORITES_FAIL
 
 } from './actionTypes'
 
@@ -109,9 +113,43 @@ export function addFavorites(favorite) {
     return async (dispatch) => {
       dispatch(actionPostFavorites(favorite));
       try {
-        const res = await axios.post("http://localhost:3000/houses", favorite);
+        const res = await axios.post("http://localhost:3000/favorites", favorite);
         dispatch(actionPostFavoritesOk(res.data))
       } catch (error) {
         dispatch(actionPostFavoritesFail(error))
+      }
+  }}
+
+  //Funciones GET FAVORITES:
+
+export function actionGetFavorites(){
+    return{
+        type: GET_FAVORITES
+    }
+}
+
+export function actionGetFavoritesOk(favoriteHouse){
+    return{
+        type: GET_FAVORITES_OK,
+        payload: favoriteHouse
+    }
+}
+
+export function actionGetFavoritesFail(error){
+    return{
+        type: GET_FAVORITES_FAIL,
+        payload: error
+    }
+}
+
+export function getFavorites(userId) {
+    return async (dispatch) => {
+      dispatch(actionGetFavorites());
+      try {
+        const res = await axios.get(`http://localhost:3000/favorites/?userId=${userId}`);
+        dispatch(actionGetFavoritesOk(res.data))
+        console.log(res.data)
+      } catch (error) {
+        dispatch(actionGetFavoritesFail(error))
       }
   }}

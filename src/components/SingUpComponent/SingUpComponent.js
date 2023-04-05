@@ -11,6 +11,9 @@ const SingUpComponent = () => {
 
   const validate = values => {
     const errors = {};
+    const currentYear = new Date().getFullYear();
+    const birthYear = parseInt(values.birthyear, 10);
+    const age = currentYear - birthYear;
 
     if (!values.username) {
       errors.username = 'Required';
@@ -41,6 +44,12 @@ const SingUpComponent = () => {
     } else if (values.lastname.length > 20) {
       errors.lastname = 'Must be 20 characters or less';
     }
+
+    if (isNaN(birthYear) || birthYear < 1900 || birthYear > currentYear) {
+      errors.birthyear = 'Are you sure about this? Insert a valid year';
+    } else if (age < 18) {
+      errors.birthyear = 'You must be at least 18 years old to register';
+    }
   
     return errors;
   };
@@ -56,8 +65,7 @@ const SingUpComponent = () => {
     },
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2))
-      console.log('hola')
+      alert("welcome!!")
       dispatch(doSignUp(values)).then(() => {
         navigate('/profile');
       });
@@ -137,6 +145,19 @@ const SingUpComponent = () => {
           />
           {formik.touched.lastname && formik.errors.lastname ? (<div>{formik.errors.lastname}</div>) : null}
       </fieldset>
+
+      {/*BIRTHYEAR*/}
+      <fieldset>
+          <label>Birthyear:</label>
+          <input 
+            type='number'
+            name='birthyear'
+            value={formik.values.birthyear}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+          {formik.touched.birthyear && formik.errors.birthyear ? (<div>{formik.errors.birthyear}</div>) : null}
+        </fieldset>
 
       {/* CURRENT CITY */}
       <fieldset>

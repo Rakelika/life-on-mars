@@ -194,6 +194,17 @@
       "userabout": "Something",
       "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "id": 5
+    },
+    {
+      "email": "angarcaz93@gmail.com",
+      "password": "$2a$10$LI2ZZcQU1mPjidTTtlUy0OGUz3HOOVC1xJwq1EB0Y46a28Y0Rtn4.",
+      "username": "kminchelle",
+      "firstname": "Ángela",
+      "lastname": "García Cazorla",
+      "currentcity": "Barcelona",
+      "birthyear": 1990,
+      "id": 6,
+      "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
     }
   ]
 }

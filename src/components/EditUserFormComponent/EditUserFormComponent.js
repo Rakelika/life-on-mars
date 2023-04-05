@@ -3,6 +3,7 @@ import './EditUserFormComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { editUser } from '../../store/users/actions';
 import { useNavigate } from 'react-router';
+import { useFormik } from 'formik';
 
 const EditUserFormComponent = () => {
 
@@ -13,35 +14,26 @@ const EditUserFormComponent = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
   
-  const [userData, setUserData] = useState({
-    username: user.username,
-    email: user.email,
-    password: user.password,
-    firstname: user.firstname, 
-    lastname: user.lastname,
-    birthyear:user.birthyear,
-    currentcity: user.currentcity,
-    occupation: user.occupation,
-    userabout: user.userabout,
-    useravatar: user.useravatar
-  })
-
-  const updateChange = (e) => {
-    const {name, value} = e.target
-    setUserData({...userData, [name]: value })
-    console.log(userData)
-  }
-
-  function submitChanges(event){
-    if (userId && userData) {
-      dispatch(editUser(userId, userData)).then(()=> {
-        setShowEditForm(false)
-        navigate('/profile')
-        alert("has modificado tu perfil con éxito! :D")
-      })
+  const formik = useFormik({
+    initialValues: {
+      username: user.username,
+      email: user.email,
+      password: user.password,
+      currentcity: user.currentcity,
+      occupation: user.occupation,
+      userabout: user.userabout,
+      useravatar: user.useravatar
+    },
+    onSubmit: (values) => {
+      if (userId && values) {
+        dispatch(editUser(userId, values)).then(()=> {
+          setShowEditForm(false)
+          navigate('/profile')
+          alert("has modificado tu perfil con éxito! :D")
+        })
+      }
     }
-    event.preventDefault()
-  }
+  })
 
   if (showEditForm === false) {
     return ""
@@ -49,102 +41,77 @@ const EditUserFormComponent = () => {
 
   return (
     <div className="EditUserFormComponent">
-    Edit UserForm Component
-    <form onSubmit={submitChanges}>
-      <fieldset>
-        <label>User name:</label>
-        <input 
-          type='text'
-          name='username'
-          value={userData.username}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Email:</label>
-        <input 
-          type='text'
-          name='email'
-          value={userData.email}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Password:</label>
-        <input 
-          type='password'
-          name='password'
-          value={userData.password}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Name:</label>
-        <input 
-          type='text'
-          name='firstname'
-          value={userData.firstname}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Last name:</label>
-        <input 
-          type='text'
-          name='lastname'
-          value={userData.lastname}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Birthyear:</label>
-        <input 
-          type='number'
-          name='birthyear'
-          value={userData.birthyear}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Current city:</label>
-        <input 
-          type='text'
-          name='currentcity'
-          value={userData.currentcity}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Occupation:</label>
-        <input 
-          type='text'
-          name='occupation'
-          value={userData.occupation}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>About me:</label>
-        <input 
-          type='text'
-          name='userabout'
-          value={userData.userabout}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <fieldset>
-        <label>Profile image:</label>
-        <input 
-          type='text'
-          name='useravatar'
-          value={userData.useravatar}
-          onChange={updateChange}
-        />
-      </fieldset>
-      <button type='submit'>Update Data</button>
-      <button onClick={()=> setShowEditForm(!true)}>Cancelar</button>
-    </form>
-  </div>
+      Edit UserForm Component
+      <form onSubmit={formik.handleSubmit}>
+        <fieldset>
+          <label>User name:</label>
+          <input 
+            type='text'
+            name='username'
+            value={formik.values.username}
+            onChange={formik.handleChange}
+          />
+        </fieldset>
+        <fieldset>
+          <label>Email:</label>
+          <input 
+            type='text'
+            name='email'
+            value={formik.values.email}
+            onChange={formik.handleChange}
+          />
+        </fieldset>
+        <fieldset>
+          <label>Password:</label>
+          <input 
+            type='password'
+            name='password'
+            value={formik.values.password}
+            onChange={formik.handleChange}
+          />
+        </fieldset>
+        <fieldset>
+          <label>Current city:</label>
+          <input 
+            type='text'
+            name='currentcity'
+            value={formik.values.currentcity}
+            onChange={formik.handleChange}
+          />
+        </fieldset>
+        <fieldset>
+          <label>Occupation:</label>
+          <input 
+            type='text'
+            name='occupation'
+            value={formik.values.occupation}
+            onChange={formik.handleChange}
+          />
+        </fieldset>
+        <fieldset>
+          <label>About me:</label>
+          <input 
+            type='text'
+            name='userabout'
+            value={formik.values.userabout}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </fieldset>
+        <fieldset>
+          <label>Profile image:</label>
+          <input 
+            type='text'
+            name='useravatar'
+            value={formik.values.useravatar}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+          />
+        </fieldset>
+        <button type="submit">Submit Changes</button>
+        {/* <button type="reset" onClick={() => handleReset(formik)}>Clear form</button> */}
+        </form>
+        </div>
   )
 }
 

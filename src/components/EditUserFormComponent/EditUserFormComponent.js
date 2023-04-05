@@ -14,6 +14,23 @@ const EditUserFormComponent = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch();
   
+  const validate = values => {
+    const errors = {};
+
+    if (values.username.length < 3) {
+      errors.username = 'Must be 3 characters or more'
+    }
+
+    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      errors.email = 'Invalid email address';
+    }
+
+    if (!/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
+      errors.password = 'Must be at least 5 characters and only contain letters and numbers';
+    }
+    return errors
+  }
+
   const formik = useFormik({
     initialValues: {
       username: user.username,
@@ -24,6 +41,7 @@ const EditUserFormComponent = () => {
       userabout: user.userabout,
       useravatar: user.useravatar
     },
+    validate,
     onSubmit: (values) => {
       if (userId && values) {
         dispatch(editUser(userId, values)).then(()=> {
@@ -39,77 +57,114 @@ const EditUserFormComponent = () => {
     return ""
   }
 
+  const handleReset = (formik) => {
+    formik.resetForm();
+  };
+  
+
   return (
     <div className="EditUserFormComponent">
       Edit UserForm Component
+
+      <div>
+        <h4>{user.user.firstname} {user.user.lastname} {user.user.birthyear}</h4>
+      </div>
+
       <form onSubmit={formik.handleSubmit}>
+      {/* USERNAME */}
         <fieldset>
-          <label>User name:</label>
+          <label htmlFor="username">Username</label>
           <input 
-            type='text'
-            name='username'
+            id="username"
+            name="username"
+            type="text"
             value={formik.values.username}
+            onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
+          {formik.touched.username && formik.errors.username ? (<div>{formik.errors.username}</div>) : null}
         </fieldset>
+        
+        {/* EMAIL */}
         <fieldset>
-          <label>Email:</label>
-          <input 
-            type='text'
-            name='email'
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             value={formik.values.email}
-            onChange={formik.handleChange}
           />
+          {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
         </fieldset>
+
+        {/* PASSWORD */}
         <fieldset>
-          <label>Password:</label>
-          <input 
-            type='password'
-            name='password'
+          <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             value={formik.values.password}
-            onChange={formik.handleChange}
           />
+          {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
         </fieldset>
+
+        {/* CURRENT CITY */}
         <fieldset>
-          <label>Current city:</label>
+          <label htmlFor="currentcity">Current city</label>
           <input 
-            type='text'
-            name='currentcity'
+            id="currentcity"
+            name="currentcity"
+            type="text"
             value={formik.values.currentcity}
             onChange={formik.handleChange}
           />
         </fieldset>
+        
+        {/* OCCUPATION */}
         <fieldset>
-          <label>Occupation:</label>
+          <label htmlFor="occupation">Occupation</label>
           <input 
-            type='text'
-            name='occupation'
+            id="occupation"
+            name="occupation"
+            type="text"
             value={formik.values.occupation}
             onChange={formik.handleChange}
           />
         </fieldset>
+
+        {/* ABOUT */}
         <fieldset>
-          <label>About me:</label>
+          <label htmlFor="userabout">About me</label>
           <input 
-            type='text'
-            name='userabout'
+            id="userabout"
+            name="userabout"
+            type="text"
             value={formik.values.userabout}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
         </fieldset>
+
+        {/* AVATAR */}
         <fieldset>
-          <label>Profile image:</label>
+          <label htmlFor="useravatar">Avatar</label>
           <input 
-            type='text'
-            name='useravatar'
+            id="useravatar"
+            name="useravatar"
+            type="text"
+            placeholder="insert an image URL"
             value={formik.values.useravatar}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
         </fieldset>
         <button type="submit">Submit Changes</button>
-        {/* <button type="reset" onClick={() => handleReset(formik)}>Clear form</button> */}
+        <button type="reset" onClick={() => handleReset(formik)}>Clear form</button>
         </form>
         </div>
   )

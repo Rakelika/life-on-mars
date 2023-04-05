@@ -196,17 +196,26 @@
       "id": 5
     },
     {
-      "email": "mars@attack.com",
-      "password": "$2a$10$LI2ZZcQU1mPjidTTtlUy0OGUz3HOOVC1xJwq1EB0Y46a28Y0Rtn4.",
-      "username": "kminchelle",
+      "email": "angarcaz93@gmail.com",
+      "password": "",
+      "username": "leave.the.kids.aloud",
       "firstname": "Ángela",
       "lastname": "García Cazorla",
       "currentcity": "Barcelona",
-      "birthyear": 1990,
+      "birthyear": 1993,
       "id": 6,
-      "useravatar": "https://images.unsplash.com/photo-1641128208275-3bab75f6de61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80",
-      "occupation": "Taxidriver",
-      "userabout": "kasldjflasdkfjasdf"
+      "useravatar": "https://images.unsplash.com/photo-1641128208275-3bab75f6de61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
+    },
+    {
+      "email": "moon98@moon.com",
+      "password": "$2a$10$t.fwNQKCbPMaz5md0eB4EesZRFE.fxXK9U3zSD102vllI2B92gj0q",
+      "username": "moon98!",
+      "firstname": "Lola",
+      "lastname": "Lopez",
+      "currentcity": "Lugo",
+      "birthyear": 1998,
+      "id": 7,
+      "useravatar": "https://images.unsplash.com/photo-1641128208275-3bab75f6de61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80"
     }
   ]
 }

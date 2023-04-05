@@ -15,7 +15,11 @@ import {
 
     GET_FAVORITES,
     GET_FAVORITES_OK,
-    GET_FAVORITES_FAIL
+    GET_FAVORITES_FAIL,
+
+    DELETE_FAVORITE,
+    DELETE_FAVORITE_OK,
+    DELETE_FAVORITE_FAIL
 
 } from './actionTypes'
 
@@ -153,3 +157,36 @@ export function getFavorites(userId) {
         dispatch(actionGetFavoritesFail(error))
       }
   }}
+
+  //DELETE: Funciones eliminar casa de favoritos:
+
+  export function actionDeleteFavorite(){
+    return {
+        type: DELETE_FAVORITE
+    }
+  }
+
+  export function actionDeleteFavoriteOk(){
+    return {
+        type: DELETE_FAVORITE_OK,
+    }
+  }
+
+  export function actionDeleteFavoriteFail(error){
+    return {
+        type: DELETE_FAVORITE_FAIL,
+        payload: error
+    }
+  }
+
+  export function deleteFavorite(favoriteId) {
+    return async (dispatch) => {
+      dispatch(actionDeleteFavorite());
+      try {
+        await axios.delete(`http://localhost:3000/favorites/${favoriteId}`);
+        dispatch(actionDeleteFavoriteOk());
+      } catch (error) {
+        dispatch(actionDeleteFavoriteFail(error));
+      }
+    }
+  }

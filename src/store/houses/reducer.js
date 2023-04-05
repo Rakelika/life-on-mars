@@ -5,7 +5,15 @@ import {
 
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
-    GET_SINGLE_HOUSE_FAIL
+    GET_SINGLE_HOUSE_FAIL,
+
+    POST_FAVORITES,
+    POST_FAVORITES_OK,
+    POST_FAVORITES_FAIL,
+
+    GET_FAVORITES,
+    GET_FAVORITES_OK,
+    GET_FAVORITES_FAIL
 } from './actionTypes'
 
 const initialState = {
@@ -13,6 +21,10 @@ const initialState = {
     loadingHouses: false,
     singleHouse: {},
     loadingSingleHouse: false,
+    favorites: {},
+    loadingFavorites: false,
+    userFavorites: [],
+    loadingUserFavorites: false,
     error: {
         message: ""
     }
@@ -42,6 +54,29 @@ export default function HousesReducer(state = initialState, action) {
     
         case GET_SINGLE_HOUSE_FAIL:
             state = {...state, loadingSingleHouse: false, singleHouse: {}, error: {message: action.payload}}
+            break
+
+        case POST_FAVORITES:
+            state = {...state, loadingFavorites: true}
+            break
+    
+        case POST_FAVORITES_OK:
+            state = {...state, loadingFavorites: false, favorites: action.payload}
+            break
+    
+        case POST_FAVORITES_FAIL:
+            state = {...state, loadingFavorites: false, favorites: {}, error: {message: action.payload}}
+            break
+        case GET_FAVORITES:
+            state = {...state, loadingUserFavorites: true}
+            break
+        
+        case GET_FAVORITES_OK:
+            state = {...state, loadingUserFavorites: false, userFavorites: action.payload}
+            break
+        
+        case GET_FAVORITES_FAIL:
+            state = {...state, loadingUserFavorites: false, userFavorites: [], error: {message: action.payload}}
             break
 
         default:

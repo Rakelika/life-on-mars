@@ -17,10 +17,6 @@ const EditUserFormComponent = () => {
   const validate = values => {
     const errors = {};
 
-    if (values.username.length < 3) {
-      errors.username = 'Must be 3 characters or more'
-    }
-
     if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
       errors.email = 'Invalid email address';
     }
@@ -82,7 +78,6 @@ const EditUserFormComponent = () => {
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
           />
-          {formik.touched.username && formik.errors.username ? (<div>{formik.errors.username}</div>) : null}
         </fieldset>
         
         {/* EMAIL */}

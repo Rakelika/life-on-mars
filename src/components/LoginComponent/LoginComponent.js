@@ -7,6 +7,7 @@ import { doLogin } from '../../store/users/actions';
 
 const LoginComponent = () => {
   const { loadingUser } = useSelector((state) => state.UserReducer);
+  // const error = useSelector((state) => state.UserReducer.error.message)
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -74,7 +75,8 @@ const LoginComponent = () => {
               />
               {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
             </fieldset>
-            <button type="submit">Login</button>
+            <button type="submit" disabled={!(formik.isValid && formik.dirty)}>Login</button>
+            {/* {error ? <div>{error}</div> : ""} */}
           </form>
     </div>
   );

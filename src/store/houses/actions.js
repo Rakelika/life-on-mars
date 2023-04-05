@@ -7,7 +7,12 @@ import {
 
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
-    GET_SINGLE_HOUSE_FAIL
+    GET_SINGLE_HOUSE_FAIL,
+
+    POST_FAVORITES,
+    POST_FAVORITES_OK,
+    POST_FAVORITES_FAIL
+
 } from './actionTypes'
 
 //Funciones GET HOUSES
@@ -77,3 +82,36 @@ export function getSingleHouse(id){
         }
     }
 }
+
+//Funciones POST FAVORITES:
+
+export function actionPostFavorites(){
+    return{
+        type: POST_FAVORITES
+    }
+}
+
+export function actionPostFavoritesOk(favoriteHouse){
+    return{
+        type: POST_FAVORITES_OK,
+        payload: favoriteHouse
+    }
+}
+
+export function actionPostFavoritesFail(error){
+    return{
+        type: POST_FAVORITES_FAIL,
+        payload: error
+    }
+}
+
+export function addFavorites(favorite) {
+    return async (dispatch) => {
+      dispatch(actionPostFavorites(favorite));
+      try {
+        const res = await axios.post("http://localhost:3000/houses", favorite);
+        dispatch(actionPostFavoritesOk(res.data))
+      } catch (error) {
+        dispatch(actionPostFavoritesFail(error))
+      }
+  }}

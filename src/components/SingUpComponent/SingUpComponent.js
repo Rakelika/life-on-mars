@@ -171,7 +171,7 @@ const SingUpComponent = () => {
             value={formik.values.currentcity}
           />
       </fieldset>
-      <button type="submit">Sign Up</button>
+      <button type="submit" disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
     </form>
     </div>
   )}

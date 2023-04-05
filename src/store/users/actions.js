@@ -54,9 +54,8 @@ export function doLogin(loginUserData) {
         window.alert("LOGIN OK")
       } 
     } catch (error) {
-      dispatch(actionDoLoginFail(error));
-      console.log(error)
-      window.alert("usted quien es")
+      dispatch(actionDoLoginFail(error.response.data));
+      console.log(error.response.data)
     }
   };
 }

@@ -12,6 +12,7 @@ const AllHousesComponent = () => {
 
   useEffect(()=>{
     dispatch(getHouses())
+    
   },[])
 
   if(loadingHouses){

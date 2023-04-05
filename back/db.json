@@ -173,6 +173,49 @@
       },
       "userId": 6,
       "id": 3
+    },
+    {
+      "house": {
+        "id": 8,
+        "name": "Xiaomi Mars Case",
+        "architects": "OPEN Architecture & Xiaomi",
+        "image": "/assets/houses/xiaomi-mars-case.webp",
+        "material": [
+          "bioplástico renovable"
+        ],
+        "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
+      },
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "house": {
+        "id": 1,
+        "name": "La Casa del cráter",
+        "architects": "Amey Kandalgaonkar",
+        "image": "/assets/houses/casa-crater.webp",
+        "material": [
+          "elementos geológicos",
+          "piedra"
+        ],
+        "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
+      },
+      "userId": 6,
+      "id": 5
+    },
+    {
+      "house": {
+        "id": 6,
+        "name": "Kahn Yatees",
+        "architects": "Kahn Yatees",
+        "image": "/assets/houses/kahn-yatees.webp",
+        "material": [
+          "impresión 3D"
+        ],
+        "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
+      },
+      "userId": 7,
+      "id": 6
     }
   ],
   "users": [
@@ -250,6 +293,16 @@
       "currentcity": "La luna",
       "birthyear": 1990,
       "id": 6
+    },
+    {
+      "email": "socorro@auxilio.com",
+      "password": "$2a$10$Rpv3C/CFvjc9ucKvc7hCdeFzMdIxiHZVsp1RZzkwN29UlKqU7Z7ae",
+      "username": "socorro",
+      "firstname": "Ayuda",
+      "lastname": "Lopez",
+      "currentcity": "Cuenca",
+      "birthyear": 1990,
+      "id": 7
     }
   ]
 }

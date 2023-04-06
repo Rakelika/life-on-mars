@@ -5,7 +5,11 @@ import {
 
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
-    GET_SINGLE_HOUSE_FAIL
+    GET_SINGLE_HOUSE_FAIL,
+
+    GET_SEARCH_HOUSES,
+    GET_SEARCH_HOUSES_OK,
+    GET_SEARCH_HOUSES_FAIL
 } from './actionTypes'
 
 const initialState = {
@@ -13,6 +17,8 @@ const initialState = {
     loadingHouses: false,
     singleHouse: {},
     loadingSingleHouse: false,
+    searchHouses: [],
+    loadingSeacrhHouses: false,
     error: {
         message: ""
     }

@@ -8,6 +8,7 @@ import {
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
     GET_SINGLE_HOUSE_FAIL
+
 } from './actionTypes'
 
 //Funciones GET HOUSES

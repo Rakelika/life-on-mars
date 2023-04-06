@@ -4,6 +4,13 @@ import './SearchComponent.scss';
 
 const SearchComponent = () => {
 
+  return (
+    <div className="SearchComponent">
+      <div>
+
+       </div>
+    </div>
+  )
 };
 
 SearchComponent.propTypes = {};

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,11 +8,13 @@ import { Link } from 'react-router-dom';
 const AllHousesComponent = () => {
 
   const dispatch = useDispatch()
+
   const {houses,loadingHouses} = useSelector((state)=> state.HousesReducer)
 
   useEffect(()=>{
     dispatch(getHouses())
   },[])
+
 
   if(loadingHouses){
     return (
@@ -24,6 +26,7 @@ const AllHousesComponent = () => {
   
   return(
   <div className="AllHousesComponent">
+
     {houses.map(house=>{
       return (
         <div key={house.id}>

@@ -9,6 +9,8 @@ const AllHousesComponent = () => {
 
   const dispatch = useDispatch()
 
+  const [search, setSearch] = useState("");
+
   const {houses,loadingHouses} = useSelector((state)=> state.HousesReducer)
 
   useEffect(()=>{
@@ -27,14 +29,22 @@ const AllHousesComponent = () => {
   
   return(
   <div className="AllHousesComponent">
-
-    {houses.map(house=>{
+    <div>
+      <input type="text" placeholder="search" onChange={(e) => setSearch(e.target.value)}/>
+    </div>
+    {houses.filter(house=>{
+      return search.toLowerCase() === ""
+                ? house
+                : house.name.toLowerCase().includes(search);
+            })
+    .map(house=>{
       return (
         <div key={house.id}>
           <Link to={`/house/${house.id}`}>
             <img src={house.image} alt={house.name}/>
           </Link>
           <h3>{house.name}</h3>
+          <p>{house.architects}</p>
         </div>
       )
     })}

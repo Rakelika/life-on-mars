@@ -5,7 +5,16 @@ import {
 
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
-    GET_SINGLE_HOUSE_FAIL
+    GET_SINGLE_HOUSE_FAIL,
+
+    POST_FAVORITES,
+    POST_FAVORITES_OK,
+    POST_FAVORITES_FAIL,
+
+    GET_FAVORITES,
+    GET_FAVORITES_OK,
+    GET_FAVORITES_FAIL,
+
 } from './actionTypes'
 
 const initialState = {

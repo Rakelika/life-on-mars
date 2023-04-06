@@ -13,6 +13,7 @@ const AllHousesComponent = () => {
 
   useEffect(()=>{
     dispatch(getHouses())
+    
   },[])
 
 

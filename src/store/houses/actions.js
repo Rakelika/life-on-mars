@@ -7,7 +7,20 @@ import {
 
     GET_SINGLE_HOUSE,
     GET_SINGLE_HOUSE_OK,
-    GET_SINGLE_HOUSE_FAIL
+    GET_SINGLE_HOUSE_FAIL,
+
+    POST_FAVORITES,
+    POST_FAVORITES_OK,
+    POST_FAVORITES_FAIL,
+
+    GET_FAVORITES,
+    GET_FAVORITES_OK,
+    GET_FAVORITES_FAIL,
+
+    DELETE_FAVORITE,
+    DELETE_FAVORITE_OK,
+    DELETE_FAVORITE_FAIL
+
 
 } from './actionTypes'
 
@@ -78,3 +91,103 @@ export function getSingleHouse(id){
         }
     }
 }
+
+//Funciones POST FAVORITES:
+
+export function actionPostFavorites(){
+    return{
+        type: POST_FAVORITES
+    }
+}
+
+export function actionPostFavoritesOk(favoriteHouse){
+    return{
+        type: POST_FAVORITES_OK,
+        payload: favoriteHouse
+    }
+}
+
+export function actionPostFavoritesFail(error){
+    return{
+        type: POST_FAVORITES_FAIL,
+        payload: error
+    }
+}
+
+export function addFavorites(favorite) {
+    return async (dispatch) => {
+      dispatch(actionPostFavorites(favorite));
+      try {
+        const res = await axios.post("http://localhost:3000/favorites", favorite);
+        dispatch(actionPostFavoritesOk(res.data))
+      } catch (error) {
+        dispatch(actionPostFavoritesFail(error))
+      }
+  }}
+
+  //Funciones GET FAVORITES:
+
+export function actionGetFavorites(){
+    return{
+        type: GET_FAVORITES
+    }
+}
+
+export function actionGetFavoritesOk(favoriteHouse){
+    return{
+        type: GET_FAVORITES_OK,
+        payload: favoriteHouse
+    }
+}
+
+export function actionGetFavoritesFail(error){
+    return{
+        type: GET_FAVORITES_FAIL,
+        payload: error
+    }
+}
+
+export function getFavorites(userId) {
+    return async (dispatch) => {
+      dispatch(actionGetFavorites());
+      try {
+        const res = await axios.get(`http://localhost:3000/favorites/?userId=${userId}`);
+        dispatch(actionGetFavoritesOk(res.data))
+        console.log(res.data)
+      } catch (error) {
+        dispatch(actionGetFavoritesFail(error))
+      }
+  }}
+
+  //DELETE: Funciones eliminar casa de favoritos:
+
+  export function actionDeleteFavorite(){
+    return {
+        type: DELETE_FAVORITE
+    }
+  }
+
+  export function actionDeleteFavoriteOk(){
+    return {
+        type: DELETE_FAVORITE_OK,
+    }
+  }
+
+  export function actionDeleteFavoriteFail(error){
+    return {
+        type: DELETE_FAVORITE_FAIL,
+        payload: error
+    }
+  }
+
+  export function deleteFavorite(favoriteId) {
+    return async (dispatch) => {
+      dispatch(actionDeleteFavorite());
+      try {
+        await axios.delete(`http://localhost:3000/favorites/${favoriteId}`);
+        dispatch(actionDeleteFavoriteOk());
+      } catch (error) {
+        dispatch(actionDeleteFavoriteFail(error));
+      }
+    }
+  }

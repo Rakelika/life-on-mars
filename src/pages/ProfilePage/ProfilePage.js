@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { deleteUser, doLogout } from "../../store/users/actions";
 import EditUserFormComponent from "../../components/EditUserFormComponent/EditUserFormComponent";
 import { useState } from "react";
+import FavoritesComponents from "../../components/FavoritesComponents/FavoritesComponents";
 
 export default function ProfilePage() {
 
@@ -58,6 +59,7 @@ export default function ProfilePage() {
         <div>
             <EditUserFormComponent user={user}></EditUserFormComponent>
         </div> : ""}
+        <FavoritesComponents></FavoritesComponents>
       </div>
     );
 }

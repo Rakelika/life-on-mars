@@ -11,17 +11,16 @@ const FavoritesComponents = () => {
   const {user} = useSelector((state) => state.UserReducer)
   const dispatch = useDispatch();
   const userId = user.id
-  const favoriteHouseId = userFavorites.id
-  console.log("userFavorites: ")
-  console.log(favoriteHouseId)
 
   useEffect(() => {
     dispatch(getFavorites(userId))
   }, [])
 
-  function removeFavorite() {
-      dispatch(deleteFavorite(userFavorites.id))
+  function removeFavorite(thishouse) {
+      dispatch(deleteFavorite(thishouse))
     }
+
+    
   
   return (
   <div className="FavoritesComponents">
@@ -32,7 +31,7 @@ const FavoritesComponents = () => {
         <div key={house.id}>
             <img src={house.house.image} alt={house.name}/>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          <button onClick={removeFavorite}>Remove this house</button>
+          <button onClick={() => removeFavorite(house.id)}>Remove this house</button>
         </div>
       )
     })}

@@ -11,12 +11,24 @@ const AllHousesComponent = () => {
 
   const [search, setSearch] = useState("");
 
+  const [material, setMaterial] = useState("");
+
   const {houses,loadingHouses} = useSelector((state)=> state.HousesReducer)
 
   useEffect(()=>{
     dispatch(getHouses())
     
   },[])
+
+  /*pruebas*/
+  function handleMaterialChange(e) {
+    setMaterial(e.target.value);
+  }
+
+  const housesMaterialFiltered = houses.filter((house) => house.material.includes(material));
+
+  console.log(housesMaterialFiltered)
+  /*pruebas*/
 
 
   if(loadingHouses){
@@ -29,9 +41,84 @@ const AllHousesComponent = () => {
   
   return(
   <div className="AllHousesComponent">
+
+  {/* Buscador */}
     <div>
       <input type="text" placeholder="search" onChange={(e) => setSearch(e.target.value)}/>
     </div>
+
+  {/*Filtrado por materiales*/}
+
+    <div>
+      <h5>Materials</h5>
+      <label>
+        <input 
+          type="checkbox"
+          value="impresión 3D"
+          checked={material === 'impresión 3D'}
+          onChange={handleMaterialChange}/> Impresión 3D
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="elementos geológicos"
+          checked={material === 'elementos geológicos'}
+          onChange={handleMaterialChange}/> Elementos geológicos       
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="bioplástico renovable"
+          checked={material === 'bioplástico renovable'}
+          onChange={handleMaterialChange}/> Bioplástico renovable  
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="hielo"
+          checked={material === 'hielo'}
+          onChange={handleMaterialChange}/> Hielo  
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="fibra de basalto"
+          checked={material === 'fibra de basalto'}
+          onChange={handleMaterialChange}/> Fibra de basalto  
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="plástico de regolito"
+          checked={material === 'plástico de regolito'}
+          onChange={handleMaterialChange}/> Plástico de regolito 
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="óxido de hierro"
+          checked={material === 'óxido de hierro'}
+          onChange={handleMaterialChange}/> Óxido de hierro 
+      </label>
+      <label>
+        <input 
+          type="checkbox"
+          value="estructura inflable"
+          checked={material === 'estructura inflable'}
+          onChange={handleMaterialChange}/> Estructura inflable 
+      </label>
+    </div>
+
+  {/*Casas*/}
+
+  {housesMaterialFiltered.map(house => {
+    return(
+        <div key={house.id}>
+          <h2>{house.name}</h2>
+          {/* <p>Material: {house.material}</p> */}
+        </div>
+  )})}
+
     {houses.filter(house=>{
       return search.toLowerCase() === ""
                 ? house

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './FavoritesComponents.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import HousesReducer from '../../store/houses/reducer';
 import { deleteFavorite, getFavorites } from '../../store/houses/actions';
+import { Navigate } from 'react-router-dom';
 
 const FavoritesComponents = () => {
 
@@ -11,14 +12,20 @@ const FavoritesComponents = () => {
   const {user} = useSelector((state) => state.UserReducer)
   const dispatch = useDispatch();
   const userId = user.id
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
-    dispatch(getFavorites(userId))
-  }, [])
+    dispatch(getFavorites(userId));
+  }, [refresh]);
+
 
   function removeFavorite(thishouse) {
-      dispatch(deleteFavorite(thishouse))
+      dispatch(deleteFavorite(thishouse)).then(() => {
+        setRefresh(!refresh);
+        Navigate('/profile');
+      })
     }
+  
 
     
   

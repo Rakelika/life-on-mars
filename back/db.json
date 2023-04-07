@@ -140,10 +140,12 @@
           "hielo",
           "elementos geológicos"
         ],
-        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones.",
+        "rooms": "3"
       },
       "userId": 6,
-      "id": 2
+      "id": 2,
+      "rooms": "3"
     },
     {
       "house": {
@@ -172,7 +174,24 @@
         "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
       },
       "userId": 6,
-      "id": 7
+      "id": 7,
+      "rooms": "5"
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "material": [
+          "impresión 3D",
+          "elementos geológicos"
+        ],
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire.",
+        "rooms": "2"
+      },
+      "userId": 6,
+      "id": 8
     }
   ],
   "users": [
@@ -243,13 +262,14 @@
     },
     {
       "email": "exito@petandolo.com",
-      "password": "$2a$10$nUFd52QvLwbBxNg6.LOBuOMe3yb9AAKmyPLZlKSXOR3UwSZJ62q8.",
-      "username": "exitosas",
+      "password": "$2a$10$2P6qtnCGTpm4XBB38v/3cOukBbJExmCemA5ob19DT42jFjR9TBAVW",
+      "username": "exitosas00",
       "firstname": "Exito",
       "lastname": "García",
       "currentcity": "La luna",
       "birthyear": 1990,
-      "id": 6
+      "id": 6,
+      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
     },
     {
       "email": "socorro@auxilio.com",

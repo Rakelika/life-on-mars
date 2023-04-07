@@ -4,7 +4,7 @@ import './FavoritesComponents.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import HousesReducer from '../../store/houses/reducer';
 import { deleteFavorite, getFavorites } from '../../store/houses/actions';
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 const FavoritesComponents = () => {
 
@@ -18,16 +18,12 @@ const FavoritesComponents = () => {
     dispatch(getFavorites(userId));
   }, [refresh]);
 
-
   function removeFavorite(thishouse) {
       dispatch(deleteFavorite(thishouse)).then(() => {
         setRefresh(!refresh);
         Navigate('/profile');
       })
     }
-  
-
-    
   
   return (
   <div className="FavoritesComponents">
@@ -38,7 +34,10 @@ const FavoritesComponents = () => {
         <div key={house.id}>
             <img src={house.house.image} alt={house.name}/>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
+          {house.house.description ? <p>{house.house.description}</p> : ""}
+          {house.house.rooms ? <p>Number of rooms: {house.house.rooms}</p> : ""}
           <button onClick={() => removeFavorite(house.id)}>Remove this house</button>
+          <Link to={`/house-form/${house.id}`}>Custom house</Link>
         </div>
       )
     })}

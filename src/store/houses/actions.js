@@ -17,9 +17,17 @@ import {
     GET_FAVORITES_OK,
     GET_FAVORITES_FAIL,
 
+    GET_SINGLE_FAVORITE,
+    GET_SINGLE_FAVORITE_OK,
+    GET_SINGLE_FAVORITE_FAIL,
+
     DELETE_FAVORITE,
     DELETE_FAVORITE_OK,
-    DELETE_FAVORITE_FAIL
+    DELETE_FAVORITE_FAIL,
+    
+    EDIT_FAV_HOUSE_INFO,
+    EDIT_FAV_HOUSE_INFO_OK, 
+    EDIT_FAV_HOUSE_INFO_FAIL
 
 } from './actionTypes'
 
@@ -128,7 +136,7 @@ export function addFavorites(favorite) {
 
 export function actionGetFavorites(){
     return{
-        type: GET_FAVORITES
+        type: GET_FAVORITES,
     }
 }
 
@@ -157,6 +165,76 @@ export function getFavorites(userId) {
         dispatch(actionGetFavoritesFail(error))
       }
   }}
+
+  //Funciones GET SINGLE FAVORITE
+
+export function actionGetSingleFavorite(houseId){
+    return{
+        type: GET_SINGLE_FAVORITE,
+        payload: houseId
+    }
+}
+
+export function actionGeSingleFavoriteOk(singleHouse){
+    return{
+        type: GET_SINGLE_FAVORITE_OK,
+        payload: singleHouse
+    }
+}
+
+export function actionGeSingleFavoriteFail(error){
+    return{
+        type: GET_SINGLE_FAVORITE_FAIL,
+        payload: error,
+    }
+}
+
+export function getSingleFavorite(houseId){
+    return async (dispatch)=>{
+        dispatch(actionGetSingleFavorite())
+        try {
+            const response = await axios.get(`http://localhost:3000/favorites/${houseId}`)
+            dispatch(actionGeSingleFavoriteOk(response.data))
+            console.log(response.data)
+        } catch(error){
+            dispatch(actionGeSingleFavoriteFail(error))
+        }
+    }
+}
+
+// Funciones editar información casa favorita: 
+
+export function actionEditFavHouseInfo(){
+    return {
+        type: EDIT_FAV_HOUSE_INFO,
+    }
+  }
+
+  export function actionEditFavHouseInfoOk(houseNewData){
+    return {
+        type: EDIT_FAV_HOUSE_INFO_OK,
+        payload: houseNewData
+    }
+  }
+
+  export function actionEditFavHouseInfoFail(error) {
+    return {
+        type: EDIT_FAV_HOUSE_INFO_FAIL,
+        payload: error
+    }
+  }
+
+  export function editFavHouse(houseId, houseData) {
+    return async (dispatch) => {
+      dispatch(actionEditFavHouseInfo());
+      try {
+        const res = await axios.patch(`http://localhost:3000/favorites/${houseId}`, houseData);
+        dispatch(actionEditFavHouseInfoOk(res.data))
+      } catch (error) {
+        dispatch(actionEditFavHouseInfoFail(error))
+      }
+  }}
+
 
   //DELETE: Funciones eliminar casa de favoritos:
 

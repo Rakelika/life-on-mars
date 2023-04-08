@@ -132,21 +132,6 @@
   "favorites": [
     {
       "house": {
-        "id": 1,
-        "name": "La Casa del cráter",
-        "architects": "Amey Kandalgaonkar",
-        "image": "/assets/houses/casa-crater.webp",
-        "material": [
-          "elementos geológicos",
-          "piedra"
-        ],
-        "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
-      },
-      "userId": 6,
-      "id": 1
-    },
-    {
-      "house": {
         "id": 4,
         "name": "Ice House",
         "architects": "SEArch y Clouds AO",
@@ -155,53 +140,12 @@
           "hielo",
           "elementos geológicos"
         ],
-        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones.",
+        "rooms": "3"
       },
       "userId": 6,
-      "id": 2
-    },
-    {
-      "house": {
-        "id": 6,
-        "name": "Kahn Yatees",
-        "architects": "Kahn Yatees",
-        "image": "/assets/houses/kahn-yatees.webp",
-        "material": [
-          "impresión 3D"
-        ],
-        "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
-      },
-      "userId": 6,
-      "id": 3
-    },
-    {
-      "house": {
-        "id": 8,
-        "name": "Xiaomi Mars Case",
-        "architects": "OPEN Architecture & Xiaomi",
-        "image": "/assets/houses/xiaomi-mars-case.webp",
-        "material": [
-          "bioplástico renovable"
-        ],
-        "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
-      },
-      "userId": 6,
-      "id": 4
-    },
-    {
-      "house": {
-        "id": 1,
-        "name": "La Casa del cráter",
-        "architects": "Amey Kandalgaonkar",
-        "image": "/assets/houses/casa-crater.webp",
-        "material": [
-          "elementos geológicos",
-          "piedra"
-        ],
-        "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
-      },
-      "userId": 6,
-      "id": 5
+      "id": 2,
+      "rooms": "3"
     },
     {
       "house": {
@@ -216,6 +160,38 @@
       },
       "userId": 7,
       "id": 6
+    },
+    {
+      "house": {
+        "id": 1,
+        "name": "La Casa del cráter",
+        "architects": "Amey Kandalgaonkar",
+        "image": "/assets/houses/casa-crater.webp",
+        "material": [
+          "elementos geológicos",
+          "piedra"
+        ],
+        "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
+      },
+      "userId": 6,
+      "id": 7,
+      "rooms": "5"
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "material": [
+          "impresión 3D",
+          "elementos geológicos"
+        ],
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire.",
+        "rooms": "2"
+      },
+      "userId": 6,
+      "id": 8
     }
   ],
   "users": [
@@ -286,13 +262,14 @@
     },
     {
       "email": "exito@petandolo.com",
-      "password": "$2a$10$nUFd52QvLwbBxNg6.LOBuOMe3yb9AAKmyPLZlKSXOR3UwSZJ62q8.",
-      "username": "exitosas",
+      "password": "$2a$10$2P6qtnCGTpm4XBB38v/3cOukBbJExmCemA5ob19DT42jFjR9TBAVW",
+      "username": "exitosas00",
       "firstname": "Exito",
       "lastname": "García",
       "currentcity": "La luna",
       "birthyear": 1990,
-      "id": 6
+      "id": 6,
+      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
     },
     {
       "email": "socorro@auxilio.com",

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './FavoritesComponents.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import HousesReducer from '../../store/houses/reducer';
 import { deleteFavorite, getFavorites } from '../../store/houses/actions';
+import { Link, Navigate } from 'react-router-dom';
 
 const FavoritesComponents = () => {
 
@@ -11,16 +12,17 @@ const FavoritesComponents = () => {
   const {user} = useSelector((state) => state.UserReducer)
   const dispatch = useDispatch();
   const userId = user.id
-  const favoriteHouseId = userFavorites.id
-  console.log("userFavorites: ")
-  console.log(favoriteHouseId)
+  const [refresh, setRefresh] = useState(false);
 
   useEffect(() => {
-    dispatch(getFavorites(userId))
-  }, [])
+    dispatch(getFavorites(userId));
+  }, [refresh]);
 
-  function removeFavorite() {
-      dispatch(deleteFavorite(userFavorites.id))
+  function removeFavorite(thishouse) {
+      dispatch(deleteFavorite(thishouse)).then(() => {
+        setRefresh(!refresh);
+        Navigate('/profile');
+      })
     }
   
   return (
@@ -32,7 +34,10 @@ const FavoritesComponents = () => {
         <div key={house.id}>
             <img src={house.house.image} alt={house.name}/>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          <button onClick={removeFavorite}>Remove this house</button>
+          {house.house.description ? <p>{house.house.description}</p> : ""}
+          {house.house.rooms ? <p>Number of rooms: {house.house.rooms}</p> : ""}
+          <button onClick={() => removeFavorite(house.id)}>Remove this house</button>
+          <Link to={`/house-form/${house.id}`}>Custom house</Link>
         </div>
       )
     })}

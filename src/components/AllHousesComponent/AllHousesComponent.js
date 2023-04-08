@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../../store/houses/actions';
 import { Link } from 'react-router-dom';
 
-const AllHousesComponent = () => {
+const AllHousesComponent = ({ search, selectedMaterials }) => {
 
   const dispatch = useDispatch()
-
-  const [search, setSearch] = useState("");
-
-  const [material, setMaterial] = useState("");
 
   const {houses,loadingHouses} = useSelector((state)=> state.HousesReducer)
 
@@ -19,17 +15,6 @@ const AllHousesComponent = () => {
     dispatch(getHouses())
     
   },[])
-
-
-  function handleMaterialChange(e) {
-    setMaterial(e.target.value);
-  }
-
-  const housesMaterialFiltered = houses.filter((house) => house.material.includes(material));
-
-  // console.log(housesMaterialFiltered)
-
-
 
   if(loadingHouses){
     return (
@@ -41,90 +26,22 @@ const AllHousesComponent = () => {
   
   return(
   <div className="AllHousesComponent">
-
-  {/* Buscador */}
-    <div>
-      <input type="text" placeholder="search" onChange={(e) => setSearch(e.target.value)}/>
-    </div>
-
-  {/*Filtrado por materiales*/}
-
-    <div>
-      <h5>Materials</h5>
-      <label>
-        <input 
-          type="checkbox"
-          value="impresión 3D"
-          checked={material === 'impresión 3D'}
-          onChange={handleMaterialChange}/> Impresión 3D
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="elementos geológicos"
-          checked={material === 'elementos geológicos'}
-          onChange={handleMaterialChange}/> Elementos geológicos       
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="bioplástico renovable"
-          checked={material === 'bioplástico renovable'}
-          onChange={handleMaterialChange}/> Bioplástico renovable  
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="hielo"
-          checked={material === 'hielo'}
-          onChange={handleMaterialChange}/> Hielo  
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="fibra de basalto"
-          checked={material === 'fibra de basalto'}
-          onChange={handleMaterialChange}/> Fibra de basalto  
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="plástico de regolito"
-          checked={material === 'plástico de regolito'}
-          onChange={handleMaterialChange}/> Plástico de regolito 
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="óxido de hierro"
-          checked={material === 'óxido de hierro'}
-          onChange={handleMaterialChange}/> Óxido de hierro 
-      </label>
-      <label>
-        <input 
-          type="checkbox"
-          value="estructura inflable"
-          checked={material === 'estructura inflable'}
-          onChange={handleMaterialChange}/> Estructura inflable 
-      </label>
-    </div>
-
-  {/*Casas*/}
-
-  {/* {housesMaterialFiltered.map(house => {
-    return(
-        <div key={house.id}>
-          <h2>{house.name}</h2>
-          <p><strong>Material:</strong> {house.material.join(" | ")}</p>
-        </div>
-  )})} */}
-
-    {houses.filter(house=>{
+  {houses
+    .filter((house) => {
       return search.toLowerCase() === ""
-                ? house
-                : house.name.toLowerCase().includes(search) 
-            }) 
-    .map(house=>{
+        ? // Si no se está haciendo ninguna búsqueda por nombre,
+          // filtrar por materiales seleccionados
+          selectedMaterials.length === 0 ||
+              selectedMaterials.every(
+                (material) => house.material.includes(material)
+              ) 
+        : // Si se está buscando por nombre, aplicar filtro por nombre y materiales seleccionados
+          house.name.toLowerCase().includes(search) &&
+              (selectedMaterials.length === 0 ||
+                selectedMaterials.some(
+                  (material) => house.material.includes(material)
+                ))
+    }).map(house=>{
       return (
         <div key={house.id}>
           <Link to={`/house/${house.id}`}>

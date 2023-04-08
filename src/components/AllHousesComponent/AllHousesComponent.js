@@ -26,8 +26,7 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
   
   return(
   <div className="AllHousesComponent">
-  {houses
-    .filter((house) => {
+    {houses.filter((house) => {
       return search.toLowerCase() === ""
         ? // Si no se está haciendo ninguna búsqueda por nombre,
           // filtrar por materiales seleccionados
@@ -38,20 +37,32 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
         : // Si se está buscando por nombre, aplicar filtro por nombre y materiales seleccionados
           house.name.toLowerCase().includes(search) &&
               (selectedMaterials.length === 0 ||
-                selectedMaterials.some(
+                selectedMaterials.every(
                   (material) => house.material.includes(material)
                 ))
-    }).map(house=>{
-      return (
-        <div key={house.id}>
-          <Link to={`/house/${house.id}`}>
-            <img src={house.image} alt={house.name}/>
-          </Link>
-          <h3>{house.name}</h3>
-          <p>{house.architects}</p>
-        </div>
-      )
-    })}
+    }).map(house => (
+      <div key={house.id}>
+        <Link to={`/house/${house.id}`}>
+          <img src={house.image} alt={house.name}/>
+        </Link>
+        <h3>{house.name}</h3>
+        <p>{house.architects}</p>
+      </div>
+    ))}
+    {houses.filter((house) => {
+        return search.toLowerCase() === "" ?
+            selectedMaterials.length === 0 ||
+            selectedMaterials.every((material) => house.material.includes(material))
+            :
+            house.name.toLowerCase().includes(search) &&
+            (selectedMaterials.length === 0 ||
+                selectedMaterials.every(
+                    (material) => house.material.includes(material)
+                ))
+        }).length === 0 && (
+        <p>There are no houses with these characteristics</p>
+    )
+    }
   </div>
 )};
 

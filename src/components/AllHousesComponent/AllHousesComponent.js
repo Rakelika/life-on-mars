@@ -20,15 +20,15 @@ const AllHousesComponent = () => {
     
   },[])
 
-  /*pruebas*/
+
   function handleMaterialChange(e) {
     setMaterial(e.target.value);
   }
 
   const housesMaterialFiltered = houses.filter((house) => house.material.includes(material));
 
-  console.log(housesMaterialFiltered)
-  /*pruebas*/
+  // console.log(housesMaterialFiltered)
+
 
 
   if(loadingHouses){
@@ -111,19 +111,19 @@ const AllHousesComponent = () => {
 
   {/*Casas*/}
 
-  {housesMaterialFiltered.map(house => {
+  {/* {housesMaterialFiltered.map(house => {
     return(
         <div key={house.id}>
           <h2>{house.name}</h2>
-          {/* <p>Material: {house.material}</p> */}
+          <p><strong>Material:</strong> {house.material.join(" | ")}</p>
         </div>
-  )})}
+  )})} */}
 
     {houses.filter(house=>{
       return search.toLowerCase() === ""
                 ? house
-                : house.name.toLowerCase().includes(search);
-            })
+                : house.name.toLowerCase().includes(search) 
+            }) 
     .map(house=>{
       return (
         <div key={house.id}>

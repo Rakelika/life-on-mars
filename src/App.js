@@ -34,7 +34,7 @@ function App() {
         <Route exact path="/signup" element={<SignUpPage />}></Route>
         <Route exact path="/profile" element= {user && user.id ? (<ProfilePage />) : (<Navigate to="/" replace></Navigate>)} ></Route>
         <Route exact path="/single-house" element={<SingleHousePage />}></Route>
-        <Route exact path="/house-form" element={<HouseFormPage />}></Route>
+        <Route exact path="/house-form/:id" element={<HouseFormPage />}></Route>
       </Routes>
     </div>
   );

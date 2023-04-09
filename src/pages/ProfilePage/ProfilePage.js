@@ -37,7 +37,7 @@ export default function ProfilePage() {
       }
       
     return (
-        <div>
+        <div className="Container">
         {user && user.id ? (
           <div>
           <p>Hola {user.username} has inciado sesión correctamente</p>
@@ -48,13 +48,13 @@ export default function ProfilePage() {
           <p>{user.userabout}</p>
           <p>{user.email}</p>
           <img src={user.useravatar} alt={user.name} width={300}></img>
-          <p><Link onClick={logOut}>Logout</Link></p>
-          <p><button onClick={deleteAccount}>Delete account</button></p>
+          <button onClick={logOut} className="third-btn">Logout</button>
+          <button onClick={deleteAccount} className="third-btn">Delete account</button>
           </div>
         ) : (
           <div>No estás logeado</div>
         )}
-        <button onClick={() => setShowEditForm(true)}>Edit my profile</button>
+        <button onClick={() => setShowEditForm(true)} className="secondary-btn">Edit my profile</button>
         {showEditForm === true ? 
         <div>
             <EditUserFormComponent user={user}></EditUserFormComponent>

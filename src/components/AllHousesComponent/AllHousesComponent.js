@@ -25,7 +25,7 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
   }
   
   return(
-  <div className="AllHousesComponent">
+  <div className="AllHousesComponent Container">
     {houses.filter((house) => {
       return search.toLowerCase() === ""
         ? // Si no se está haciendo ninguna búsqueda por nombre,

@@ -32,7 +32,7 @@ const SingleHouseComponent = () => {
 return(
   <div className="SingleHouseComponent">
 
-    <div>
+    <div className='Container'>
       <img src={singleHouse.image} alt={singleHouse.name}/>
       <h2>{singleHouse.name}</h2>
       <p>{singleHouse.description}</p>

@@ -42,21 +42,27 @@ export default function ProfilePage() {
           <div className="ProfilePageMainBanner"></div>
           <div className="Container">
             <div className="ProfilePageUserInfoContainer">
+            <header className="ProfilePageUserHeader">
               <div className="userAvatarContainer">
               {user.useravatar ? <img src={user.useravatar} alt={user.name} className="userAvatarImage"></img> : <img src="https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png" alt={user.name} width={300}></img>}
               </div>
+              <h1>{user.username}</h1>
+            </header>
+            <div className="ProfileRow">
             <div className="ProfileInfo">
-            <h2>{user.username}</h2>
-            <p>{user.firstname} {user.lastname}</p>
-            <p>{user.email}</p>
-            <p>{user.occupation}</p>
-            <p>{user.currentcity}</p>
-            <p>{user.userabout}</p>
+            <h3>{user.firstname} {user.lastname}</h3>
+            <p><span className="boldLabel">Email: </span>{user.email}</p>
+            <p><span className="boldLabel">Occupation: </span>{user.occupation}</p>
+            <p><span className="boldLabel">Current city: </span>{user.currentcity}</p>
+            <p><span className="boldLabel">About me: </span>{user.userabout}</p>
             </div>
-            </div>
+            <div className="ProfileButtonsContainer">
             <button onClick={logOut} className="third-btn">Logout</button>
             <button onClick={deleteAccount} className="third-btn">Delete account</button>
-          <button onClick={() => setShowEditForm(!showEditForm)} className="third-btn">Edit my profile</button>
+            <button onClick={() => setShowEditForm(!showEditForm)} className="third-btn">Edit my profile</button>
+          </div>
+          </div>
+          </div>
           {showEditForm === true ? 
           <div>
               <EditUserFormComponent user={user}></EditUserFormComponent>

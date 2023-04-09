@@ -6,23 +6,50 @@
     height: 200px;
 }
 
+.ProfileRow {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ProfileInfo {
+    min-width: 70%;
+}
+
 .ProfilePageUserInfoContainer {
     margin: -90px 0 0 0;
     display: flex;
-    gap: 30px;
-    flex-direction: row;
+    gap: 10px;
+    flex-direction: column;
     text-align: left;
-    align-items: left;
+    .boldLabel {
+        font-weight: 600;
+    }
+    .ProfilePageUserHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    .userAvatarContainer {
+        border-radius: 100%;
+        width:140px;
+        height:140px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+            img {
+            object-fit: cover;
+            border-radius: 100%;
+            width: 85%;
+            height: 85%;
+        }
+    }
+    
 }
 
-.userAvatarContainer {
-    border-radius: 100%;
-    width:200px;
-    height:200px;
-    img {
-        object-fit: cover;
-        border-radius: 100%;
-        width: 100%;
-        height: 100%;
-    }
+.ProfileButtonsContainer {
+    text-align: right;
 }

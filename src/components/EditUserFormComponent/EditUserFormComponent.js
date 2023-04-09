@@ -17,9 +17,9 @@ const EditUserFormComponent = () => {
   const validate = values => {
     const errors = {};
 
-    if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      errors.email = 'Invalid email address';
-    }
+    // if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+    //   errors.email = 'Invalid email address';
+    // }
 
     if (!/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
       errors.password = 'Must be at least 5 characters and only contain letters and numbers';
@@ -41,7 +41,7 @@ const EditUserFormComponent = () => {
     onSubmit: (values) => {
       if (userId && values) {
         dispatch(editUser(userId, values)).then(()=> {
-          setShowEditForm(false)
+          setShowEditForm(!showEditForm)
           navigate('/profile')
           alert("has modificado tu perfil con éxito! :D")
         })
@@ -137,7 +137,7 @@ const EditUserFormComponent = () => {
         </fieldset>
 
          {/* AVATAR */}
-         <fieldset>
+        <fieldset>
           {/* <label htmlFor="useravatar">Avatar</label> */}
           <input 
             id="useravatar"

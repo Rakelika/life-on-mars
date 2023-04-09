@@ -46,6 +46,10 @@ p {
     min-height: 100vh;
 }
 
+.centerText {
+    text-align:center
+}
+
 @media only screen and (max-width: 768px) {
     .Container {
         max-width: 95%;

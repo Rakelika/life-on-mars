@@ -22,6 +22,7 @@ import {
     EDIT_FAV_HOUSE_INFO,
     EDIT_FAV_HOUSE_INFO_OK,
     EDIT_FAV_HOUSE_INFO_FAIL
+,
 
 } from './actionTypes'
 
@@ -34,8 +35,6 @@ const initialState = {
     loadingFavorites: false,
     userFavorites: [],
     loadingUserFavorites: false,
-    singleFavorite: {},
-    loadingSingleFavorite: false,
     error: {
         message: ""
     }

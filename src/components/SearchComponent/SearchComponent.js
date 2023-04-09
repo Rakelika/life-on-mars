@@ -6,7 +6,7 @@ const SearchComponent = ({ setSearch }) => {
 
   return (
     <div className="SearchComponent">
-        <input type="text" placeholder="search" onChange={(e) => setSearch(e.target.value)}/>
+        <input className='regularInput' type="text" placeholder="search" onChange={(e) => setSearch(e.target.value)}/>
     </div>
   )
 };

@@ -68,9 +68,10 @@ export function getHouses(){
 
 //Funciones GET SINGLE HOUSE
 
-export function actionGetSingleHouse(){
+export function actionGetSingleHouse(id){
     return{
-        type: GET_SINGLE_HOUSE
+        type: GET_SINGLE_HOUSE,
+        payload: id
     }
 }
 
@@ -90,7 +91,7 @@ export function actionGeSingleHouseFail(error){
 
 export function getSingleHouse(id){
     return async (dispatch)=>{
-        dispatch(actionGetSingleHouse())
+        dispatch(actionGetSingleHouse(id))
         try {
             const response = await axios.get(`http://localhost:3000/houses/${id}`)
             dispatch(actionGeSingleHouseOk(response.data))

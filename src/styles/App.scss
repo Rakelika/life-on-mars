@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import 'globalStyles.scss';
+
+.App {
+  text-align: center;
+  background-color: $dark-color;
+  color: $light-color;
+  font-family: $font-stack;
+}

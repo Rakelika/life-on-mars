@@ -1,6 +1,6 @@
 
-import './App.css';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import '../src/styles/App.scss';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 //Pages: 

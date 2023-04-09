@@ -47,6 +47,8 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
         </Link>
         <h3>{house.name}</h3>
         <p>{house.architects}</p>
+        <button className='primary-btn'>Prueba</button>
+        <button className='secondary-btn'>Prueba</button>
       </div>
     ))}
     {houses.filter((house) => {

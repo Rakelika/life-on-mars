@@ -4,6 +4,7 @@ import { deleteUser, doLogout } from "../../store/users/actions";
 import EditUserFormComponent from "../../components/EditUserFormComponent/EditUserFormComponent";
 import { useState } from "react";
 import FavoritesComponents from "../../components/FavoritesComponents/FavoritesComponents";
+import "./profilePageStyles.scss"
 
 export default function ProfilePage() {
 
@@ -37,29 +38,31 @@ export default function ProfilePage() {
       }
       
     return (
-        <div className="Container">
-        {user && user.id ? (
+      <section>
+          <div className="ProfilePageMainBanner"></div>
+          <div className="Container">
+            <div className="ProfilePageUserInfoContainer">
+              <div className="userAvatarContainer">
+              {user.useravatar ? <img src={user.useravatar} alt={user.name} className="userAvatarImage"></img> : <img src="https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png" alt={user.name} width={300}></img>}
+              </div>
+            <div className="ProfileInfo">
+            <h2>{user.username}</h2>
+            <p>{user.firstname} {user.lastname}</p>
+            <p>{user.email}</p>
+            <p>{user.occupation}</p>
+            <p>{user.currentcity}</p>
+            <p>{user.userabout}</p>
+            </div>
+            </div>
+            <button onClick={logOut} className="third-btn">Logout</button>
+            <button onClick={deleteAccount} className="third-btn">Delete account</button>
+          <button onClick={() => setShowEditForm(!showEditForm)} className="third-btn">Edit my profile</button>
+          {showEditForm === true ? 
           <div>
-          <p>Hola {user.username} has inciado sesión correctamente</p>
-          <p>{user.firstname} {user.lastname}</p>
-          <p>{user.birthyear}</p>
-          <p>{user.currentcity}</p>
-          <p>{user.occupation}</p>
-          <p>{user.userabout}</p>
-          <p>{user.email}</p>
-          <img src={user.useravatar} alt={user.name} width={300}></img>
-          <button onClick={logOut} className="third-btn">Logout</button>
-          <button onClick={deleteAccount} className="third-btn">Delete account</button>
-          </div>
-        ) : (
-          <div>No estás logeado</div>
-        )}
-        <button onClick={() => setShowEditForm(true)} className="secondary-btn">Edit my profile</button>
-        {showEditForm === true ? 
-        <div>
-            <EditUserFormComponent user={user}></EditUserFormComponent>
-        </div> : ""}
-        <FavoritesComponents></FavoritesComponents>
-      </div>
+              <EditUserFormComponent user={user}></EditUserFormComponent>
+          </div> : ""}
+          <FavoritesComponents></FavoritesComponents>
+        </div>
+      </section>
     );
 }

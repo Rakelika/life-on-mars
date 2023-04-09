@@ -192,6 +192,20 @@
       },
       "userId": 6,
       "id": 8
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "material": [
+          "impresión 3D",
+          "elementos geológicos"
+        ],
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
+      },
+      "id": 9
     }
   ],
   "users": [
@@ -280,6 +294,18 @@
       "currentcity": "Cuenca",
       "birthyear": 1990,
       "id": 7
+    },
+    {
+      "email": "asteroide@mars.com",
+      "password": "$2a$10$5mc0uA.QI3.1rell7fcraewoys.MYfo0TkJCSsbMw7kUeaajUYhAa",
+      "username": "asteroide",
+      "firstname": "Beatriz",
+      "lastname": "Muñoz",
+      "currentcity": "Terrassa",
+      "birthyear": 1990,
+      "id": 8,
+      "occupation": "Teacher",
+      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWxpZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
     }
   ]
 }

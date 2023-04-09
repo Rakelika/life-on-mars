@@ -74,104 +74,116 @@ const SingUpComponent = () => {
 
   return (
     <div className="SingUpComponent">
-      <form onSubmit={formik.handleSubmit}>
+      <form className='SignUpForm' onSubmit={formik.handleSubmit}>
 
        {/* USERNAME */}
        <fieldset>
-       <label htmlFor="username">Username</label>
+       {/* <label htmlFor="username">Username</label> */}
         <input
           id="username"
           name="username"
           type="text"
+          placeholder='Username *'
+          className='simpleInput'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.username}
         />
-      {formik.touched.username && formik.errors.username ? (<div>{formik.errors.username}</div>) : null}
+      {formik.touched.username && formik.errors.username ? (<div className='errorMessage'>{formik.errors.username}</div>) : null}
       </fieldset>
 
       {/* EMAIL */}
       <fieldset>
-      <label htmlFor="email">Email Address</label>
+      {/* <label htmlFor="email">Email Address</label> */}
        <input
          id="email"
          name="email"
          type="email"
+         placeholder='Email *'
+         className='simpleInput'
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.email}
        />
-       {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+       {formik.touched.email && formik.errors.email ? <div className='errorMessage'>{formik.errors.email}</div> : null}
       </fieldset>
 
       {/* PASSWORD */}
       <fieldset>
-        <label htmlFor="password">Password</label>
+        {/* <label htmlFor="password">Password</label> */}
         <input
           id="password"
           name="password"
           type="password"
+          placeholder='Password *'
+          className='simpleInput'
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.password}
         />
-        {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+        {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
       </fieldset>
 
        {/* FIRST NAME */}
-       <fieldset>
-        <label htmlFor="firstname">First name</label>
+       <fieldset className='TwoColumnsFieldset'>
+        {/* <label htmlFor="firstname">First name</label> */}
           <input
             id="firstname"
             name="firstname"
             type="text"
+            placeholder='First name *'
+            className='simpleInput simpleHalfWidthInput'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstname}
           />
-          {formik.touched.firstname && formik.errors.firstname ? (<div>{formik.errors.firstname}</div>) : null}
-        </fieldset>
+          {formik.touched.firstname && formik.errors.firstname ? (<div className='errorMessage'>{formik.errors.firstname}</div>) : null}
+
         
        {/* LAST NAME */}
-       <fieldset>
-        <label htmlFor="lastname">Last name</label>
+        {/* <label htmlFor="lastname">Last name</label> */}
           <input
             id="lastname"
             name="lastname"
             type="text"
+            placeholder='Last name *'
+            className='simpleInput simpleHalfWidthInput'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.lastname}
           />
-          {formik.touched.lastname && formik.errors.lastname ? (<div>{formik.errors.lastname}</div>) : null}
+          {formik.touched.lastname && formik.errors.lastname ? (<div className='errorMessage'>{formik.errors.lastname}</div>) : null}
       </fieldset>
 
       {/*BIRTHYEAR*/}
-      <fieldset>
-          <label>Birthyear:</label>
+      <fieldset className='TwoColumnsFieldset'>
+          {/* <label>Birthyear:</label> */}
           <input 
+            id= 'birthyear'
             type='number'
             name='birthyear'
+            placeholder='Birth year *'
+            className='simpleInput simpleHalfWidthInput'
             value={formik.values.birthyear}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
-          {formik.touched.birthyear && formik.errors.birthyear ? (<div>{formik.errors.birthyear}</div>) : null}
-        </fieldset>
+          {formik.touched.birthyear && formik.errors.birthyear ? (<div className='errorMessage'>{formik.errors.birthyear}</div>) : null}
 
       {/* CURRENT CITY */}
-      <fieldset>
-        <label htmlFor="currentcity">Current city</label>
+        {/* <label htmlFor="currentcity">Current city</label> */}
           <input
             id="currentcity"
             name="currentcity"
             type="text"
+            placeholder='Current city'
+            className='simpleInput simpleHalfWidthInput'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.currentcity}
           />
       </fieldset>
-      <button type="submit" disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
+      <button type="submit" className='primary-btn' disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
     </form>
     </div>
   )}

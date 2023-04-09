@@ -17,3 +17,38 @@
 fieldset {
     border: none;
 }
+
+label {
+    font-size: $regular-size;
+}
+
+.simpleInput {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid $light-color;
+    color: $light-color;
+    width: 100%;
+    margin: 2px 0;
+    padding: 8px 0px;
+    &::placeholder {
+        color: $light-color;
+    }
+    &:focus {
+        border: 0;
+        border-bottom: 1px solid $secondary-color;
+        color: $secondary-color;
+        outline: none;
+    }
+}
+
+.simpleHalfWidthInput {
+    width: 48%;
+}
+
+.errorMessage {
+    color: $error-color;
+    font-size: $small-size;
+    & .simpleInput {
+        border-bottom: 1px solid $error-color;
+    }
+}

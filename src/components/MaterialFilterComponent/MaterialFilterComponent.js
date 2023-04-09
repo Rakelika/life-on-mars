@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './MaterialFilterComponent.scss';
+import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 
 const MaterialFilterComponent = ({ setSelectedMaterials, selectedMaterials }) => {
 
+
 return (
   <div className="MaterialFilterComponent">
-      <h5>Materials</h5>
+   <Accordion>
+      <AccordionItem header="Select materials you prefer">
       <label>
         <input 
           type="checkbox"
@@ -87,6 +90,8 @@ return (
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
         }}/> Estructura inflable 
       </label>
+      </AccordionItem>
+      </Accordion>
   </div>
 )
 };

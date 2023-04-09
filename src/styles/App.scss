@@ -4,8 +4,23 @@
 @import 'formStyles.scss';
 
 .App {
-  text-align: center;
   background-color: $dark-color;
   color: $light-color;
   font-family: $font-stack;
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+    
+body::-webkit-scrollbar-track {
+  background: $dark-color;
+}
+    
+body::-webkit-scrollbar-thumb {
+  background-color: $secondary-color;
+  border-radius: 20px;
+  border: 3px solid $dark-color;
 }

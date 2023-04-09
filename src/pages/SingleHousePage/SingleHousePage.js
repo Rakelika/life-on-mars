@@ -21,12 +21,12 @@ export default function SingleHousePage() {
 
     return (
         <div>
-            <div>
+            <div className="Container">
                 { singleHouse.id > 1 ? (
-                <button onClick={() => navigate (`/house/${singleHouse.id-1}`)}>Previous</button>
+                <button className="primary-btn" onClick={() => navigate (`/house/${singleHouse.id-1}`)}>Previous</button>
                 ) : null}
                 { singleHouse.id < houses.length ?
-                    <button onClick={() => navigate (`/house/${singleHouse.id+1}`)}>Next</button>
+                    <button className="primary-btn" onClick={() => navigate (`/house/${singleHouse.id+1}`)}>Next</button>
                 : null} 
             </div>
             <SingleHouseComponent></SingleHouseComponent>

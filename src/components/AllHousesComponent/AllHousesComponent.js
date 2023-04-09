@@ -25,7 +25,7 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
   }
   
   return(
-  <div className="AllHousesComponent Container">
+  <section className="AllHousesComponent Container">
     {houses.filter((house) => {
       return search.toLowerCase() === ""
         ? // Si no se está haciendo ninguna búsqueda por nombre,
@@ -41,15 +41,21 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
                   (material) => house.material.includes(material)
                 ))
     }).map(house => (
-      <div key={house.id}>
+      <article key={house.id} className='cardHouse'>
         <Link to={`/house/${house.id}`}>
           <img src={house.image} alt={house.name}/>
         </Link>
-        <h3>{house.name}</h3>
-        <p>{house.architects}</p>
-        <button className='primary-btn'>Prueba</button>
-        <button className='secondary-btn'>Prueba</button>
-      </div>
+        <div className='cardResume'>
+          <div>
+            <h3>{house.name}</h3>
+            <p className='nameArchitect'>{house.architects}</p>
+            <p>{house.material.join(" | ")}</p>
+          </div>
+          <Link to={`/house/${house.id}`}>
+            <button className='primary-btn'>Explore</button>
+          </Link>
+        </div>
+      </article>
     ))}
     {houses.filter((house) => {
         return search.toLowerCase() === "" ?
@@ -62,10 +68,13 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
                     (material) => house.material.includes(material)
                 ))
         }).length === 0 && (
-        <p>There are no houses with these characteristics</p>
+        <div className='Container'>
+          <p className='centerText'>(｡•́︿•̀｡)</p> 
+          <p className='centerText'>Sorry, there are no houses with these characteristics</p>
+        </div>
     )
     }
-  </div>
+  </section>
 )};
 
 AllHousesComponent.propTypes = {};

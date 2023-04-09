@@ -25,6 +25,10 @@ $gradient-color: linear-gradient(0deg, rgba(38,33,42,1) 0%, rgba(37,39,42,1) 100
 
 // RESETS
 
+body {
+    background-color: $dark-color;
+}
+
 ul {
     list-style: none;
 }
@@ -42,4 +46,16 @@ p {
     max-width: 80%;
     margin: 0 auto;
 }
+
+.centerText {
+    text-align:center
+}
+
+@media only screen and (max-width: 768px) {
+    .Container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
 

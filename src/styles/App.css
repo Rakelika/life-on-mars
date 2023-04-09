@@ -3,9 +3,111 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.primary-btn {
+  background-color: #B26ADC;
+  border-radius: 3px;
+  color: #202124;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.primary-btn:hover {
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #B26ADC;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.secondary-btn:hover {
+  cursor: pointer;
+}
+
+.third-btn {
+  background-color: transparent;
+  border: none;
+  color: #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.third-btn:hover {
+  cursor: pointer;
+}
+
+.regularInput {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #f5f5f5;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+fieldset {
+  border: none;
+}
+
 .App {
-  text-align: center;
   background-color: #202124;
   color: #f5f5f5;
   font-family: "Quicksand", sans-serif;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #202124;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B26ADC;
+  border-radius: 20px;
+  border: 3px solid #202124;
 }/*# sourceMappingURL=App.css.map */

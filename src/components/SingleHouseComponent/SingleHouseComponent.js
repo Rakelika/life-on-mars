@@ -30,14 +30,14 @@ const SingleHouseComponent = () => {
   }
 
 return(
-  <div className="SingleHouseComponent">
+  <div className="SingleHouseComponent Container">
 
-    <div className='Container'>
+    <div>
       <img src={singleHouse.image} alt={singleHouse.name}/>
       <h2>{singleHouse.name}</h2>
       <p>{singleHouse.description}</p>
     </div>
-    <button onClick={sendFavorites}>Reservar</button>
+    <button className='primary-btn' onClick={sendFavorites}>Reserve</button>
   </div>
 )
 };

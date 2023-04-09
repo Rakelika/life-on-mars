@@ -1,3 +1,7 @@
+body {
+  background-color: #202124;
+}
+
 ul {
   list-style: none;
 }
@@ -8,33 +12,21 @@ a {
 }
 
 p {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
-.primary-btn {
-  background-color: #B26ADC;
-  border-radius: 3px;
-  color: #202124;
-  border: 2px solid #B26ADC;
-  font-family: "Quicksand", sans-serif;
-  width: 180px;
-  font-weight: 700;
-  padding: 10px;
-  margin: 10px auto;
-  font-size: 15px;
-  letter-spacing: 0.05em;
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.secondary-btn {
-  background-color: transparent;
-  border-radius: 3px;
-  color: #B26ADC;
-  border: 2px solid #B26ADC;
-  font-family: "Quicksand", sans-serif;
-  width: 180px;
-  font-weight: 700;
-  padding: 10px;
-  margin: 10px auto;
-  font-size: 15px;
-  letter-spacing: 0.05em;
+.centerText {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=globalStyles.css.map */

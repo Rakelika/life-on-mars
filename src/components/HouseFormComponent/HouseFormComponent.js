@@ -37,8 +37,6 @@ const HouseFormComponent = () => {
 
   return (
     <div className="HouseFormComponent">
-      {singleFavorite.house.name ? <p>{singleFavorite.house.name}</p> : ""}
-      {singleFavorite.house.image ? <img src={singleFavorite.house.image} alt={singleFavorite.house.name} width={200} /> : ""}
       <form onSubmit={formik.handleSubmit}>
       {/* ROOMS */}
         <fieldset>
@@ -56,6 +54,8 @@ const HouseFormComponent = () => {
         <button type="submit">Submit Changes</button>
         <button type="reset" onClick={() => handleReset(formik)}>Clear form</button>
         </form>
+        {singleFavorite.house.name ? <p>{singleFavorite.house.name}</p> : ""}
+      {singleFavorite.house.image ? <img src={singleFavorite.house.image} alt={singleFavorite.house.name} width={200} /> : ""}
         </div>
   )
 };

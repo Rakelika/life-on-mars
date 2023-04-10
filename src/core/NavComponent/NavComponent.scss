@@ -1,3 +1,11 @@
+.NavComponent {
+    -webkit-box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.55);
+    box-shadow: 0px 10px 24px -7px rgba(0,0,0,0.55);
+    z-index: 10;
+    position: relative;
+}
+
 nav {
     display: flex;
     width: 80%;
@@ -11,6 +19,20 @@ nav {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 20px;
+        gap: 15px;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
+}
+
+.greenCercle {
+    width: 7px;
+    height: 7px;
+    background-color: greenyellow;
+    border-radius: 100%;
+    margin: 0 5px 0 0;
 }

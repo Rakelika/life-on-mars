@@ -42,40 +42,42 @@ const LoginComponent = () => {
 
   if (loadingUser) {
     return (
-      <div>Cargando...</div>
+      <div>Loading...</div>
     )
   }
 
   return (
     <div className="LoginComponent">
-          <form onSubmit={formik.handleSubmit}>
+          <form className='LoginForm' onSubmit={formik.handleSubmit}>
             <fieldset>
-              <label htmlFor="email">Email:</label>
+              {/* <label htmlFor="email">Email:</label> */}
               <input
                 id="email"
                 name="email"
                 type="text"
-                placeholder="email"
+                placeholder="Email"
+                className='simpleInput'
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
               />
-              {formik.touched.email && formik.errors.email ? <div>{formik.errors.email}</div> : null}
+              {formik.touched.email && formik.errors.email ? <div className='errorMessage'>{formik.errors.email}</div> : null}
             </fieldset>
             <fieldset>
-              <label htmlFor="password">Password:</label>
+              {/* <label htmlFor="password">Password:</label> */}
               <input
                 id="password"
                 name="password"
                 type="password"
-                placeholder="password"
+                placeholder="Password"
+                className='simpleInput'
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
                 value={formik.values.password}
               />
-              {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+              {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
             </fieldset>
-            <button type="submit" disabled={!(formik.isValid && formik.dirty)}>Login</button>
+            <button type="submit"  className='primary-btn' disabled={!(formik.isValid && formik.dirty)}>Login</button>
             {/* {error ? <div>{error}</div> : ""} */}
           </form>
     </div>

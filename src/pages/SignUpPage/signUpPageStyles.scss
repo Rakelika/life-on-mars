@@ -1,0 +1,39 @@
+.FullWidthContainer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 92vh;
+    text-align: center;
+
+}
+
+.LeftCol, .RightCol {
+    width: 50%;
+}
+
+.RightCol {
+    background-image: url("https://images.unsplash.com/photo-1614935981447-893ce3858657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.LeftCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUpHeader {
+    max-width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .LeftCol {
+        width: 95%;
+    }
+
+    .RightCol {
+        display: none;
+    }
+}

@@ -8,12 +8,14 @@ $semibold-weight: 600;
 $bold-weight: 700;
 
 $regular-size: 0.9em;
+$small-size: 0.8em;
 
 // COLORES
 
 $dark-color: #202124;
 $light-color: #f5f5f5;
 $secondary-color: #B26ADC;
+$error-color: #ED2B2A;
 
 // GAP
 
@@ -45,6 +47,7 @@ p {
 .Container {
     max-width: 80%;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .centerText {

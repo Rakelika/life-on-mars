@@ -13,9 +13,11 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import SingleHousePage from './pages/SingleHousePage/SingleHousePage';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 
 //Components:
 import NavComponent from './core/NavComponent/NavComponent'
+import FooterComponent from './core/FooterComponent/FooterComponent'
 
 function App() {
 
@@ -35,7 +37,9 @@ function App() {
         <Route exact path="/profile" element= {user && user.id ? (<ProfilePage />) : (<Navigate to="/" replace></Navigate>)} ></Route>
         <Route exact path="/single-house" element={<SingleHousePage />}></Route>
         <Route exact path="/house-form/:id" element={<HouseFormPage />}></Route>
+        <Route exact path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       </Routes>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }

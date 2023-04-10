@@ -187,11 +187,53 @@
           "impresión 3D",
           "elementos geológicos"
         ],
-        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire.",
-        "rooms": "2"
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
       },
-      "userId": 6,
-      "id": 8
+      "id": 9
+    },
+    {
+      "house": {
+        "id": 4,
+        "name": "Ice House",
+        "architects": "SEArch y Clouds AO",
+        "image": "/assets/houses/ice-house.webp",
+        "material": [
+          "hielo",
+          "elementos geológicos"
+        ],
+        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+      },
+      "userId": 8,
+      "id": 10
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "material": [
+          "impresión 3D",
+          "elementos geológicos"
+        ],
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
+      },
+      "userId": 8,
+      "id": 11
+    },
+    {
+      "house": {
+        "id": 5,
+        "name": "Mars Incubator",
+        "architects": "La Nasa",
+        "image": "/assets/houses/mars-incubator.webp",
+        "material": [
+          "plástico de regolito",
+          "fibra de basalto"
+        ],
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+      },
+      "id": 12
     }
   ],
   "users": [
@@ -266,10 +308,12 @@
       "username": "exitosas00",
       "firstname": "Exito",
       "lastname": "García",
-      "currentcity": "La luna",
+      "currentcity": "Barcelona",
       "birthyear": 1990,
       "id": 6,
-      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
+      "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. ",
+      "occupation": "Teacher"
     },
     {
       "email": "socorro@auxilio.com",
@@ -280,6 +324,19 @@
       "currentcity": "Cuenca",
       "birthyear": 1990,
       "id": 7
+    },
+    {
+      "email": "asteroide@mars.com",
+      "password": "$2a$10$5mc0uA.QI3.1rell7fcraewoys.MYfo0TkJCSsbMw7kUeaajUYhAa",
+      "username": "asteroide",
+      "firstname": "Beatriz",
+      "lastname": "Muñoz",
+      "currentcity": "Terrassa",
+      "birthyear": 1990,
+      "id": 8,
+      "occupation": "Teacher",
+      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWxpZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
     }
   ]
 }

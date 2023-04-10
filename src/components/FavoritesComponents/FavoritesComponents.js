@@ -27,8 +27,9 @@ const FavoritesComponents = () => {
   
   return (
   <div className="FavoritesComponents">
-    <h3>Mis casas</h3>
+    <h2>My houses</h2>
     <div>
+    {userFavorites.length === 0 ? "You don't have any house"  : ""}
     {userFavorites.map(house=>{
       return (
         <div key={house.id}>

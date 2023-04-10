@@ -33,7 +33,7 @@ const FooterComponent = () => {
         <li>About us</li>
         <li>Careers</li>
         <li>Press</li>
-        <li>News</li>
+        <li>Privacy policy</li>
         <li>Contact</li>
       </ul>
     </div>

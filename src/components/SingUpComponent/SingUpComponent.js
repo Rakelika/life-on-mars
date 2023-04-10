@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormik } from 'formik';
 import './SingUpComponent.scss';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { doSignUp } from '../../store/users/actions';
 
 const SingUpComponent = () => {
@@ -183,6 +183,21 @@ const SingUpComponent = () => {
             value={formik.values.currentcity}
           />
       </fieldset>
+      {/* ACCEPT PRIVACY POLICY */}
+      <fieldset>
+          <label htmlFor="acceptPrivacyPolicy">
+          <input
+              id="acceptPrivacyPolicy"
+              name="acceptPrivacyPolicy"
+              type="checkbox"
+              className='acceptCheckbox'
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.acceptPrivacyPolicy}
+          />
+          I have read and accept the <Link to="/privacy-policy">privacy policy</Link>.
+          </label>
+          </fieldset>
       <button type="submit" className='primary-btn' disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
     </form>
     </div>

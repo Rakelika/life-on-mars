@@ -18,8 +18,9 @@ fieldset {
     border: none;
 }
 
-label {
+label, textarea {
     font-size: $regular-size;
+    font-family: $font-stack;
 }
 
 .simpleInput {
@@ -45,6 +46,10 @@ label {
     width: 48%;
 }
 
+.inputContactWidth {
+    width: 70%;
+}
+
 .errorMessage {
     color: $error-color;
     font-size: $small-size;
@@ -52,3 +57,4 @@ label {
         border-bottom: 1px solid $error-color;
     }
 }
+

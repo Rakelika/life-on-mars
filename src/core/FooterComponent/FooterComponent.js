@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const FooterComponent = () => {
   return (
   <div className="FooterComponent">
+  <footer>
     <div className='Col1'>
       <h3><Link to="/">Life on Mars</Link></h3>
       <ul className='FooterSocialMedia'>
@@ -47,6 +48,7 @@ const FooterComponent = () => {
         <li>Tutorials</li>
       </ul>
     </div>
+    </footer>
   </div>
   )
 };

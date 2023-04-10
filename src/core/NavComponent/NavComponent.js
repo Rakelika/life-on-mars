@@ -16,8 +16,8 @@ const NavComponent = () => {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/houses">Houses</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          {user && user.id ? ("") : (<Link to="/signup"> SignUp</Link>)}
-          {user && user.id ? (<Link to="/profile"> Profile</Link>) : ("")}
+          <li>{user && user.id ? ("") : (<Link to="/signup"> SignUp</Link>)}</li>
+          <li>{user && user.id ? (<Link to="/profile"><div className='greenCercle'></div>{user.username}</Link>) : ("")}</li>
         </ul>
       </nav>
   </div>

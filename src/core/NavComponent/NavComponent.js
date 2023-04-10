@@ -11,7 +11,7 @@ const NavComponent = () => {
   return (
     <div className="NavComponent">
     <nav>
-      <div><Link to="/">Life on Mars</Link></div>
+      <div><h3><Link to="/">Life on Mars</Link></h3></div>
         <ul>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/houses">Houses</Link></li>

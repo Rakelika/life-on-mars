@@ -16,6 +16,7 @@ import SingleHousePage from './pages/SingleHousePage/SingleHousePage';
 
 //Components:
 import NavComponent from './core/NavComponent/NavComponent'
+import FooterComponent from './core/FooterComponent/FooterComponent'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/single-house" element={<SingleHousePage />}></Route>
         <Route exact path="/house-form/:id" element={<HouseFormPage />}></Route>
       </Routes>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }

@@ -1,1 +1,34 @@
-.FooterComponent {}
+.FooterComponent {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 80%;
+    ul {
+        padding: 0;
+        li {
+            font-size: 0.8em;
+            padding: 7px 0;
+        }
+    }
+}
+
+.Col1 {
+    width: 40%;
+    gap: 5px;
+    span {
+        font-size: 0.8em;
+    }
+}
+
+.FooterSocialMedia {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .FooterComponent{
+        display: flex;
+        flex-direction: column;
+    }
+}

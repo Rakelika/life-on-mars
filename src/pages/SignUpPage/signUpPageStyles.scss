@@ -26,3 +26,13 @@
     max-width: 80%;
 }
 
+@media only screen and (max-width: 768px) {
+
+    .LeftCol {
+        width: 95%;
+    }
+
+    .RightCol {
+        display: none;
+    }
+}

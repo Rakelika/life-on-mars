@@ -187,22 +187,6 @@
           "impresión 3D",
           "elementos geológicos"
         ],
-        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire.",
-        "rooms": "2"
-      },
-      "userId": 6,
-      "id": 8
-    },
-    {
-      "house": {
-        "id": 2,
-        "name": "Zopherus",
-        "architects": "Zopherus of Rogers",
-        "image": "/assets/houses/zopherus.webp",
-        "material": [
-          "impresión 3D",
-          "elementos geológicos"
-        ],
         "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
       },
       "id": 9
@@ -221,6 +205,35 @@
       },
       "userId": 8,
       "id": 10
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "material": [
+          "impresión 3D",
+          "elementos geológicos"
+        ],
+        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
+      },
+      "userId": 8,
+      "id": 11
+    },
+    {
+      "house": {
+        "id": 5,
+        "name": "Mars Incubator",
+        "architects": "La Nasa",
+        "image": "/assets/houses/mars-incubator.webp",
+        "material": [
+          "plástico de regolito",
+          "fibra de basalto"
+        ],
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+      },
+      "id": 12
     }
   ],
   "users": [
@@ -299,7 +312,8 @@
       "birthyear": 1990,
       "id": 6,
       "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
+      "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. ",
+      "occupation": "Teacher"
     },
     {
       "email": "socorro@auxilio.com",

@@ -1,1 +1,65 @@
-/*# sourceMappingURL=AllHousesComponent.css.map */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.AllHousesComponent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.AllHousesComponent .cardHouse {
+  width: 38.5vw;
+  border: 1px solid #430a64;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+.AllHousesComponent .cardHouse img {
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.AllHousesComponent .cardHouse .cardResume {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 30px;
+  gap: 10px;
+}
+.AllHousesComponent .cardHouse .cardResume p.nameArchitect {
+  color: #B26ADC;
+}
+
+@media only screen and (max-width: 768px) {
+  .AllHousesComponent {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .AllHousesComponent .cardHouse {
+    width: 95vw;
+  }
+  .AllHousesComponent .cardHouse img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=AllHousesComponent.css.map */

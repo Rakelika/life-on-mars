@@ -1,1 +1,54 @@
-.AllHousesComponent {}
+@import '../../styles/globalStyles.scss';
+
+.AllHousesComponent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    .cardHouse {
+        width: 38.5vw;
+        border: 1px solid #430a64;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+
+        &:hover {
+
+        }
+
+        img {
+            width: 100%;
+            border-top-right-radius: 30px ;
+            border-top-left-radius: 30px;
+        }
+
+        .cardResume {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 30px;
+            gap: 10px;
+
+            p.nameArchitect {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .AllHousesComponent {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .cardHouse {
+            width: 95vw;
+    
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -5,10 +5,16 @@
       "name": "La Casa del cráter",
       "architects": "Amey Kandalgaonkar",
       "image": "/assets/houses/casa-crater.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
       "material": [
         "elementos geológicos",
         "piedra"
       ],
+      "title": "La creatividad sin límites del arquitecto indio para una vivienda en forma de OVNI",
+      "video": "https://player.vimeo.com/video/142099027?h=13b5f9f648",
       "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
     },
     {
@@ -20,6 +26,7 @@
         "impresión 3D",
         "elementos geológicos"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
     },
     {
@@ -32,6 +39,7 @@
         "fibra de basalto",
         "bioplástico renovable"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "The Marsha Project de AI SpaceFactory es la propuesta de la NASA de una casa impresa en 3D optimizada para su construcción en Marte.  La empresa ha investigado y desarrollado un compuesto de fibra de basalto (que puede extraerse de las rocas de Marte) y un bioplástico renovable que puede obtenerse de plantas que se pueden cultivar en el planeta rojo."
     },
     {
@@ -43,6 +51,7 @@
         "hielo",
         "elementos geológicos"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
     },
     {
@@ -54,6 +63,7 @@
         "plástico de regolito",
         "fibra de basalto"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
     },
     {
@@ -64,6 +74,7 @@
       "material": [
         "impresión 3D"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
     },
     {
@@ -75,6 +86,7 @@
         "impresión 3D",
         "óxido de hierro"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "La empresa francesa de impresión 3D Fabulous diseñó una casa burbuja que una vez aterrizada en Marte empezaría a construirse a partir del óxido de hierro que se encuentra en la superficie del planeta. Una estructura futurista con escalera helicoidal que conectaría 2 pisos."
     },
     {
@@ -85,6 +97,7 @@
       "material": [
         "bioplástico renovable"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
     },
     {
@@ -96,6 +109,7 @@
         "hielo",
         "estructura inflable"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "El diseño de Clouds AO, Mars Ice Home ha sido desarrollado por un equipo de expertos y el Centro de Investigación Langley de la NASA. Es un concepto de hábitat desplegable. Está basado en una estructura inflable que incorpora hielo, de agua obtenida del propio planeta rojo, como blindaje contra la radiación y como componente estructural."
     },
     {
@@ -106,6 +120,7 @@
       "material": [
         "impresión 3D"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Este diseño ha sido uno de los 10 finalistas en la fase 3 (modelado virtual) del concurso de la NASA de hábitats impresos en 3D. Pese a que parece una cúpula redondeada, se basa en un diseño hexagonal y, en su interior, cuenta con todo el equipamiento necesario, como habitaciones, cocina y área de trabajo, dividido en varias plantas."
     },
     {
@@ -116,6 +131,7 @@
       "material": [
         "óxido de hierro"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "El equipo de XArc también ha diseñado ArcHab, con un diseño más robusto y eficiente. Este diseño en forma de arco, proporciona una protección sólida contra la radiación, a la vez que ofrece un refugio adicional para cualquier habitante del planeta rojo."
     },
     {
@@ -126,6 +142,7 @@
       "material": [
         "piedra"
       ],
+      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Este artista conceptual, que ha trabajado como diseñador industrial durante más de 20 años, también ha imaginado y diseñado su propia base marciana. Desde 2011, con su proyecto Spacehabs, hace diseños conceptuales sobre posibles hábitats para explorar el espacio. Su diseño no dejará indiferente a nadie."
     }
   ],

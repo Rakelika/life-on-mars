@@ -1,44 +1,45 @@
 import axios from 'axios'
 import {
-    GET_MARS_WEATHER,
-    GET_MARS_WEATHER_OK,
-    GET_MARS_WEATHER_FAIL,
+    GET_PICTURES,
+    GET_PICTURES_OK,
+    GET_PICTURES_FAIL
 
 } from './actionTypes'
 
 const APIKEY = "HGB0sdrb2JlKXuJC7aSpL4mFAXsX5uUlHPO1p2MZ";
 
-//Funciones GET MARS WEATHER
+//Funciones get pictures
 
-export function actionGetWeather(){
+export function actionGetPictures(){
     return {
-        type: GET_MARS_WEATHER
+        type: GET_PICTURES
     }
 }
 
-export function actionGetWeatherOk(weatherData){
+export function actionGetPicturesOk(images){
     return {
-        type: GET_MARS_WEATHER_OK,
-        payload: weatherData
+        type: GET_PICTURES_OK,
+        payload: images
     }
 }
 
-export function actionGetWeatherFail(error){
+export function actionGetPicturesFail(error){
     return {
-        type: GET_MARS_WEATHER_FAIL,
+        type: GET_PICTURES_FAIL,
         payload: error
     }
 }
 
-export function getWeather(){
+export function getPictures(){
     return async (dispatch)=>{
-        dispatch(actionGetWeather())
+        dispatch(actionGetPictures())
         try {
-            const response = await axios.get(`https://api.nasa.gov/insight_weather/?api_key=${APIKEY}&feedtype=json&ver=1.0`);
-            dispatch(actionGetWeatherOk(response.data))
+            // const response = await axios.get(`https://api.nasa.gov/planetary/apod?count=10&thumbs=true&api_key=${APIKEY}`);
+            const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
+            dispatch(actionGetPicturesOk(response.data))
             console.log(response.data)
         } catch (error) {
-            dispatch(actionGetWeatherFail(error))
+            dispatch(actionGetPicturesFail(error))
         }
     }
 }

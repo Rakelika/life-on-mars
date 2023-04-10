@@ -1,10 +1,10 @@
-import MarsWeatherComponent from "../../components/MarsWeatherComponent/MarsWeatherComponent";
+import PicturesNasaComponent from "../../components/PicturesNasaComponent/PicturesNasaComponent";
 
 export default function HomePage() {
     return (
-        <div>
+        <div className="Container">
             <h1>Home page</h1>
-            <MarsWeatherComponent></MarsWeatherComponent>
+            <PicturesNasaComponent></PicturesNasaComponent>
         </div>
     )
 }

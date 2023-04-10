@@ -55,7 +55,7 @@ const HouseFormComponent = () => {
         <button type="reset" onClick={() => handleReset(formik)}>Clear form</button>
         </form>
         {singleFavorite.house.name ? <p>{singleFavorite.house.name}</p> : ""}
-      {singleFavorite.house.image ? <img src={singleFavorite.house.image} alt={singleFavorite.house.name} width={200} /> : ""}
+        {singleFavorite.house.image ? <img src={singleFavorite.house.image} alt={singleFavorite.house.name} width={200} /> : ""}
         </div>
   )
 };

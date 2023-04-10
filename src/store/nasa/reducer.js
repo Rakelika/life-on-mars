@@ -1,13 +1,13 @@
 import {
-    GET_MARS_WEATHER,
-    GET_MARS_WEATHER_OK,
-    GET_MARS_WEATHER_FAIL,
+    GET_PICTURES,
+    GET_PICTURES_OK,
+    GET_PICTURES_FAIL
 
 } from './actionTypes'
 
 const initialState = {
-    weather: {},
-    loadingWeather: false,
+    nasaImages: {},
+    loadingImages: false,
     error: {
         message: ""
     }
@@ -15,14 +15,14 @@ const initialState = {
 
 export default function NasaReducer(state = initialState, action) {
     switch (action.type) {
-        case GET_MARS_WEATHER:
-            state = {...state, loadingWeather: true}
+        case GET_PICTURES:
+            state = {...state, loadingImages: true}
             break;
-        case GET_MARS_WEATHER_OK:
-            state = {...state, loadingWeather: false, weather: action.payload}
+        case GET_PICTURES_OK:
+            state = {...state, loadingImages:false, nasaImages: action.payload}
             break;
-        case GET_MARS_WEATHER_FAIL:
-            state = {...state, loadingWeather: false, error: {message: action.payload}}
+        case GET_PICTURES_FAIL:
+            state = {...state, loadingImages:false, error: {message: action.payload}}
             break;
         default: 
             break;

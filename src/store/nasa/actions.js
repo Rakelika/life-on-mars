@@ -1,49 +1,87 @@
 import axios from 'axios'
 import {
-    GET_PICTURES,
-    GET_PICTURES_OK,
-    GET_PICTURES_FAIL,
+    GET_PICTURE_DAY,
+    GET_PICTURE_DAY_OK,
+    GET_PICTURE_DAY_FAIL,
     
     GET_MARS_WEATHER,
     GET_MARS_WEATHER_OK,
-    GET_MARS_WEATHER_FAIL
+    GET_MARS_WEATHER_FAIL,
+
+    GET_MARS_IMAGES,
+    GET_MARS_IMAGES_OK,
+    GET_MARS_IMAGES_FAIL
 
 } from './actionTypes'
 
 const APIKEY = "HGB0sdrb2JlKXuJC7aSpL4mFAXsX5uUlHPO1p2MZ";
 
-//Funciones get pictures
+//Funciones get MARS IMAGES
 
-export function actionGetPictures(){
+export function actionGetMarsImages(){
     return {
-        type: GET_PICTURES
+        type: GET_MARS_IMAGES
     }
 }
 
-export function actionGetPicturesOk(images){
+export function actionGetMarsImagesOk(images){
     return {
-        type: GET_PICTURES_OK,
+        type: GET_MARS_IMAGES_OK,
         payload: images
     }
 }
 
-export function actionGetPicturesFail(error){
+export function actionGetMarsImagesFail(error){
     return {
-        type: GET_PICTURES_FAIL,
+        type: GET_MARS_IMAGES_FAIL,
         payload: error
     }
 }
 
-export function getPictures(){
+export function getMarsImages(){
     return async (dispatch)=>{
-        dispatch(actionGetPictures())
+        dispatch(actionGetMarsImages())
         try {
-            // const response = await axios.get(`https://api.nasa.gov/planetary/apod?count=10&thumbs=true&api_key=${APIKEY}`);
+            const response = await axios.get(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=100&camera=navcam&api_key=${APIKEY}`);
+            dispatch(actionGetMarsImagesOk(response.data.photos))
+            console.log(response.data.photos)
+        } catch (error) {
+            dispatch(actionGetMarsImagesFail(error))
+        }
+    }
+}
+
+//Funciones get PICTURE OF THE DAY
+
+export function actionGetPicture(){
+    return {
+        type: GET_PICTURE_DAY
+    }
+}
+
+export function actionGetPictureOk(image){
+    return {
+        type: GET_PICTURE_DAY_OK,
+        payload: image
+    }
+}
+
+export function actionGetPictureFail(error){
+    return {
+        type: GET_PICTURE_DAY_FAIL,
+        payload: error
+    }
+}
+
+export function getPicture(){
+    return async (dispatch)=>{
+        dispatch(actionGetPicture())
+        try {
             const response = await axios.get(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}`);
-            dispatch(actionGetPicturesOk(response.data))
+            dispatch(actionGetPictureOk(response.data))
             console.log(response.data)
         } catch (error) {
-            dispatch(actionGetPicturesFail(error))
+            dispatch(actionGetPictureFail(error))
         }
     }
 }
@@ -82,3 +120,5 @@ export function getWeather(){
         }
     }
 }
+
+

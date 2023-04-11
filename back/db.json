@@ -2,7 +2,7 @@
   "houses": [
     {
       "id": 1,
-      "name": "La Casa del cráter",
+      "name": "The Crater House",
       "architects": "Amey Kandalgaonkar",
       "image": "/assets/houses/casa-crater.webp",
       "gallery": [
@@ -13,9 +13,29 @@
         "elementos geológicos",
         "piedra"
       ],
-      "title": "La creatividad sin límites del arquitecto indio para una vivienda en forma de OVNI",
-      "video": "https://player.vimeo.com/video/142099027?h=13b5f9f648",
-      "description": "Amey Kandalgaonkar es conocido por sus impactantes proyectos utópicos. El arquitecto y fotógrafo indio, a raíz de las declaraciones de Elon Musk el pasado mes de mayo en las que afirmaba que no tenía sentido tener posesiones en la Tierra y que su próximo objetivo será habitar Marte, Amey se dispuso a trabajar en el diseño de una vivienda en forma de OVNI albergada por un cráter marciano. Para este arquitecto indio la imaginación no tiene límite y es capaz de situar edificaciones en formaciones naturales que jamás habrías imaginado."
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
     },
     {
       "id": 2,

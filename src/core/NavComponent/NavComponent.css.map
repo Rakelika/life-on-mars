@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"NavComponent.css"}
+{"version":3,"sources":["NavComponent.scss","NavComponent.css"],"names":[],"mappings":"AAAA;EAGI,kDAAA;EACA,WAAA;EACA,kBAAA;ACCJ;;ADEA;EACI,aAAA;EACA,UAAA;EACA,mBAAA;EACA,mBAAA;EACA,8BAAA;EACA,cAAA;ACCJ;ADCI;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,8BAAA;EACA,SAAA;ACCR;ADCQ;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;ACCZ;;ADIA;EACI,UAAA;EACA,WAAA;EACA,6BAAA;EACA,mBAAA;EACA,iBAAA;ACDJ","file":"NavComponent.css"}

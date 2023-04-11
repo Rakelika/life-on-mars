@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './SingleHouseComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavorites } from '../../store/houses/actions';
+import ReactPlayer from 'react-player'
 
 const SingleHouseComponent = () => {
 
@@ -13,8 +14,6 @@ const SingleHouseComponent = () => {
   // const houseID = singleHouse.id;
   const userID = user.id;
 
-  // console.log(houseID + 'house id')
-  console.log(userID + 'user id')
 
   function sendFavorites(){
     dispatch(addFavorites({house: singleHouse, userId: userID}))
@@ -29,39 +28,56 @@ const SingleHouseComponent = () => {
   }
 
 return(
-  <div className="SingleHouseComponent Container">
+  <div className="SingleHouseComponent">
   <div>
 
-    <div className='titleContainer'>
+    <div className='titleContainer Container'>
       <h2>{singleHouse.name} </h2>
       <span>{singleHouse.architects}</span>
     </div>
 
-    <div className='heroHouse'>
-    <div className='heroHouseImg'>
-      <img src={singleHouse.image} alt={singleHouse.name}/>
-    </div>
-    <div className='heroHouseDescription'>
-      <h3>{singleHouse.title}</h3>
-      <p>{singleHouse.description}</p>
-    </div>
+    <div className='heroHouse Container'>
+      <div className='heroHouseImg'>
+        <img src={singleHouse.image} alt={singleHouse.name}/>
+      </div>
+      <div className='heroHouseDescription'>
+        <h3>{singleHouse.title}</h3>
+        <p>{singleHouse.description}</p>
+      </div>
     </div>
 
     <div className='galleryHouses'>
       {singleHouse && singleHouse.gallery?.map((item)=> {
         return (
-          <img src={item} alt="hola"/>
+          <img src={item} alt="gallery"/>
         );
       })}
-
     </div>
 
-    <div className='embed-container'>
-    <iframe title={singleHouse.name} src={singleHouse.video} allowFullScreen></iframe>
+    {/* <div className='galleryhowToUse'></div> */}
+
+    <div className='informationHouses'>
+      <div className='infoHouses'>
+        <h2>More information</h2>
+      {singleHouse && singleHouse.information?.map((item)=> {
+        return (
+          <p>{item.info}</p>
+        );
+      })}
+      </div>
+      <div>
+
+      <ReactPlayer 
+      url={singleHouse.video}
+      light={singleHouse.image}
+      width="100%"
+      height="100%"
+    />
+    </div>
     </div>
 
     </div>
-    <button className='primary-btn' onClick={sendFavorites}>Reserve</button>
+    <button className='ReserveBtn' onClick={sendFavorites}>+</button>
   </div>
 )
 };

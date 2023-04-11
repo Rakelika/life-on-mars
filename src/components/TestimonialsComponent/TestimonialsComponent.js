@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './TestimonialsComponent.scss';
+import ReactRating from 'react-rating';
+import { FaStar } from 'react-icons/fa';
+
 
 const TestimonialsComponent = () => {
 
@@ -9,7 +12,7 @@ const TestimonialsComponent = () => {
         name: "John D.",
         currentcity: "London",
         rate: 4.5,
-        text: "I absolutely loved using this website to customize my dream home on Mars. The form was easy to use and allowed me to personalize every detail to my liking!"
+        text: "This website is amazing! The customizable homes on Mars are beyond my imagination. The attention to detail and the endless options to make my dream home a reality left me in awe. Highly recommended!"
     },
     {
         name: "Sarah W.",
@@ -26,20 +29,26 @@ const TestimonialsComponent = () => {
     {
         name: "Berta R.",
         currentcity: "Madrid",
-        rate: 4.4,
+        rate: 4.8,
         text: "I had a great experience using this website to customize my favorite Martian home. The form was straightforward and I was able to make changes easily. Thank you!"
     },
 ]
 
       return (
       <div className="TestimonialsComponent">
-          TestimonialsComponent Component
+          TestimonialsComponent
           {Testimonials.map(t => {
             return (
               <div className='TestimonialCard'>
                 <h4>{t.name}</h4>
                 <p>{t.currentcity}</p>
-                <p>{t.rate}</p>
+                <ReactRating
+                  initialRating={t.rate}
+                  emptySymbol={<FaStar />}
+                  fullSymbol={<FaStar fill="#B26ADC" />}
+                  fractions={2}
+                  readonly
+                /> <span>({t.rate})</span>
                 <p>{t.text}</p>
               </div>
             )

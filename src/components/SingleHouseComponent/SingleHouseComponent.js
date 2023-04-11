@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './SingleHouseComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { addFavorites } from '../../store/houses/actions';
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+
 
 const SingleHouseComponent = () => {
 
@@ -11,13 +14,14 @@ const SingleHouseComponent = () => {
   const {user} = useSelector((state) => state.UserReducer)
 
   const dispatch = useDispatch();
-  // const houseID = singleHouse.id;
-  const userID = user.id;
 
+  const userID = user.id;
 
   function sendFavorites(){
     dispatch(addFavorites({house: singleHouse, userId: userID}))
   }
+
+  const [activeTab, setActiveTab] = useState(0);
 
   if(loadingSingleHouse){
     return (
@@ -54,26 +58,40 @@ return(
       })}
     </div>
 
-    {/* <div className='galleryhowToUse'></div> */}
+    <div className='Container informationHouses'>
+    <Tabs selectedIndex={activeTab} onSelect={index => setActiveTab(index)}>
+      <TabList>
+        <Tab>More information</Tab>
+        <Tab>Video</Tab>
+        <Tab>Materials</Tab>
+      </TabList>
 
-    <div className='informationHouses'>
-      <div className='infoHouses'>
-        <h2>More information</h2>
+      <TabPanel>
+      <h2>More information</h2>
       {singleHouse && singleHouse.information?.map((item)=> {
         return (
           <p>{item.info}</p>
         );
       })}
-      </div>
-      <div>
-
+      </TabPanel>
+      <TabPanel>
+      <div className='videoContainer'>
       <ReactPlayer 
       url={singleHouse.video}
       light={singleHouse.image}
       width="100%"
-      height="100%"
+      height="600px"
     />
     </div>
+      </TabPanel>
+      <TabPanel>
+      {singleHouse && singleHouse.material?.map((item)=> {
+        return (
+          <p>{item}</p>
+        );
+      })}
+      </TabPanel>
+    </Tabs>
     </div>
 
     </div>

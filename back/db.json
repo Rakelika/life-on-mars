@@ -10,7 +10,408 @@
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
       "material": [
+        "elementos geológicos"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://youtu.be/ZtdDzaQbzUk",
+      "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
+    },
+    {
+      "id": 2,
+      "name": "Zopherus",
+      "architects": "Zopherus of Rogers",
+      "image": "/assets/houses/zopherus.webp",
+      "gallery": [
+        "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
+        "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
+        "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
+        "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
+        "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
+        "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
+      ],
+      "material": [
+        "impresión 3D",
         "elementos geológicos",
+        "bioplástico renovable"
+      ],
+      "information" : [
+        {
+          "info": "The tough exterior shell of the Zopherus beetle, the tensile strength of a spider's web, and the hexagonal pattern of a bee's hive to create a modular footprint."
+        },
+        {
+          "info": "The lander seals to the ground to create a pressurized environment for printing, protecting the print process from the extremes of the Martian atmosphere."
+        },
+        {
+          "info": "The shell of the habitat is composed of a structural outer shell and an airtight inner layer, much like a bicycle tire and tube. The thick and firm outer martian concrete shell structurally confines and protects the thin and flexible inner layer of HDPE."
+        },
+        {
+          "info": "The Zopherus Habitat is complete with three base units, the Communal, Crew, and Laboratory, Including a Mezzanine level that provides natural light to the habitat for vegetation growth."
+        }
+      ],
+      "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
+      "video": "https://youtu.be/r79vdlDsjrM",
+      "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage."
+    },
+    {
+      "id": 3,
+      "name": "Marsha",
+      "architects": "AI SpaceFactory",
+      "image": "/assets/houses/marsha.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],  
+      "material": [
+        "impresión 3D",
+        "fibra de basalto",
+        "bioplástico renovable"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "The Marsha Project de AI SpaceFactory es la propuesta de la NASA de una casa impresa en 3D optimizada para su construcción en Marte.  La empresa ha investigado y desarrollado un compuesto de fibra de basalto (que puede extraerse de las rocas de Marte) y un bioplástico renovable que puede obtenerse de plantas que se pueden cultivar en el planeta rojo."
+    },
+    {
+      "id": 4,
+      "name": "Ice House",
+      "architects": "SEArch y Clouds AO",
+      "image": "/assets/houses/ice-house.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "hielo",
+        "elementos geológicos"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+    },
+    {
+      "id": 5,
+      "name": "Mars Incubator",
+      "architects": "La Nasa",
+      "image": "/assets/houses/mars-incubator.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "plástico de regolito",
+        "fibra de basalto"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+    },
+    {
+      "id": 6,
+      "name": "Kahn Yatees",
+      "architects": "Kahn Yatees",
+      "image": "/assets/houses/kahn-yatees.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "impresión 3D"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
+    },
+    {
+      "id": 7,
+      "name": "Sfero by Fabulous",
+      "architects": "Fabulous",
+      "image": "/assets/houses/sfero-faboluous.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "impresión 3D",
+        "óxido de hierro"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "La empresa francesa de impresión 3D Fabulous diseñó una casa burbuja que una vez aterrizada en Marte empezaría a construirse a partir del óxido de hierro que se encuentra en la superficie del planeta. Una estructura futurista con escalera helicoidal que conectaría 2 pisos."
+    },
+    {
+      "id": 8,
+      "name": "Xiaomi Mars Case",
+      "architects": "OPEN Architecture & Xiaomi",
+      "image": "/assets/houses/xiaomi-mars-case.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "bioplástico renovable"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
+    },
+    {
+      "id": 9,
+      "name": "Mars Ice Home",
+      "architects": "Clouds AO",
+      "image": "/assets/houses/mars-ice-home.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "hielo",
+        "estructura inflable"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "El diseño de Clouds AO, Mars Ice Home ha sido desarrollado por un equipo de expertos y el Centro de Investigación Langley de la NASA. Es un concepto de hábitat desplegable. Está basado en una estructura inflable que incorpora hielo, de agua obtenida del propio planeta rojo, como blindaje contra la radiación y como componente estructural."
+    },
+    {
+      "id": 10,
+      "name": "XArc",
+      "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
+      "image": "/assets/houses/XArc.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "impresión 3D"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "Este diseño ha sido uno de los 10 finalistas en la fase 3 (modelado virtual) del concurso de la NASA de hábitats impresos en 3D. Pese a que parece una cúpula redondeada, se basa en un diseño hexagonal y, en su interior, cuenta con todo el equipamiento necesario, como habitaciones, cocina y área de trabajo, dividido en varias plantas."
+    },
+    {
+      "id": 11,
+      "name": "ArcHab",
+      "architects": "XArc (Exploration Architecture corporation)",
+      "image": "/assets/houses/arc-hab.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
+        "óxido de hierro"
+      ],
+      "information" : [
+        {
+          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+        },
+        {
+          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+        },
+        {
+          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+        },
+        {
+          "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+        },
+        {
+          "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+        },
+        {
+          "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+        }
+      ],
+      "title": "Indian architect's boundless creativity for a UFO-shaped home",
+      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+      "description": "El equipo de XArc también ha diseñado ArcHab, con un diseño más robusto y eficiente. Este diseño en forma de arco, proporciona una protección sólida contra la radiación, a la vez que ofrece un refugio adicional para cualquier habitante del planeta rojo."
+    },
+    {
+      "id": 12,
+      "name": "Spacehabs",
+      "architects": "Bryan Versteeg",
+      "image": "/assets/houses/spacehabs.webp",
+      "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+      "material": [
         "piedra"
       ],
       "information" : [
@@ -35,134 +436,6 @@
       ],
       "title": "Indian architect's boundless creativity for a UFO-shaped home",
       "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-      "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
-    },
-    {
-      "id": 2,
-      "name": "Zopherus",
-      "architects": "Zopherus of Rogers",
-      "image": "/assets/houses/zopherus.webp",
-      "material": [
-        "impresión 3D",
-        "elementos geológicos"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
-    },
-    {
-      "id": 3,
-      "name": "Marsha",
-      "architects": "AI SpaceFactory",
-      "image": "/assets/houses/marsha.webp",
-      "material": [
-        "impresión 3D",
-        "fibra de basalto",
-        "bioplástico renovable"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "The Marsha Project de AI SpaceFactory es la propuesta de la NASA de una casa impresa en 3D optimizada para su construcción en Marte.  La empresa ha investigado y desarrollado un compuesto de fibra de basalto (que puede extraerse de las rocas de Marte) y un bioplástico renovable que puede obtenerse de plantas que se pueden cultivar en el planeta rojo."
-    },
-    {
-      "id": 4,
-      "name": "Ice House",
-      "architects": "SEArch y Clouds AO",
-      "image": "/assets/houses/ice-house.webp",
-      "material": [
-        "hielo",
-        "elementos geológicos"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
-    },
-    {
-      "id": 5,
-      "name": "Mars Incubator",
-      "architects": "La Nasa",
-      "image": "/assets/houses/mars-incubator.webp",
-      "material": [
-        "plástico de regolito",
-        "fibra de basalto"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
-    },
-    {
-      "id": 6,
-      "name": "Kahn Yatees",
-      "architects": "Kahn Yatees",
-      "image": "/assets/houses/kahn-yatees.webp",
-      "material": [
-        "impresión 3D"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
-    },
-    {
-      "id": 7,
-      "name": "Sfero by Fabulous",
-      "architects": "Fabulous",
-      "image": "/assets/houses/sfero-faboluous.webp",
-      "material": [
-        "impresión 3D",
-        "óxido de hierro"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "La empresa francesa de impresión 3D Fabulous diseñó una casa burbuja que una vez aterrizada en Marte empezaría a construirse a partir del óxido de hierro que se encuentra en la superficie del planeta. Una estructura futurista con escalera helicoidal que conectaría 2 pisos."
-    },
-    {
-      "id": 8,
-      "name": "Xiaomi Mars Case",
-      "architects": "OPEN Architecture & Xiaomi",
-      "image": "/assets/houses/xiaomi-mars-case.webp",
-      "material": [
-        "bioplástico renovable"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia."
-    },
-    {
-      "id": 9,
-      "name": "Mars Ice Home",
-      "architects": "Clouds AO",
-      "image": "/assets/houses/mars-ice-home.webp",
-      "material": [
-        "hielo",
-        "estructura inflable"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "El diseño de Clouds AO, Mars Ice Home ha sido desarrollado por un equipo de expertos y el Centro de Investigación Langley de la NASA. Es un concepto de hábitat desplegable. Está basado en una estructura inflable que incorpora hielo, de agua obtenida del propio planeta rojo, como blindaje contra la radiación y como componente estructural."
-    },
-    {
-      "id": 10,
-      "name": "XArc",
-      "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
-      "image": "/assets/houses/XArc.webp",
-      "material": [
-        "impresión 3D"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "Este diseño ha sido uno de los 10 finalistas en la fase 3 (modelado virtual) del concurso de la NASA de hábitats impresos en 3D. Pese a que parece una cúpula redondeada, se basa en un diseño hexagonal y, en su interior, cuenta con todo el equipamiento necesario, como habitaciones, cocina y área de trabajo, dividido en varias plantas."
-    },
-    {
-      "id": 11,
-      "name": "ArcHab",
-      "architects": "XArc (Exploration Architecture corporation)",
-      "image": "/assets/houses/arc-hab.webp",
-      "material": [
-        "óxido de hierro"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
-      "description": "El equipo de XArc también ha diseñado ArcHab, con un diseño más robusto y eficiente. Este diseño en forma de arco, proporciona una protección sólida contra la radiación, a la vez que ofrece un refugio adicional para cualquier habitante del planeta rojo."
-    },
-    {
-      "id": 12,
-      "name": "Spacehabs",
-      "architects": "Bryan Versteeg",
-      "image": "/assets/houses/spacehabs.webp",
-      "material": [
-        "piedra"
-      ],
-      "title": "Diseñado en Mississippi con una estructura resistente a tormentas de polvo en Marte",
       "description": "Este artista conceptual, que ha trabajado como diseñador industrial durante más de 20 años, también ha imaginado y diseñado su propia base marciana. Desde 2011, con su proyecto Spacehabs, hace diseños conceptuales sobre posibles hábitats para explorar el espacio. Su diseño no dejará indiferente a nadie."
     }
   ],

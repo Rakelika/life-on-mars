@@ -32,7 +32,7 @@ export default function SingleHousePage() {
                         <FaCaretLeft/>
                 </button>
                 ) : null}
-                { singleHouse.id < houses.length ?
+                { singleHouse.id < 12 ?
                 <button className="paginator-btn" 
                     onClick={() => navigate (`/house/${singleHouse.id+1}`)}>
                         <FaCaretRight/>

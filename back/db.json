@@ -511,7 +511,10 @@
           "hielo",
           "elementos geológicos"
         ],
-        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones."
+        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones.",
+        "rooms": 7,
+        "bathrooms": 2,
+        "garden": "yes"
       },
       "userId": 8,
       "id": 10

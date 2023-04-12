@@ -2,6 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './FooterComponent.scss';
 import { Link } from 'react-router-dom';
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaSlideshare,
+} from "react-icons/fa";
 
 const FooterComponent = () => {
   return (
@@ -10,12 +17,13 @@ const FooterComponent = () => {
     <div className='Col1'>
       <h3><Link to="/">Life on Mars</Link></h3>
       <ul className='FooterSocialMedia'>
-        <li><a href="https://twitter.com/">⬜</a></li>
-        <li><a href="https://www.instagram.com/">⬜</a></li>
-        <li><a href="https://facebook.com/">⬜</a></li>
-        <li><a href="https://facebook.com/">⬜</a></li>
-        <li><a href="https://facebook.com/">⬜</a></li>
+        <li><a href="https://twitter.com/"><FaTwitter /></a></li>
+        <li><a href="https://www.instagram.com/"><FaInstagram /></a></li>
+        <li><a href="https://facebook.com/"><FaFacebook /></a></li>
+        <li><a href="https://facebook.com/"><FaLinkedin /></a></li>
+        <li><a href="https://facebook.com/"><FaSlideshare /></a></li>
       </ul>
+      <p>hello@lifeonmars.com</p>
       <span>©2023 - Life on Mars</span>
     </div>
     <div className='Col2'>

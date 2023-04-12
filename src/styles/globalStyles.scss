@@ -47,10 +47,18 @@ p {
 .Container {
     max-width: 80%;
     margin: 0 auto;
+<<<<<<< HEAD
+    // min-height: 100vh;
+=======
+>>>>>>> 946618db2f0a66bbb5971b3e2468887ce70e5b74
 }
 
 .centerText {
     text-align:center
+}
+
+.PageRegularPadding {
+    padding: 50px 0;
 }
 
 @media only screen and (max-width: 768px) {

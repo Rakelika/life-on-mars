@@ -1,1 +1,11 @@
-/*# sourceMappingURL=SingUpComponent.css.map */
+.SignUpForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 350px;
+}
+
+.TwoColumnsFieldset {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=SingUpComponent.css.map */

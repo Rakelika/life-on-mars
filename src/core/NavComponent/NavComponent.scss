@@ -1,1 +1,38 @@
-.NavComponent {}
+.NavComponent {
+    -webkit-box-shadow: 11px 0px 20px 17px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow:  11px 0px 20px 17px rgba(0, 0, 0, 0.55);
+    box-shadow: 11px 0px 20px 17px rgba(0, 0, 0, 0.55);
+    z-index: 10;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+}
+
+.greenCercle {
+    width: 7px;
+    height: 7px;
+    background-color: greenyellow;
+    border-radius: 100%;
+    margin: 0 5px 0 0;
+}

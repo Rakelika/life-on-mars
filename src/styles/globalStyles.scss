@@ -1,0 +1,67 @@
+// TIPOGRAFÍA
+
+$font-stack: 'Quicksand', sans-serif;
+
+$light-weight: 300;
+$regular-weight: 400;
+$semibold-weight: 600;
+$bold-weight: 700;
+
+$regular-size: 0.9em;
+$small-size: 0.8em;
+
+// COLORES
+
+$dark-color: #202124;
+$light-color: #f5f5f5;
+$secondary-color: #B26ADC;
+$error-color: #ED2B2A;
+
+// GAP
+
+$regular-gap: 15px;
+
+// DEGRADADOS
+
+$gradient-color: linear-gradient(0deg, rgba(38,33,42,1) 0%, rgba(37,39,42,1) 100%);
+
+// RESETS
+
+body {
+    background-color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color
+}
+
+p {
+    font-size: $regular-size;
+}
+
+.Container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.centerText {
+    text-align:center;
+}
+
+.PageRegularPadding {
+    padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .Container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
+

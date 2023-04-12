@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+body {
+  background-color: #202124;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.primary-btn {
+  background-color: #B26ADC;
+  border-radius: 3px;
+  color: #202124;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.primary-btn:hover {
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #B26ADC;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.secondary-btn:hover {
+  cursor: pointer;
+}
+
+.third-btn {
+  background-color: transparent;
+  border: none;
+  color: #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.third-btn:hover {
+  cursor: pointer;
+}
+
+.fourth-btn {
+  background-color: transparent;
+  border: none;
+  color: #B26ADC;
+}
+
+.regularInput {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #f5f5f5;
+  border: 2px solid #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+fieldset {
+  border: none;
+}
+
+label, textarea {
+  font-size: 0.9em;
+  font-family: "Quicksand", sans-serif;
+}
+
+.simpleInput {
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  width: 100%;
+  margin: 2px 0;
+  padding: 8px 0px;
+}
+.simpleInput::-moz-placeholder {
+  color: #f5f5f5;
+}
+.simpleInput::placeholder {
+  color: #f5f5f5;
+}
+.simpleInput:focus {
+  border: 0;
+  border-bottom: 1px solid #B26ADC;
+  color: #B26ADC;
+  outline: none;
+}
+
+.simpleHalfWidthInput {
+  width: 48%;
+}
+
+.inputContactWidth {
+  width: 70%;
+}
+
+.errorMessage {
+  color: #ED2B2A;
+  font-size: 0.8em;
+}
+.errorMessage .simpleInput {
+  border-bottom: 1px solid #ED2B2A;
+}
+
+.App {
+  background-color: #202124;
+  color: #f5f5f5;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #202124;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B26ADC;
+  border-radius: 20px;
+  border: 3px solid #202124;
+}/*# sourceMappingURL=App.css.map */

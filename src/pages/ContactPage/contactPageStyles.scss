@@ -1,0 +1,45 @@
+.contactPageContainer {
+    background: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dW5pdmVyc2V8ZW58MHx8MHx8&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.FormContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    p {
+        max-width: 67%;
+        margin: 0 auto;
+        padding: 10px 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .FormContainer {
+        width: 95%;
+        p {
+            max-width: 87%;
+        }
+    }
+}

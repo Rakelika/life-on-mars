@@ -1,0 +1,60 @@
+// INPUT
+
+.regularInput {
+    background-color: transparent;
+    border-radius: 3px;
+    color: $light-color;
+    border: 2px solid $secondary-color;
+    font-family: $font-stack;
+    width: 180px;
+    font-weight: $bold-weight;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}
+
+fieldset {
+    border: none;
+}
+
+label, textarea {
+    font-size: $regular-size;
+    font-family: $font-stack;
+}
+
+.simpleInput {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid $light-color;
+    color: $light-color;
+    width: 100%;
+    margin: 2px 0;
+    padding: 8px 0px;
+    &::placeholder {
+        color: $light-color;
+    }
+    &:focus {
+        border: 0;
+        border-bottom: 1px solid $secondary-color;
+        color: $secondary-color;
+        outline: none;
+    }
+}
+
+.simpleHalfWidthInput {
+    width: 48%;
+}
+
+.inputContactWidth {
+    width: 70%;
+}
+
+.errorMessage {
+    color: $error-color;
+    font-size: $small-size;
+    & .simpleInput {
+        border-bottom: 1px solid $error-color;
+    }
+}
+

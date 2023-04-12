@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 50px 0;
 }
 .contactPageContainer .Container {
   display: flex;

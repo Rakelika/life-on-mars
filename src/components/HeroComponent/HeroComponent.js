@@ -8,7 +8,7 @@ const HeroComponent = () => (
     <div className='titleHero'>
       <h1>Explore the future of housing on Mars</h1>
       <h2>Welcome to your home on the red planet!</h2>
-      <button className='primary-btn'>Discover the houses</button>
+      <button className='primary-btn'>Discover our houses</button>
     </div>
   </div>
 );

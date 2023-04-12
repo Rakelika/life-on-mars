@@ -1,0 +1,58 @@
+body {
+  background-color: #202124;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.PagitatorHouses {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 20px auto;
+}
+.PagitatorHouses .paginator-btn {
+  background-color: transparent;
+  border: 1px solid #430a64;
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+  color: #B26ADC;
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PagitatorHouses .paginator-btn:hover {
+  cursor: pointer;
+  background-color: #B26ADC;
+  color: #202124;
+  border: 1px solid #B26ADC;
+}/*# sourceMappingURL=SingleHousePage.css.map */

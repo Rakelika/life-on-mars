@@ -13,10 +13,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+<<<<<<< HEAD
     "react-rating": "^2.0.5",
+=======
+    "react-image-gallery": "^1.2.11",
+    "react-player": "^2.12.0",
+>>>>>>> 946618db2f0a66bbb5971b3e2468887ce70e5b74
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-tabs": "^6.0.0",
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2",

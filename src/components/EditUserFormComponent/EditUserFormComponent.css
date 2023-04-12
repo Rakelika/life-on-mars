@@ -1,1 +1,6 @@
-/*# sourceMappingURL=EditUserFormComponent.css.map */
+.EditUserForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 350px;
+}/*# sourceMappingURL=EditUserFormComponent.css.map */

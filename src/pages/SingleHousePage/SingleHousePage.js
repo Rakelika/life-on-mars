@@ -3,6 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSingleHouse } from "../../store/houses/actions";
 import SingleHouseComponent from "../../components/SingleHouseComponent/SingleHouseComponent";
+import './SingleHousePage.scss';
+import { FaCaretRight } from "react-icons/fa";
+import { FaCaretLeft } from "react-icons/fa";
 
 
 export default function SingleHousePage() {
@@ -21,12 +24,19 @@ export default function SingleHousePage() {
 
     return (
         <div>
-            <div className="Container">
+            <div className="Container PagitatorHouses">
                 { singleHouse.id > 1 ? (
-                <button className="primary-btn" onClick={() => navigate (`/house/${singleHouse.id-1}`)}>Previous</button>
+                <button 
+                    className="paginator-btn" 
+                    onClick={() => navigate (`/house/${singleHouse.id-1}`)}>
+                        <FaCaretLeft/>
+                </button>
                 ) : null}
-                { singleHouse.id < houses.length ?
-                    <button className="primary-btn" onClick={() => navigate (`/house/${singleHouse.id+1}`)}>Next</button>
+                { singleHouse.id < 12 ?
+                <button className="paginator-btn" 
+                    onClick={() => navigate (`/house/${singleHouse.id+1}`)}>
+                        <FaCaretRight/>
+                </button>
                 : null} 
             </div>
             <SingleHouseComponent></SingleHouseComponent>

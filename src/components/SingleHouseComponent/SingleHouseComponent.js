@@ -78,7 +78,7 @@ return(
       <div className='videoContainer'>
       <ReactPlayer 
       url={singleHouse.video}
-      light={singleHouse.image}
+      // light={singleHouse.image}
       width="100%"
       height="600px"
     />

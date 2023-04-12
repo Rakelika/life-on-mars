@@ -1,3 +1,4 @@
+@import '../../styles/globalStyles.scss';
 
 .HeroComponent {
     background-image: url("../../assets/life-on-mars-home.jpg");
@@ -6,22 +7,35 @@
     height: 90vh;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+
 
     .titleHero {
-        width: 60%;
-        height: 30vh;
+        width: 40%;
         display: flex;
         flex-direction: column;
-        padding: 50px 0;
         background: rgba(255, 255, 255, 0.17);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5.3px);
         -webkit-backdrop-filter: blur(8.3px);
         border: 0px solid rgba(255, 255, 255, 0.3);
-    }
+        padding: 4em;
+        margin-right: 5%;
 
-    h1 {
-        margin: 0 auto
+        h1 {
+            color: $dark-color;
+            margin: 0px
+        }
+
+        h2 {
+            color: $dark-color;
+            margin: 0px;
+            font-weight: $light-weight;
+        }
+
+        button {
+            margin-top: 30px;
+        }
     }
 }

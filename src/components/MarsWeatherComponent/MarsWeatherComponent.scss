@@ -1,1 +1,67 @@
-.MarsWeatherComponent {}
+@import '../../styles/globalStyles.scss';
+
+.MarsWeatherComponent {
+    background-image: url("../../assets/banner-life-on-mars-1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .MarsWeatherCard{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 0px solid rgba(255, 255, 255, 0.3);
+        padding: 4em;
+        margin-left: 5%;
+        color: $dark-color;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+
+    .MarsWeatherItem {
+        width: 130px;
+        height: 130px;
+        background-color: rgba(25, 24, 24, 0.269);
+        color: $light-color;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4, h3 {
+            margin: 0;
+        }
+        .h3Number {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+            font-weight: $semibold-weight;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+

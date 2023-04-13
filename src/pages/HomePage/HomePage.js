@@ -8,9 +8,9 @@ export default function HomePage() {
     return (
         <div className="">
             <HeroComponent></HeroComponent>
-            {/* <NasaPictureDayComponent></NasaPictureDayComponent>
-            <MarsWeatherComponent></MarsWeatherComponent> */}
+            {/* <NasaPictureDayComponent></NasaPictureDayComponent>*/}
             <TestimonialsComponent></TestimonialsComponent>
+            <MarsWeatherComponent></MarsWeatherComponent> 
             {/* <MarsImagesComponent></MarsImagesComponent> */}
         </div>
     )

@@ -17,7 +17,7 @@ const MarsWeatherComponent = () => {
   return (
   <section className="MarsWeatherComponent">
         <div className='MarsWeatherCard'>
-        <h2 className='centerText'>The Weather in Mars today</h2>
+        <h2 className='centerText'>The Weather on Mars today</h2>
           <section  key={weather.id}>
             <article className='MarsWeatherItem'>
               {weather.atmo_opacity === "Sunny" ? <img src={sun} alt="sunny"/> : ""}

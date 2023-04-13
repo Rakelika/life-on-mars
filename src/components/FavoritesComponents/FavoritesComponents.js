@@ -26,24 +26,29 @@ const FavoritesComponents = () => {
     }
   
   return (
-  <div className="FavoritesComponents">
-    <h2>My houses</h2>
-    <div>
-    {userFavorites.length === 0 ? "You don't have any house"  : ""}
+  <section className="FavoritesComponents">
+    {userFavorites.length === 0 ? 
+    <div className='noHouses'>
+    <h3>You haven't added any house yet, let's get started!</h3>
+    <Link to="/houses" className='secondary-btn-invt centerText'>Explore houses</Link>
+    </div>  : ""}
     {userFavorites.map(house=>{
       return (
-        <div key={house.id}>
+        <article key={house.id} className='cardHouse'>
             <img src={house.house.image} alt={house.name}/>
+            {house.house.rooms || house.house.bathrooms || house.house.garden ? <div className='customTag'><p>Customized</p></div> : ''}
+          <div className='cardResume'>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          {house.house.description ? <p>{house.house.description}</p> : ""}
-          {house.house.rooms ? <p>Number of rooms: {house.house.rooms}</p> : ""}
-          <button onClick={() => removeFavorite(house.id)}>Remove this house</button>
-          <Link to={`/house-form/${house.id}`}>Custom house</Link>
-        </div>
+          {house.house.title ? <p>{house.house.title}</p> : ""}
+          </div>
+          <div className='cardButtons'>
+            <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>
+            <button className='secondary-btn centerText' onClick={() => removeFavorite(house.id)}>Remove this house</button>
+          </div>
+        </article>
       )
     })}
-    </div>
-  </div>
+  </section>
 )};
 
 FavoritesComponents.propTypes = {};

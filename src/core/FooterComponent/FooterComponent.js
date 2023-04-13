@@ -20,40 +20,40 @@ const FooterComponent = () => {
         <li><a href="https://twitter.com/"><FaTwitter /></a></li>
         <li><a href="https://www.instagram.com/"><FaInstagram /></a></li>
         <li><a href="https://facebook.com/"><FaFacebook /></a></li>
-        <li><a href="https://facebook.com/"><FaLinkedin /></a></li>
-        <li><a href="https://facebook.com/"><FaSlideshare /></a></li>
+        <li><a href="https://linkedin.com/"><FaLinkedin /></a></li>
+        <li><a href="https://www.slideshare.net/"><FaSlideshare /></a></li>
       </ul>
-      <p>hello@lifeonmars.com</p>
-      <span>©2023 - Life on Mars</span>
+      <a href="mailto: hello@lifeonmars.com" className='EmailFooter'>hello@lifeonmars.com</a>
+      <p>©2023 - Life on Mars</p>
     </div>
     <div className='Col2'>
       <h5>Product</h5>
       <ul className='FooterUl'>
-        <li>Overview</li>
-        <li>Zopherus</li>
-        <li>Ice House</li>
-        <li>Spacehabs</li>
-        <li>The crater house</li>
+        <li><Link to="/houses">Overview</Link></li>
+        <li><Link to="/house/2">Zopherus</Link></li>
+        <li><Link to="/house/4">Ice House</Link></li>
+        <li><Link to="/house/12">Spacehabs</Link></li>
+        <li><Link to="/house/1">The Crater House</Link></li>
       </ul>
     </div>
     <div className='Col3'>
       <h5>Company</h5>
       <ul className='FooterUl'>
-        <li>About us</li>
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Privacy policy</li>
-        <li>Contact</li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="#">Careers</Link></li>
+        <li><Link to="#">Press</Link></li>
+        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
       </ul>
     </div>
     <div className='Col4'>
       <h5>Resources</h5>
       <ul className='FooterUl'>
-        <li>Blog</li>
-        <li>Newsletter</li>
-        <li>Events</li>
-        <li>Help centre</li>
-        <li>Tutorials</li>
+        <li><Link to="#">Blog</Link></li>
+        <li><Link to="#">Newsletter</Link></li>
+        <li><Link to="#">Events</Link></li>
+        <li><Link to="#">Help Center</Link></li>
+        <li><Link to="#">Tutorials</Link></li>
       </ul>
     </div>
     </footer>

@@ -8,11 +8,12 @@
       "gallery": [
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
       "material": [
         "elementos geológicos"
       ],
-      "information" : [
+      "information": [
         {
           "info": "Amey Kandalgaonkar is a visionary architect and photographer who is known for his utopian projects. In response to Elon Musk's announcement about inhabiting Mars, Amey set out to design a UFO-shaped house that would be located in a Martian crater. The design is both innovative and practical, with a focus on creating a livable space that can withstand the harsh environment of Mars."
         },
@@ -45,7 +46,7 @@
         "elementos geológicos",
         "bioplástico renovable"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The Zopherus home is an incredible feat of engineering that is inspired by terrestrial biologies such as honeycombs and spider webs. The design is both innovative and practical, with a focus on creating a livable space on Mars that is both sustainable and functional. The use of 3D printing technology and autonomous robots allows for the construction of the structure using materials gathered from the Martian environment, making the project more self-sufficient."
         },
@@ -66,6 +67,10 @@
       "architects": "AI SpaceFactory",
       "image": "/assets/houses/marsha.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/marsha-gallery/marsha-gallery-1.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-2.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-3.jpg",
@@ -80,7 +85,7 @@
         "fibra de basalto",
         "bioplástico renovable"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The Marsha Project by AI SpaceFactory is a groundbreaking proposal for a 3D printed house optimized for construction on Mars. This innovative project represents a significant step forward in our efforts to establish a permanent human settlement on the red planet. The project is designed to leverage the latest technologies and materials to create a sustainable and self-sufficient habitat that can withstand the harsh Martian environment."
         },
@@ -101,6 +106,9 @@
       "architects": "SEArch y Clouds AO",
       "image": "/assets/houses/ice-house.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/ice-house-gallery/ice-house-gallery-1.jpg",
         "/assets/houses/ice-house-gallery/ice-house-gallery-2.jpg",
         "/assets/houses/ice-house-gallery/ice-house-gallery-3.jpg",
@@ -112,7 +120,7 @@
         "hielo",
         "elementos geológicos"
       ],
-      "information" : [
+      "information": [
         {
           "info": "SEArch and Clouds AO, two innovative architectural firms, have developed a groundbreaking design for a 'house made of ice' that could revolutionize the way we build intergalactic habitats. Their design is based on the use of surface ice, which is abundant on Mars and could provide an ideal building material for human habitats on the red planet. The ice would serve as a natural shield against radiation, protecting the inhabitants of the house from the harmful effects of space radiation."
         },
@@ -133,6 +141,10 @@
       "architects": "Nasa",
       "image": "/assets/houses/mars-incubator.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-1.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-2.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-3.jpg",
@@ -144,7 +156,7 @@
         "plástico de regolito",
         "fibra de basalto"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The model with a design of four spherical modules connected by one larger module in the center presents a unique solution for spacecrafts that require increased protection against radiation. The central module acts as a hub, allowing the crew to move between the different modules using bridges without leaving the structure. This design is particularly useful for long-term space missions, where the crew may need to spend extended periods of time in space and require a safe and comfortable environment."
         },
@@ -165,6 +177,10 @@
       "architects": "Kahn Yatees",
       "image": "/assets/houses/kahn-yatees.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-1.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-2.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-3.jpg",
@@ -174,7 +190,7 @@
       "material": [
         "impresión 3D"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The Mars house design developed by the team of Kahn Yatees from Mississippi presents a unique and innovative approach to Martian architecture. The structure has been designed to withstand the harsh conditions of the red planet, including dust storms and extreme weather conditions. The design is based on a self-building ethereal structure that can be constructed once it lands safely on the Martian surface."
         },
@@ -195,6 +211,10 @@
       "architects": "Fabulous",
       "image": "/assets/houses/sfero-faboluous.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/sfero-gallery/sfero-gallery-1.jpg",
         "/assets/houses/sfero-gallery/sfero-gallery-2.jpg",
         "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"],
@@ -202,7 +222,7 @@
         "impresión 3D",
         "óxido de hierro"
       ],
-      "information" : [
+      "information": [
         {
           "info": "Fabulous, a French 3D printing company, has developed an innovative concept for a Mars habitation: a bubble house that can be built using iron oxide found on the planet's surface. The structure is designed to be built by a 3D printing robot once it has landed on Mars."
         },
@@ -223,6 +243,9 @@
       "architects": "OPEN Architecture & Xiaomi",
       "image": "/assets/houses/xiaomi-mars-case.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-1.jpg",
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-2.jpg",
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-3.jpg",
@@ -236,7 +259,7 @@
       "material": [
         "bioplástico renovable"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The OPEN Architecture and Xiaomi's Mars Case is a prototype home that focuses on sustainability and minimalism, incorporating the highest technology to consume as few resources as possible. The design is based on the belief that recycling will be the key to survival in interplanetary living, making it an ideal home for Mars."
         },
@@ -257,6 +280,9 @@
       "architects": "Clouds AO",
       "image": "/assets/houses/mars-ice-home.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-1.jpg",
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-2.jpg",
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-3.jpg",
@@ -268,7 +294,7 @@
         "hielo",
         "estructura inflable"
       ],
-      "information" : [
+      "information": [
         {
           "info": "Clouds AO, Mars Ice Home is a revolutionary deployable habitat concept designed for future Martian exploration missions. This innovative habitat is designed to incorporate ice made from water found on Mars as a structural component and radiation shield. The design was developed by a team of experts from Clouds AO, a private space architecture firm."
         },
@@ -289,6 +315,10 @@
       "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
       "image": "/assets/houses/XArc.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/xarc-gallery/xarc-gallery-1.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-2.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-3.jpg",
@@ -298,7 +328,7 @@
       "material": [
         "impresión 3D"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The hexagonal dome design has caught the attention in NASA's 3D printed habitat competition, making it one of the 10 finalists in the virtual modeling third phase. Although its shape may seem rounded, the base of the design is actually hexagonal, allowing for more efficient use of interior space."
         },
@@ -319,6 +349,10 @@
       "architects": "XArc (Exploration Architecture corporation)",
       "image": "/assets/houses/arc-hab.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/archab-gallery/archab-gallery-1.jpg",
         "/assets/houses/archab-gallery/archab-gallery-2.jpg",
         "/assets/houses/archab-gallery/archab-gallery-3.jpg"],
@@ -326,7 +360,7 @@
         "óxido de hierro",
         "impresión 3D"
       ],
-      "information" : [
+      "information": [
         {
           "info": "The XArc team has developed a new design for a habitation module on Mars, called ArcHab, which promises to offer solid protection against the harsh radiation on the planet's surface. The arc-shaped design is more robust and efficient than previous models, making it a better choice for long-term habitation on Mars."
         },
@@ -347,6 +381,10 @@
       "architects": "Bryan Versteeg",
       "image": "/assets/houses/spacehabs.webp",
       "gallery": [
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+      ],
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-1.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-2.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-3.jpg",
@@ -357,7 +395,7 @@
         "fibra de basalto",
         "bioplástico renovable"
       ],
-      "information" : [
+      "information": [
         {
           "info": "This conceptual artist and industrial designer has been working on his Spacehabs project since 2011, designing possible habitats for space exploration. His latest work imagines a futuristic Martian base that is both functional and visually striking."
         },
@@ -437,39 +475,6 @@
     },
     {
       "house": {
-        "id": 4,
-        "name": "Ice House",
-        "architects": "SEArch y Clouds AO",
-        "image": "/assets/houses/ice-house.webp",
-        "material": [
-          "hielo",
-          "elementos geológicos"
-        ],
-        "description": "Uno de los materiales de construcción más apropiados para viviendas intergalácticas es el hielo, y en este material basaron el diseño de esta “casa de hielo” SEArch y Clouds AO. El hielo superficial es abundante en Marte y esta vivienda dotada de una capa de hielo vertical sería capaz de proteger a sus habitantes de las radiaciones.",
-        "rooms": 7,
-        "bathrooms": 2,
-        "garden": "yes"
-      },
-      "userId": 8,
-      "id": 10
-    },
-    {
-      "house": {
-        "id": 2,
-        "name": "Zopherus",
-        "architects": "Zopherus of Rogers",
-        "image": "/assets/houses/zopherus.webp",
-        "material": [
-          "impresión 3D",
-          "elementos geológicos"
-        ],
-        "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
-      },
-      "userId": 8,
-      "id": 11
-    },
-    {
-      "house": {
         "id": 5,
         "name": "Mars Incubator",
         "architects": "La Nasa",
@@ -481,6 +486,48 @@
         "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
       },
       "id": 12
+    },
+    {
+      "house": {
+        "id": 5,
+        "name": "Mars Incubator",
+        "architects": "La Nasa",
+        "image": "/assets/houses/mars-incubator.webp",
+        "gallery": [
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+        ],
+        "material": [
+          "plástico de regolito",
+          "fibra de basalto"
+        ],
+        "information": [
+          {
+            "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+          },
+          {
+            "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+          },
+          {
+            "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+          },
+          {
+            "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+          },
+          {
+            "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+          },
+          {
+            "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+          }
+        ],
+        "title": "Indian architect's boundless creativity for a UFO-shaped home",
+        "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+      },
+      "userId": 8,
+      "id": 13
     }
   ],
   "users": [
@@ -578,11 +625,11 @@
       "username": "asteroide",
       "firstname": "Beatriz",
       "lastname": "Muñoz",
-      "currentcity": "Terrassa",
+      "currentcity": "Barcelona",
       "birthyear": 1990,
       "id": 8,
-      "occupation": "Teacher",
-      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWxpZW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      "occupation": "Singer",
+      "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
     }
   ]

@@ -1,1 +1,18 @@
-.HouseFormComponent {}
+.HouseFormComponent {
+    display: flex;
+
+    .Col {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EditHouseForm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+}

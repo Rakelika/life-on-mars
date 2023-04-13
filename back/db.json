@@ -67,10 +67,6 @@
       "architects": "AI SpaceFactory",
       "image": "/assets/houses/marsha.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/marsha-gallery/marsha-gallery-1.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-2.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-3.jpg",
@@ -106,9 +102,6 @@
       "architects": "SEArch y Clouds AO",
       "image": "/assets/houses/ice-house.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/ice-house-gallery/ice-house-gallery-1.jpg",
         "/assets/houses/ice-house-gallery/ice-house-gallery-2.jpg",
         "/assets/houses/ice-house-gallery/ice-house-gallery-3.jpg",
@@ -141,17 +134,13 @@
       "architects": "Nasa",
       "image": "/assets/houses/mars-incubator.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-1.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-2.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-3.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-4.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-5.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
-],
+      ],
       "material": [
         "plástico de regolito",
         "fibra de basalto"
@@ -177,10 +166,6 @@
       "architects": "Kahn Yatees",
       "image": "/assets/houses/kahn-yatees.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-1.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-2.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-3.jpg",
@@ -211,10 +196,6 @@
       "architects": "Fabulous",
       "image": "/assets/houses/sfero-faboluous.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/sfero-gallery/sfero-gallery-1.jpg",
         "/assets/houses/sfero-gallery/sfero-gallery-2.jpg",
         "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"],
@@ -243,9 +224,6 @@
       "architects": "OPEN Architecture & Xiaomi",
       "image": "/assets/houses/xiaomi-mars-case.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-1.jpg",
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-2.jpg",
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-3.jpg",
@@ -280,9 +258,6 @@
       "architects": "Clouds AO",
       "image": "/assets/houses/mars-ice-home.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-1.jpg",
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-2.jpg",
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-3.jpg",
@@ -315,10 +290,6 @@
       "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
       "image": "/assets/houses/XArc.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/xarc-gallery/xarc-gallery-1.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-2.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-3.jpg",
@@ -349,10 +320,6 @@
       "architects": "XArc (Exploration Architecture corporation)",
       "image": "/assets/houses/arc-hab.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/archab-gallery/archab-gallery-1.jpg",
         "/assets/houses/archab-gallery/archab-gallery-2.jpg",
         "/assets/houses/archab-gallery/archab-gallery-3.jpg"],
@@ -381,10 +348,6 @@
       "architects": "Bryan Versteeg",
       "image": "/assets/houses/spacehabs.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-      ],
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-1.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-2.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-3.jpg",

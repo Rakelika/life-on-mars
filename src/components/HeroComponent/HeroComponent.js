@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './HeroComponent.scss';
-import imageHero from "../../assets/life-on-mars-home.jpg"
 
 const HeroComponent = () => (
   <div className="HeroComponent">

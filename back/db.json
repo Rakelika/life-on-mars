@@ -289,26 +289,29 @@
       "architects": "XArc (Exploration Architecture corporation) y James Vaughan",
       "image": "/assets/houses/XArc.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+        "/assets/houses/xarc-gallery/xarc-gallery-1.jpg",
+        "/assets/houses/xarc-gallery/xarc-gallery-2.jpg",
+        "/assets/houses/xarc-gallery/xarc-gallery-3.jpg",
+        "/assets/houses/xarc-gallery/xarc-gallery-4.jpg",
+        "/assets/houses/xarc-gallery/xarc-gallery-5.jpg",
+        "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"],
       "material": [
         "impresión 3D"
       ],
       "information" : [
         {
-          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+          "info": "The hexagonal dome design has caught the attention in NASA's 3D printed habitat competition, making it one of the 10 finalists in the virtual modeling third phase. Although its shape may seem rounded, the base of the design is actually hexagonal, allowing for more efficient use of interior space."
         },
         {
-          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+          "info": "Inside, this habitat has all the necessary equipment to ensure human life in space. The rooms, kitchen, and work area are distributed over several floors, providing a comfortable and functional environment for astronauts. In addition, its modular design allows for easy expansion and adaptation to different needs."
         },
         {
-          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+          "info": "This hexagonal dome design is a testament to the potential of 3D printing technology for space exploration and the creation of sustainable habitats outside of Earth. The ability to print custom structures at the destination can significantly reduce costs and risks associated with shipping construction materials from Earth. Undoubtedly, this technology promises to be a key factor for the future of space exploration."
         }
       ],
-      "title": "Indian architect's boundless creativity for a UFO-shaped home",
-      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-      "description": "Este diseño ha sido uno de los 10 finalistas en la fase 3 (modelado virtual) del concurso de la NASA de hábitats impresos en 3D. Pese a que parece una cúpula redondeada, se basa en un diseño hexagonal y, en su interior, cuenta con todo el equipamiento necesario, como habitaciones, cocina y área de trabajo, dividido en varias plantas."
+      "title": "Hexagonal Dome Design Makes Top 10 in NASA's 3D Printed Habitat Competition",
+      "video": "https://youtu.be/UYyyqOcJNbw",
+      "description": "This design was one of the 10 finalists in phase 3 (virtual modelling) of NASA's 3D printed habitat competition. Although it looks like a rounded dome, it is based on a hexagonal design and, inside, it has all the necessary equipment, such as rooms, kitchen and work area, divided into several floors."
     },
     {
       "id": 11,
@@ -316,26 +319,27 @@
       "architects": "XArc (Exploration Architecture corporation)",
       "image": "/assets/houses/arc-hab.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+        "/assets/houses/archab-gallery/archab-gallery-1.jpg",
+        "/assets/houses/archab-gallery/archab-gallery-2.jpg",
+        "/assets/houses/archab-gallery/archab-gallery-3.jpg"],
       "material": [
-        "óxido de hierro"
+        "óxido de hierro",
+        "impresión 3D"
       ],
       "information" : [
         {
-          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+          "info": "The XArc team has developed a new design for a habitation module on Mars, called ArcHab, which promises to offer solid protection against the harsh radiation on the planet's surface. The arc-shaped design is more robust and efficient than previous models, making it a better choice for long-term habitation on Mars."
         },
         {
-          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+          "info": "ArcHab's curved shape also provides additional shelter for any inhabitants of the red planet, protecting them from the harsh environment outside. The module's design is based on advanced materials, including high-strength composites, and is engineered to withstand extreme temperatures and pressures."
         },
         {
-          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+          "info": "This innovative design represents a significant step forward in the quest to establish a human settlement on Mars. With the growing interest in Mars exploration and the potential for long-term habitation, it is crucial to develop technologies that can withstand the harsh conditions on the planet. ArcHab's unique design, which combines radiation protection with structural efficiency, makes it a promising option for future Mars missions.Regenerate response"
         }
       ],
-      "title": "Indian architect's boundless creativity for a UFO-shaped home",
-      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-      "description": "El equipo de XArc también ha diseñado ArcHab, con un diseño más robusto y eficiente. Este diseño en forma de arco, proporciona una protección sólida contra la radiación, a la vez que ofrece un refugio adicional para cualquier habitante del planeta rojo."
+      "title": "XArc's ArcHab: A Robust and Efficient Design for Radiation Protection on Mars",
+      "video": "https://youtu.be/UYyyqOcJNbw",
+      "description": "The XArc team has also designed ArcHab, with a more robust and efficient design. This arc-shaped design provides solid protection against radiation, while offering additional shelter for any inhabitants of the red planet."
     },
     {
       "id": 12,
@@ -343,26 +347,30 @@
       "architects": "Bryan Versteeg",
       "image": "/assets/houses/spacehabs.webp",
       "gallery": [
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-        "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"],
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-1.jpg",
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-2.jpg",
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-3.jpg",
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-4.jpg",
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-5.jpg",
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"],
       "material": [
-        "piedra"
+        "fibra de basalto",
+        "bioplástico renovable"
       ],
       "information" : [
         {
-          "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+          "info": "This conceptual artist and industrial designer has been working on his Spacehabs project since 2011, designing possible habitats for space exploration. His latest work imagines a futuristic Martian base that is both functional and visually striking."
         },
         {
-          "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+          "info": "Drawing on his experience as an industrial designer, this artist has created a unique and innovative design for a potential Martian base. The design is characterized by its sleek lines, bold colors, and modular construction, which would allow for easy expansion and customization."
         },
         {
-          "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+          "info": "While still in the conceptual stage, this artist's design has generated a lot of excitement among space enthusiasts and industry professionals alike. With its eye-catching design and functional features, this Martian base concept offers a glimpse into the future of space exploration and habitation. As humanity continues to push the boundaries of space travel, designs like this one will play a crucial role in shaping the future of space exploration."
         }
       ],
-      "title": "Indian architect's boundless creativity for a UFO-shaped home",
-      "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-      "description": "Este artista conceptual, que ha trabajado como diseñador industrial durante más de 20 años, también ha imaginado y diseñado su propia base marciana. Desde 2011, con su proyecto Spacehabs, hace diseños conceptuales sobre posibles hábitats para explorar el espacio. Su diseño no dejará indiferente a nadie."
+      "title": "Industrial Designer's Spacehabs Project Envisions Futuristic Martian Base Concept",
+      "video": "https://youtu.be/7PQgIfVP1Bs",
+      "description": "This conceptual artist, who has worked as an industrial designer for more than 20 years, has also imagined and designed his own Martian base. Since 2011, with his Spacehabs project, he has been making conceptual designs of possible habitats for exploring space. His design will leave no one indifferent."
     }
   ],
   "favorites": [

@@ -15,21 +15,30 @@ footer {
     margin: 0 auto;
     padding: 20px 0;
     max-width: 80%;
+    
     ul {
         padding: 0;
         li {
             font-size: 0.8em;
             padding: 7px 0;
         }
+        a {
+            color: $light-color;
+        }
+
     }
 }
 
 .Col1 {
     width: 40%;
     gap: 5px;
-    span {
+    p {
         font-size: 0.8em;
     }
+     .EmailFooter {
+            color: $light-color;
+            font-size: 0.9em;
+        }
 }
 
 .FooterSocialMedia {

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { editUser } from '../../store/users/actions';
 import { useNavigate } from 'react-router';
 import { useFormik } from 'formik';
+import ProfileUpdatePreviewComponent from '../ProfileUpdatePreviewComponent/ProfileUpdatePreviewComponent';
 
 const EditUserFormComponent = () => {
 
@@ -60,114 +61,122 @@ const EditUserFormComponent = () => {
 
   return (
     <div className="EditUserFormComponent">
-      <form className='EditUserForm' onSubmit={formik.handleSubmit}>
-      {/* USERNAME */}
-        <fieldset>
-          {/* <label htmlFor="username">Username</label> */}
-          <input 
-            id="username"
-            name="username"
-            type="text"
-            placeholder="New Username"
-            className='simpleInput'
-            value={formik.values.username}
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
-        
-        {/* EMAIL */}
-        <fieldset>
-          {/* <label htmlFor="email">Email</label> */}
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="New Email"
-            className='simpleInput'
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          />
-          {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
-        </fieldset>
+      <section className='Col'>
+      <h2>Edit my profile</h2>
+        <form className='EditUserForm' onSubmit={formik.handleSubmit}>
+        {/* USERNAME */}
+          <fieldset>
+            {/* <label htmlFor="username">Username</label> */}
+            <input 
+              id="username"
+              name="username"
+              type="text"
+              placeholder="New Username"
+              className='simpleInput'
+              value={formik.values.username}
+              onBlur={formik.handleBlur}
+              onChange={formik.handleChange}
+            />
+          </fieldset>
+          
+          {/* EMAIL */}
+          <fieldset>
+            {/* <label htmlFor="email">Email</label> */}
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="New Email"
+              className='simpleInput'
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.email}
+            />
+            {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
+          </fieldset>
 
-        {/* PASSWORD */}
-        <fieldset>
-          {/* <label htmlFor="password">Password</label> */}
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder="New Password"
-            className='simpleInput'
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.password}
-          />
-          {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
-        </fieldset>
+          {/* PASSWORD */}
+          <fieldset>
+            {/* <label htmlFor="password">Password</label> */}
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="New Password"
+              className='simpleInput'
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.password}
+            />
+            {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+          </fieldset>
 
-        {/* CURRENT CITY */}
-        <fieldset>
-          {/* <label htmlFor="currentcity">Current city</label> */}
-          <input 
-            id="currentcity"
-            name="currentcity"
-            type="text"
-            placeholder="Current city"
-            className='simpleInput'
-            value={formik.values.currentcity}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
-        
-        {/* OCCUPATION */}
-        <fieldset>
-          {/* <label htmlFor="occupation">Occupation</label> */}
-          <input 
-            id="occupation"
-            name="occupation"
-            type="text"
-            placeholder="Current occupation"
-            className='simpleInput'
-            value={formik.values.occupation}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
+          {/* CURRENT CITY */}
+          <fieldset>
+            {/* <label htmlFor="currentcity">Current city</label> */}
+            <input 
+              id="currentcity"
+              name="currentcity"
+              type="text"
+              placeholder="Current city"
+              className='simpleInput'
+              value={formik.values.currentcity}
+              onChange={formik.handleChange}
+            />
+          </fieldset>
+          
+          {/* OCCUPATION */}
+          <fieldset>
+            {/* <label htmlFor="occupation">Occupation</label> */}
+            <input 
+              id="occupation"
+              name="occupation"
+              type="text"
+              placeholder="Current occupation"
+              className='simpleInput'
+              value={formik.values.occupation}
+              onChange={formik.handleChange}
+            />
+          </fieldset>
 
-         {/* AVATAR */}
-        <fieldset>
-          {/* <label htmlFor="useravatar">Avatar</label> */}
-          <input 
-            id="useravatar"
-            name="useravatar"
-            type="text"
-            placeholder="Insert an image URL"
-            className='simpleInput'
-            value={formik.values.useravatar}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-        </fieldset>
+          {/* AVATAR */}
+          <fieldset>
+            {/* <label htmlFor="useravatar">Avatar</label> */}
+            <input 
+              id="useravatar"
+              name="useravatar"
+              type="text"
+              placeholder="Insert an image URL"
+              className='simpleInput'
+              value={formik.values.useravatar}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+          </fieldset>
 
-        {/* ABOUT */}
-        <fieldset>
-          {/* <label htmlFor="userabout">About me</label> */}
-          <textarea 
-            id="userabout"
-            name="userabout"
-            type="text"
-            placeholder="Write something about you"
-            className='simpleInput'
-            value={formik.values.userabout}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-        </fieldset>
-        <button className='primary-btn' type="submit">Submit Changes</button>
-        <button className='secondary-btn' type="reset" onClick={() => handleReset(formik)}>Clear form</button>
-        </form>
+          {/* ABOUT */}
+          <fieldset>
+            {/* <label htmlFor="userabout">About me</label> */}
+            <textarea 
+              id="userabout"
+              name="userabout"
+              type="text"
+              placeholder="Write something about you"
+              className='simpleInput'
+              value={formik.values.userabout}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+          </fieldset>
+          <div className='FormButtonsRow'>
+          <button className='primary-btn' type="submit">Save Changes</button>
+          <button className='secondary-btn' type="reset" onClick={() => handleReset(formik)}>Clear form</button>
+          </div>
+          </form>
+        </section>
+        <section className='Col'>
+          <ProfileUpdatePreviewComponent values={formik.values} ></ProfileUpdatePreviewComponent>
+        </section>
         </div>
   )
 }

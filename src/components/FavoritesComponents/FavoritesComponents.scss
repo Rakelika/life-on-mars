@@ -1,1 +1,35 @@
-.FavoritesComponents {}
+.FavoritesComponents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px auto;
+
+
+.cardHouse {
+    width: 38.5vw;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+
+    img {
+        width: 100%;
+        border-top-right-radius: 16px ;
+        border-top-left-radius: 16px;
+    }
+
+    .cardResume {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .cardButtons {
+        display: flex;
+        padding: 0 30px;
+    }
+}
+}

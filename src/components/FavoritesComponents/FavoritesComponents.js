@@ -26,24 +26,25 @@ const FavoritesComponents = () => {
     }
   
   return (
-  <div className="FavoritesComponents">
-    <h2>My houses</h2>
-    <div>
+  <section className="FavoritesComponents">
     {userFavorites.length === 0 ? "You don't have any house"  : ""}
     {userFavorites.map(house=>{
       return (
-        <div key={house.id}>
+        <article key={house.id} className='cardHouse'>
             <img src={house.house.image} alt={house.name}/>
+          <div className='cardResume'>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          {house.house.description ? <p>{house.house.description}</p> : ""}
+          {house.house.title ? <p>{house.house.title}</p> : ""}
           {house.house.rooms ? <p>Number of rooms: {house.house.rooms}</p> : ""}
-          <button onClick={() => removeFavorite(house.id)}>Remove this house</button>
-          <Link to={`/house-form/${house.id}`}>Custom house</Link>
-        </div>
+          </div>
+          <div className='cardButtons'>
+            <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>
+            <button className='secondary-btn centerText' onClick={() => removeFavorite(house.id)}>Remove this house</button>
+          </div>
+        </article>
       )
     })}
-    </div>
-  </div>
+  </section>
 )};
 
 FavoritesComponents.propTypes = {};

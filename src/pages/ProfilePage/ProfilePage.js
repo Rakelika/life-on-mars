@@ -12,8 +12,6 @@ export default function ProfilePage() {
         console.log("profile",state);
         return state.UserReducer;
       });
-    
-    const [showEditForm, setShowEditForm] = useState(false)
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -46,27 +44,25 @@ export default function ProfilePage() {
               <div className="userAvatarContainer">
               {user.useravatar ? <img src={user.useravatar} alt={user.name} className="userAvatarImage"></img> : <img src="https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png" alt={user.name} width={300}></img>}
               </div>
-              <h1>{user.username}</h1>
             </header>
             <div className="ProfileRow">
-            <div className="ProfileInfo">
-            <h3>{user.firstname} {user.lastname}</h3>
-            <p><span className="boldLabel">Email: </span>{user.email}</p>
-            <p><span className="boldLabel">Occupation: </span>{user.occupation}</p>
-            <p><span className="boldLabel">Current city: </span>{user.currentcity}</p>
-            <p><span className="boldLabel">About me: </span>{user.userabout}</p>
-            </div>
+                <div className="ProfileCol">
+                  <h1>{user.username}</h1>
+                  <p>{user.email}</p>
+                </div>
+                <div className="ProfileCol ProfileInfo">
+                  <h3>{user.firstname} {user.lastname}</h3>
+                  <p><span>Occupation: </span>{user.occupation}</p>
+                  <p><span>Current city: </span>{user.currentcity}</p>
+                  <p><span>About me: </span>{user.userabout}</p>
+                  </div>
             <div className="ProfileButtonsContainer">
             <button onClick={logOut} className="third-btn">Logout</button>
             <button onClick={deleteAccount} className="third-btn">Delete account</button>
-            <button onClick={() => setShowEditForm(!showEditForm)} className="third-btn">Edit my profile</button>
+            <Link to={`/edit-user-profile`} className='secondary-btn centerText'>Edit my profile</Link>
           </div>
           </div>
           </div>
-          {showEditForm === true ? 
-          <div>
-              <EditUserFormComponent user={user}></EditUserFormComponent>
-          </div> : ""}
           <FavoritesComponents></FavoritesComponents>
         </div>
       </section>

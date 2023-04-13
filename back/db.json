@@ -529,7 +529,7 @@
     {
       "house": {
         "id": 1,
-        "name": "The Crater House",
+        "name": "My Favorite Ever House in Mars",
         "architects": "Amey Kandalgaonkar",
         "image": "/assets/houses/casa-crater.webp",
         "gallery": [
@@ -562,7 +562,10 @@
         ],
         "title": "Indian architect's boundless creativity for a UFO-shaped home",
         "video": "https://youtu.be/ZtdDzaQbzUk",
-        "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
+        "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined.",
+        "rooms": 7,
+        "bathrooms": 2,
+        "garden": "Yes"
       },
       "userId": 8,
       "id": 13

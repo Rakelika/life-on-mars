@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { editFavHouse, getSingleFavorite } from '../../store/houses/actions';
 import { useFormik } from 'formik';
 import { Navigate, useNavigate } from 'react-router-dom';
+import CustomHousePreviewComponent from '../CustomHousePreviewComponent/CustomHousePreviewComponent'
 
 const HouseFormComponent = () => {
 
@@ -43,16 +44,18 @@ const HouseFormComponent = () => {
 
   return (
     <div className="HouseFormComponent">
-      {singleFavorite && singleFavorite.house.name ? <p>{singleFavorite.house.name}</p> : ""}
-      {singleFavorite && singleFavorite.house.image ? <img src={singleFavorite.house.image} alt={singleFavorite.house.name} width={200} /> : ""}
-        <form onSubmit={formik.handleSubmit}>
+      <section className='Col'>
+      <h2>Let's customize!</h2>
+      <p className='centerText'>Customize your Martian home with our form. Edit the details of your favorite house and make it uniquely yours. You can choose the number of bedrooms and bathrooms, select if you want a garden, and even rename your house!</p>
+        <form className='EditHouseForm' onSubmit={formik.handleSubmit}>
         {/* RENAME */}
           <fieldset>
-            <label htmlFor="name">Rename your house</label>
             <input 
               id="name"
               name="name"
               type="text"
+              placeholder="Add a custom name for this house"
+              className='simpleInput'
               value={formik.values.name}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -64,7 +67,11 @@ const HouseFormComponent = () => {
             <input 
               id="rooms"
               name="rooms"
-              type="number"
+              type="range"
+              min="0"
+              max="10"
+              placeholder="Number of rooms"
+              className='simpleInput rangeInput'
               value={formik.values.rooms}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -72,11 +79,15 @@ const HouseFormComponent = () => {
           </fieldset>
         {/* BATHROOMS */}
           <fieldset>
-            <label htmlFor="bathrooms">Number of bathrooms</label>
+          <label htmlFor="rooms">Number of bathrooms</label>
             <input 
               id="bathrooms"
               name="bathrooms"
-              type="number"
+              type="range"
+              min="0"
+              max="5"
+              placeholder="Number of rooms"
+              className='simpleInput rangeInput'
               value={formik.values.bathrooms}
               onBlur={formik.handleBlur}
               onChange={formik.handleChange}
@@ -84,21 +95,38 @@ const HouseFormComponent = () => {
           </fieldset>
           {/* GARDEN */}
           <fieldset>
-          <label htmlFor="garden">Do you want a garden?</label>
-            <select
-              id="garden"
+          <label htmlFor="garden">Do you want a garden?
+            <input
+              type="radio"
               name="garden"
-              value={formik.values.garden}
+              value="Yes"
+              checked={formik.values.garden === "Yes"}
+              onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              onChange={formik.handleChange}>
-              <option value="">Select an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            />
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="garden"
+              value="No"
+              checked={formik.values.garden === "No"}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+            No
+          </label>
           </fieldset> 
-          <button type="submit" className='primary-btn'>Submit Changes</button>
-          <button type="reset" className='secondary-btn' onClick={() => handleReset(formik)}>Clear form</button>
+          <div className='FormButtonsRow'>
+            <button type="submit" className='primary-btn'>Submit Changes</button>
+            <button type="reset" className='secondary-btn' onClick={() => handleReset(formik)}>Clear form</button>
+          </div>
           </form>
+          </section>
+          <section className='Col'>
+            <CustomHousePreviewComponent values={formik.values}></CustomHousePreviewComponent>
+          </section>
         </div>
   )
 };

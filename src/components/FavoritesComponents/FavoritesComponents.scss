@@ -1,3 +1,5 @@
+@import '../../styles/globalStyles.scss';
+
 .FavoritesComponents {
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +32,25 @@
     .cardButtons {
         display: flex;
         padding: 0 30px;
+    }
+
+    .customTag {
+        max-width: 105px;
+        padding: 5px 20px;
+        margin: -60px 0 40px 30px; 
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 6px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 0px solid rgba(255, 255, 255, 0.3);
+        
+        p {
+            margin: 0 auto;
+            font-size: 1.2em;
+            color: $dark-color;
+            font-weight: $bold-weight;
+        }
     }
 }
 }

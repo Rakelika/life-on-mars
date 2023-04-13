@@ -48,18 +48,18 @@ export default function ProfilePage() {
                 <div className="ProfileCol">
                   <h1>{user.username}</h1>
                   <p>{user.email}</p>
+                  <div className="ProfileButtonsContainer">
+                  <Link to={`/edit-user-profile`} className='profile-third-btn '>Edit my profile</Link>
+                    <button onClick={logOut} className="profile-third-btn">Logout</button>
+                    <button onClick={deleteAccount} className="profile-third-btn">Delete account</button>
                 </div>
-                <div className="ProfileCol ProfileInfo">
+                </div>
+                <div className="ProfileInfo">
                   <h3>{user.firstname} {user.lastname}</h3>
                   <p><span>Occupation: </span>{user.occupation}</p>
                   <p><span>Current city: </span>{user.currentcity}</p>
                   <p><span>About me: </span>{user.userabout}</p>
-                  </div>
-            <div className="ProfileButtonsContainer">
-            <button onClick={logOut} className="third-btn">Logout</button>
-            <button onClick={deleteAccount} className="third-btn">Delete account</button>
-            <Link to={`/edit-user-profile`} className='secondary-btn centerText'>Edit my profile</Link>
-          </div>
+                </div>
           </div>
           </div>
           <FavoritesComponents></FavoritesComponents>

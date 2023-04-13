@@ -55,3 +55,22 @@
     border: none;
     color: $secondary-color;
 }
+
+
+// profile special buttons:
+
+.profile-third-btn {
+    background-color: transparent;
+    border: none;
+    color: $secondary-color;
+    font-family: $font-stack;
+    width: 180px;
+    text-align: left;
+    font-weight: $bold-weight;
+    padding: 10px 10px 10px 0;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    &:hover {
+        cursor:pointer;
+    }  
+}

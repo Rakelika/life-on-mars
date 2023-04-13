@@ -11,16 +11,17 @@
 .ProfileRow {
     display: flex;
     gap: 60px;
+    width: 80%;
     -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
-    padding: 95px 50px 40px 50px;
-    margin: -100px 0 0 0;
+    padding: 55px 50px 40px 50px;
+    margin: -90px auto 0 auto;
     background-color: $dark-color;
         h1 {
             padding-bottom: 0.6em;
-            border-bottom: 1px solid $secondary-color;
+            border-bottom: 2px solid rgba(202, 202, 202, 0.25);
             margin: 0.5em 0;
         }
         h3 {
@@ -32,7 +33,7 @@
 }
 
 .ProfilePageUserInfoContainer {
-    margin: -100px 0 0 0;
+    margin: -90px 0 0 0;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -46,16 +47,13 @@
         align-items: center;
         z-index: 3;
         padding-left: 40px;
-        margin: -20px 0 0 0;
+        margin: -30px 0 0 75px;
     }
 
     .ProfileCol {
         display: flex;
         flex-direction: column;
-    }
-
-    .ProfileInfo {
-        
+        margin-top: 30px;
     }
 
     .userAvatarContainer {
@@ -82,5 +80,15 @@
 }
 
 .ProfileButtonsContainer {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.ProfileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
 }

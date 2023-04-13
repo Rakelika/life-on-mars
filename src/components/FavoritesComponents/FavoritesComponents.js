@@ -27,15 +27,19 @@ const FavoritesComponents = () => {
   
   return (
   <section className="FavoritesComponents">
-    {userFavorites.length === 0 ? "You don't have any house"  : ""}
+    {userFavorites.length === 0 ? 
+    <div>
+    <h3>You haven't added any house yet, let's get started!</h3>
+    <Link to="/houses" className='primary-btn'>Explore houses</Link>
+    </div>  : ""}
     {userFavorites.map(house=>{
       return (
         <article key={house.id} className='cardHouse'>
             <img src={house.house.image} alt={house.name}/>
+            {house.house.rooms || house.house.bathrooms || house.house.garden ? <div className='customTag'><p>Customized</p></div> : ''}
           <div className='cardResume'>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
           {house.house.title ? <p>{house.house.title}</p> : ""}
-          {house.house.rooms ? <p>Number of rooms: {house.house.rooms}</p> : ""}
           </div>
           <div className='cardButtons'>
             <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>

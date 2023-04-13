@@ -528,17 +528,17 @@
     },
     {
       "house": {
-        "id": 1,
-        "name": "My Favorite Ever House in Mars",
-        "architects": "Amey Kandalgaonkar",
-        "image": "/assets/houses/casa-crater.webp",
+        "id": 8,
+        "name": "Xiaomi Mars House Custom :D",
+        "architects": "OPEN Architecture & Xiaomi",
+        "image": "/assets/houses/xiaomi-mars-case.webp",
         "gallery": [
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         ],
         "material": [
-          "elementos geológicos"
+          "bioplástico renovable"
         ],
         "information": [
           {
@@ -561,54 +561,14 @@
           }
         ],
         "title": "Indian architect's boundless creativity for a UFO-shaped home",
-        "video": "https://youtu.be/ZtdDzaQbzUk",
-        "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined.",
-        "rooms": 7,
+        "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+        "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia.",
+        "rooms": 3,
         "bathrooms": 2,
         "garden": "Yes"
       },
       "userId": 8,
       "id": 13
-    },
-    {
-      "house": {
-        "id": 2,
-        "name": "Zopherus",
-        "architects": "Zopherus of Rogers",
-        "image": "/assets/houses/zopherus.webp",
-        "gallery": [
-          "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
-        ],
-        "material": [
-          "impresión 3D",
-          "elementos geológicos",
-          "bioplástico renovable"
-        ],
-        "information": [
-          {
-            "info": "The tough exterior shell of the Zopherus beetle, the tensile strength of a spider's web, and the hexagonal pattern of a bee's hive to create a modular footprint."
-          },
-          {
-            "info": "The lander seals to the ground to create a pressurized environment for printing, protecting the print process from the extremes of the Martian atmosphere."
-          },
-          {
-            "info": "The shell of the habitat is composed of a structural outer shell and an airtight inner layer, much like a bicycle tire and tube. The thick and firm outer martian concrete shell structurally confines and protects the thin and flexible inner layer of HDPE."
-          },
-          {
-            "info": "The Zopherus Habitat is complete with three base units, the Communal, Crew, and Laboratory, Including a Mezzanine level that provides natural light to the habitat for vegetation growth."
-          }
-        ],
-        "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
-        "video": "https://youtu.be/r79vdlDsjrM",
-        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage."
-      },
-      "userId": 8,
-      "id": 14
     }
   ],
   "users": [

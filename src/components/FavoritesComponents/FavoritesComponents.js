@@ -28,9 +28,9 @@ const FavoritesComponents = () => {
   return (
   <section className="FavoritesComponents">
     {userFavorites.length === 0 ? 
-    <div>
+    <div className='noHouses'>
     <h3>You haven't added any house yet, let's get started!</h3>
-    <Link to="/houses" className='primary-btn'>Explore houses</Link>
+    <Link to="/houses" className='secondary-btn-invt centerText'>Explore houses</Link>
     </div>  : ""}
     {userFavorites.map(house=>{
       return (

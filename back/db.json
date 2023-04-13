@@ -528,17 +528,18 @@
     },
     {
       "house": {
-        "id": 8,
-        "name": "Xiaomi Mars House Custom :D",
-        "architects": "OPEN Architecture & Xiaomi",
-        "image": "/assets/houses/xiaomi-mars-case.webp",
+        "id": 5,
+        "name": "Mars Incubator",
+        "architects": "La Nasa",
+        "image": "/assets/houses/mars-incubator.webp",
         "gallery": [
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
         ],
         "material": [
-          "bioplástico renovable"
+          "plástico de regolito",
+          "fibra de basalto"
         ],
         "information": [
           {
@@ -562,10 +563,7 @@
         ],
         "title": "Indian architect's boundless creativity for a UFO-shaped home",
         "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-        "description": "El estudio OPEN Architecture, en colaboración con Xiaomi, también presento su prototipo de vivienda, la Mars Case. Es un diseño bastante minimalista, pero no por ello renuncia a la más alta tecnología en su interior. Todo está pensado para consumir la menor cantidad de recursos posible y el reciclaje es uno de sus máximos, ya que creen que allí sería el medio de supervivencia.",
-        "rooms": 3,
-        "bathrooms": 2,
-        "garden": "Yes"
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
       },
       "userId": 8,
       "id": 13

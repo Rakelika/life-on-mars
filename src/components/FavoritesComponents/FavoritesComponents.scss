@@ -6,6 +6,18 @@
     justify-content: space-between;
     margin: 60px auto;
 
+.noHouses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: $secondary-color;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+}
 
 .cardHouse {
     width: 38.5vw;

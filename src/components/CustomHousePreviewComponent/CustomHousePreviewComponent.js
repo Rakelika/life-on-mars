@@ -26,7 +26,7 @@ const CustomHousePreviewComponent = ( {values} ) => {
       </div>
       <div className='CustomHouseDataItem'>
         <img className={`CustomHouseIcon ${values.bathrooms > 0 ? 'fullOpacity' : 'lowOpacity'}`} src={bathroom} alt="bathroom" />
-        <p className={`${values.bathrooms > 0 ? 'fullOpacity' : 'lowOpacity'}`}>Bedrooms</p> 
+        <p className={`${values.bathrooms > 0 ? 'fullOpacity' : 'lowOpacity'}`}>Bathrooms</p> 
         <p className='customValue'>{values.bathrooms}</p> 
       </div>
       <div className='CustomHouseDataItem'>

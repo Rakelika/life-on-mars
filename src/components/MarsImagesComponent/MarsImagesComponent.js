@@ -53,15 +53,13 @@ const MarsImagesComponent = () => {
   }
 
     return (
-    <div className="MarsImagesComponent">
-    {marsImages && marsImages[12] && marsImages[12].img_src ? 
-      <header style={{ backgroundImage: `url(${marsImages[12].img_src})` }} 
-      className='MarsBanner'>
-      <div className='BannerTitles'>
-        <h1>The Red Planet</h1>
-        <h2>Welcome to Mars</h2>
-      </div>
-      </header> : ""}
+    <div className="MarsImagesComponent"> 
+      <header className='MarsBanner'>
+        <div className='BannerTitles'>
+          <h1>The Red Planet</h1>
+          <h2>Welcome to Mars</h2>
+        </div>
+      </header>
     <section className='Container'>
         <h2>{MarsInfo.hero}</h2>
     <div className="MarsSection">
@@ -74,8 +72,7 @@ const MarsImagesComponent = () => {
         )
       })}
       {marsImages && marsImages[0] && marsImages[0].camera ?
-      <span>Exploring Mars: Stunning {marsImages[0].camera.full_name} 
-      images captured by NASA's {marsImages[0].rover.name} on Earth Day {marsImages[0].earth_date}, 
+      <span>Exploring Mars: Stunning {marsImages[0].camera.full_name} images captured by NASA's {marsImages[0].rover.name} on Earth Day {marsImages[0].earth_date}, 
       launched from Earth on {marsImages[0].rover.launch_date} and landed on Martian Soil on {marsImages[0].rover.landing_date}</span>
       : ""}
     </div>

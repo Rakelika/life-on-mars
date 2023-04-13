@@ -75,7 +75,8 @@
         "/assets/houses/marsha-gallery/marsha-gallery-6.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-7.jpg",
         "/assets/houses/marsha-gallery/marsha-gallery-8.jpg",
-        "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"],  
+        "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
+      ],
       "material": [
         "impresión 3D",
         "fibra de basalto",
@@ -140,7 +141,7 @@
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-4.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-5.jpg",
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
-],
+      ],
       "material": [
         "plástico de regolito",
         "fibra de basalto"
@@ -171,7 +172,8 @@
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-3.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-4.jpg",
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-5.jpg",
-        "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-6.jpg"],
+        "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-6.jpg"
+      ],
       "material": [
         "impresión 3D"
       ],
@@ -198,7 +200,8 @@
       "gallery": [
         "/assets/houses/sfero-gallery/sfero-gallery-1.jpg",
         "/assets/houses/sfero-gallery/sfero-gallery-2.jpg",
-        "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"],
+        "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"
+      ],
       "material": [
         "impresión 3D",
         "óxido de hierro"
@@ -295,7 +298,8 @@
         "/assets/houses/xarc-gallery/xarc-gallery-3.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-4.jpg",
         "/assets/houses/xarc-gallery/xarc-gallery-5.jpg",
-        "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"],
+        "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"
+      ],
       "material": [
         "impresión 3D"
       ],
@@ -322,7 +326,8 @@
       "gallery": [
         "/assets/houses/archab-gallery/archab-gallery-1.jpg",
         "/assets/houses/archab-gallery/archab-gallery-2.jpg",
-        "/assets/houses/archab-gallery/archab-gallery-3.jpg"],
+        "/assets/houses/archab-gallery/archab-gallery-3.jpg"
+      ],
       "material": [
         "óxido de hierro",
         "impresión 3D"
@@ -353,7 +358,8 @@
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-3.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-4.jpg",
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-5.jpg",
-        "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"],
+        "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"
+      ],
       "material": [
         "fibra de basalto",
         "bioplástico renovable"
@@ -487,7 +493,10 @@
         ],
         "title": "Indian architect's boundless creativity for a UFO-shaped home",
         "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto.",
+        "rooms": 7,
+        "bathrooms": 2,
+        "garden": "Yes"
       },
       "userId": 8,
       "id": 13

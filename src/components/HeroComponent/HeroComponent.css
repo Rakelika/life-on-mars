@@ -1,3 +1,40 @@
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 .HeroComponent {
   background-image: url("../../assets/life-on-mars-home.jpg");
   background-repeat: no-repeat;
@@ -5,20 +42,30 @@
   height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .HeroComponent .titleHero {
-  width: 60%;
-  height: 30vh;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
   background: rgba(255, 255, 255, 0.17);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.3px);
   -webkit-backdrop-filter: blur(8.3px);
   border: 0px solid rgba(255, 255, 255, 0.3);
+  padding: 4em;
+  margin-right: 5%;
 }
-.HeroComponent h1 {
-  margin: 0 auto;
+.HeroComponent .titleHero h1 {
+  color: #202124;
+  margin: 0px;
+}
+.HeroComponent .titleHero h2 {
+  color: #202124;
+  margin: 0px;
+  font-weight: 300;
+}
+.HeroComponent .titleHero button {
+  margin-top: 30px;
 }/*# sourceMappingURL=HeroComponent.css.map */

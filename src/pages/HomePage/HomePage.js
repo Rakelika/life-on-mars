@@ -3,11 +3,13 @@ import MarsWeatherComponent from "../../components/MarsWeatherComponent/MarsWeat
 import TestimonialsComponent from "../../components/TestimonialsComponent/TestimonialsComponent";
 import MarsImagesComponent from "../../components/MarsImagesComponent/MarsImagesComponent";
 import HeroComponent from "../../components/HeroComponent/HeroComponent";
+import HowToUseComponent from "../../components/HowToUseComponent/HowToUseComponent";
 
 export default function HomePage() {
     return (
         <div className="">
             <HeroComponent></HeroComponent>
+            <HowToUseComponent></HowToUseComponent>
             {/* <NasaPictureDayComponent></NasaPictureDayComponent>
             <MarsWeatherComponent></MarsWeatherComponent> */}
             <TestimonialsComponent></TestimonialsComponent>

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 body {
   background-color: #202124;
+  overflow: x hidden;
 }
 
 ul {
@@ -25,6 +26,10 @@ p {
   text-align: center;
 }
 
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .Container {
     max-width: 95%;
@@ -40,7 +45,7 @@ p {
   width: 180px;
   font-weight: 700;
   padding: 5px;
-  margin: 10px auto;
+  margin: 10px;
   font-size: 15px;
   letter-spacing: 0.05em;
 }
@@ -57,11 +62,28 @@ p {
   width: 180px;
   font-weight: 700;
   padding: 5px;
-  margin: 10px auto;
+  margin: 10px;
   font-size: 15px;
   letter-spacing: 0.05em;
 }
 .secondary-btn:hover {
+  cursor: pointer;
+}
+
+.secondary-btn-invt {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #202124;
+  border: 2px solid #202124;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  font-weight: 700;
+  padding: 5px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.secondary-btn-invt:hover {
   cursor: pointer;
 }
 
@@ -85,6 +107,22 @@ p {
   background-color: transparent;
   border: none;
   color: #B26ADC;
+}
+
+.profile-third-btn {
+  background-color: transparent;
+  border: none;
+  color: #B26ADC;
+  font-family: "Quicksand", sans-serif;
+  width: 180px;
+  text-align: left;
+  font-weight: 700;
+  padding: 10px 10px 10px 0;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.profile-third-btn:hover {
+  cursor: pointer;
 }
 
 .regularInput {
@@ -114,6 +152,7 @@ label, textarea {
   background-color: transparent;
   border: 0px;
   border-bottom: 1px solid #f5f5f5;
+  font-family: "Quicksand", sans-serif;
   color: #f5f5f5;
   width: 100%;
   margin: 2px 0;
@@ -146,6 +185,47 @@ label, textarea {
 }
 .errorMessage .simpleInput {
   border-bottom: 1px solid #ED2B2A;
+}
+
+.FormButtonsRow {
+  display: flex;
+  gap: 20px;
+}
+
+.rangeInput {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  width: 100%;
+  height: 10px;
+}
+
+.rangeInput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.rangeInput::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.rangeInput::-webkit-slider-thumb:active {
+  background-color: #B26ADC;
+}
+
+.rangeInput::-moz-range-thumb:active {
+  background-color: #B26ADC;
 }
 
 .App {

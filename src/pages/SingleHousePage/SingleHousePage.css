@@ -1,5 +1,6 @@
 body {
   background-color: #202124;
+  overflow: x hidden;
 }
 
 ul {
@@ -24,6 +25,10 @@ p {
   text-align: center;
 }
 
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .Container {
     max-width: 95%;
@@ -35,11 +40,10 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   gap: 10px;
-  margin: 20px auto;
 }
 .PagitatorHouses .paginator-btn {
   background-color: transparent;
-  border: 1px solid #430a64;
+  border: 1px solid transparent;
   box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
   color: #B26ADC;
   width: 36px;
@@ -49,6 +53,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .PagitatorHouses .paginator-btn:hover {
   cursor: pointer;

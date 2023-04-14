@@ -4,6 +4,8 @@ import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../../store/houses/actions';
 import { Link } from 'react-router-dom';
+import { Orbit } from '@uiball/loaders'
+
 
 const AllHousesComponent = ({ search, selectedMaterials }) => {
 
@@ -18,8 +20,11 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
 
   if(loadingHouses){
     return (
-      <div>
-        <p>searching for houses</p>
+      <div className='Container centerText'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+        />
       </div>
     )
   }

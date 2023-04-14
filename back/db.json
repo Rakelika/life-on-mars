@@ -458,49 +458,14 @@
     },
     {
       "house": {
-        "id": 1,
-        "name": "The Crater House",
-        "architects": "Amey Kandalgaonkar",
-        "image": "/assets/houses/casa-crater.webp",
+        "id": 5,
+        "name": "Mars Incubator",
+        "architects": "La Nasa",
+        "image": "/assets/houses/mars-incubator.webp",
         "gallery": [
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
           "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
-        ],
-        "material": [
-          "elementos geológicos"
-        ],
-        "information": [
-          {
-            "info": "Amey Kandalgaonkar is a visionary architect and photographer who is known for his utopian projects. In response to Elon Musk's announcement about inhabiting Mars, Amey set out to design a UFO-shaped house that would be located in a Martian crater. The design is both innovative and practical, with a focus on creating a livable space that can withstand the harsh environment of Mars."
-          },
-          {
-            "info": "What sets Amey apart from other architects is his ability to merge natural formations with his designs. He is not afraid to think outside the box and has a knack for placing buildings in places you would never have imagined. His unique perspective on architecture and design has earned him numerous accolades and awards, cementing his position as one of the most talented architects of his generation."
-          },
-          {
-            "info": "Amey's passion for architecture and design extends beyond just creating beautiful buildings. He is deeply committed to sustainability and believes that architecture should have a positive impact on the environment. His designs incorporate green technologies and materials, with a focus on minimizing waste and reducing carbon emissions. As the world becomes more conscious of the impact of climate change, architects like Amey are leading the way in creating sustainable, innovative designs that have the potential to transform the way we live."
-          }
-        ],
-        "title": "Indian architect's boundless creativity for a UFO-shaped home",
-        "video": "https://youtu.be/ZtdDzaQbzUk",
-        "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
-      },
-      "userId": 8,
-      "id": 14
-    },
-    {
-      "house": {
-        "id": 5,
-        "name": "Mars Incubator",
-        "architects": "Nasa",
-        "image": "/assets/houses/mars-incubator.webp",
-        "gallery": [
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-1.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-2.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-3.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-4.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-5.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
         ],
         "material": [
           "plástico de regolito",
@@ -508,24 +473,30 @@
         ],
         "information": [
           {
-            "info": "The model with a design of four spherical modules connected by one larger module in the center presents a unique solution for spacecrafts that require increased protection against radiation. The central module acts as a hub, allowing the crew to move between the different modules using bridges without leaving the structure. This design is particularly useful for long-term space missions, where the crew may need to spend extended periods of time in space and require a safe and comfortable environment."
+            "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
           },
           {
-            "info": "One of the main advantages of this design is its resistance to radiation. The support structure is made of a combination of regolith plastic and polyethylene with basalt fiber. These materials provide excellent protection against high levels of radiation and can withstand extreme conditions in space. The use of these innovative materials ensures that the structure is durable and can withstand the harsh environment of space."
+            "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
           },
           {
-            "info": "The modular design of the structure also offers flexibility and adaptability. The individual modules can be customized and equipped with different systems and equipment, depending on the mission requirements. This allows for more efficient use of space and resources and ensures that the spacecraft is optimized for its specific mission. The bridges connecting the modules also provide additional space for storage and equipment, further enhancing the overall functionality of the structure. Overall, this model presents a practical and innovative solution for space missions that require a durable and adaptable spacecraft."
+            "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
+          },
+          {
+            "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
+          },
+          {
+            "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
+          },
+          {
+            "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
           }
         ],
-        "title": "Modular spherical structure design with radiation resistance and innovative materials",
-        "video": "https://youtu.be/7GgPFFzn8hg",
-        "description": "Model featuring a design of four spherical modules connected by a larger one in the centre. Each of the modules is connected by bridges that allow the crew to move between the different modules without leaving the structure. Radiation resistant, its supports are made of regolith plastic and polyethylene with basalt fibre.",
-        "rooms": 3,
-        "bathrooms": 2,
-        "garden": "Yes"
+        "title": "Indian architect's boundless creativity for a UFO-shaped home",
+        "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
+        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
       },
       "userId": 8,
-      "id": 15
+      "id": 13
     }
   ],
   "users": [

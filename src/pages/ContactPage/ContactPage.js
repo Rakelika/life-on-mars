@@ -1,6 +1,7 @@
 import { useFormik } from "formik"
 import "./contactPageStyles.scss"
 import { Link } from "react-router-dom"
+import Swal from 'sweetalert2';
 
 export default function ContactPage() {
 
@@ -41,7 +42,12 @@ export default function ContactPage() {
         },
         validate,
         onSubmit: (values, { resetForm }) => {
-            alert("thankyou");
+            Swal.fire({
+                title: 'Formulario enviado!',
+                text: 'Tu formulario ha sido enviado exitosamente.',
+                icon: 'success',
+                confirmButtonText: 'Aceptar'
+              });
             console.log(values)
             resetForm();
         }

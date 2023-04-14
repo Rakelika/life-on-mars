@@ -6,6 +6,7 @@ import { addFavorites } from '../../store/houses/actions';
 import ReactPlayer from 'react-player';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const SingleHouseComponent = () => {
@@ -22,6 +23,8 @@ const SingleHouseComponent = () => {
   }
 
   const [activeTab, setActiveTab] = useState(0);
+
+  const navigate = useNavigate ();
 
   if(loadingSingleHouse){
     return (
@@ -95,7 +98,9 @@ return(
     </div>
 
     </div>
-    <button className='ReserveBtn' onClick={sendFavorites}>+</button>
+    <button className='ReserveBtn' 
+      onClick={userID ? sendFavorites : () => navigate("/signup")}>+
+    </button>
   </div>
 )
 };

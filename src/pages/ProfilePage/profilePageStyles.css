@@ -36,7 +36,7 @@ p {
   }
 }
 .ProfilePageMainBanner {
-  background: url("https://images.unsplash.com/photo-1630061937831-5b8bc0a58548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background: url("../../assets/life-on-mars-profile-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

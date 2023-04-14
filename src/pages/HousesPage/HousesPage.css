@@ -1,12 +1,8 @@
 .navFiltersHouses {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-button#\:r1\: {
-  background-color: transparent !important;
-  border: transparent;
-  color: white;
+.navFiltersHouses .MaterialFilterComponent {
+  width: 70%;
 }/*# sourceMappingURL=HousesPage.css.map */

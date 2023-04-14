@@ -15,6 +15,7 @@ import SignUpPage from './pages/SignUpPage/SignUpPage';
 import SingleHousePage from './pages/SingleHousePage/SingleHousePage';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import EditUserFormPage from './pages/EditUserFormPage/EditUserFormPage';
+import TheRedPlanet from './pages/TheRedPlanetPage/TheRedPlanet';
 
 //Components:
 import NavComponent from './core/NavComponent/NavComponent'
@@ -41,6 +42,7 @@ function App() {
         <Route exact path="/house-form/:id" element={<HouseFormPage />}></Route>
         <Route exact path="/edit-user-profile" element={<EditUserFormPage />}></Route>
         <Route exact path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+        <Route exact path="/red-planet" element={<TheRedPlanet />}></Route>
       </Routes>
       <FooterComponent></FooterComponent>
     </div>

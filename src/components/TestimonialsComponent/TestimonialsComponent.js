@@ -71,8 +71,8 @@ const TestimonialsComponent = () => {
       >
           {Testimonials.map(t => {
             return (
-              <SwiperSlide>
-              <div className='TestimonialCard' key={t.id}>
+              <SwiperSlide key={t.id}>
+              <div className='TestimonialCard'>
                 <h4>{t.name}</h4>
                 <p>{t.currentcity}</p>
                 <ReactRating

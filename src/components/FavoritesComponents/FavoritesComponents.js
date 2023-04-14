@@ -5,6 +5,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import HousesReducer from '../../store/houses/reducer';
 import { deleteFavorite, getFavorites } from '../../store/houses/actions';
 import { Link, Navigate } from 'react-router-dom';
+import bedroom from "../../assets/bedroom.svg"
+import bathroom from "../../assets/bathroom.svg"
+import garden from "../../assets/garden.svg"
 
 const FavoritesComponents = () => {
 
@@ -39,7 +42,33 @@ const FavoritesComponents = () => {
             {house.house.rooms || house.house.bathrooms || house.house.garden ? <div className='customTag'><p>Customized</p></div> : ''}
           <div className='cardResume'>
           {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          {house.house.title ? <p>{house.house.title}</p> : ""}
+          <section className='customItems'>
+          {house.house.rooms ? 
+          <div className='favCardItem'>
+          <img className='favCardIcon' src={bedroom} alt='bedrooms'/>
+          <p>{house.house.rooms}</p>
+          </div>
+           : ""}
+           {house.house.bathrooms ? 
+          <div className='favCardItem'>
+          <img className='favCardIcon' src={bathroom} alt='bedrooms'/>
+          <p>{house.house.bathrooms}</p>
+          </div>
+           : ""}
+           {house.house.garden ? 
+          <div className='favCardItem'>
+          <img className='favCardIcon' src={garden} alt='bedrooms'/>
+          <p>{house.house.garden}</p>
+          </div>
+           : ""}
+           </section>
+          </div>
+          <div className='favPadding'>
+          {house.house.title ?
+          <h5>{house.house.title}</h5> : ""}
+          {house.house.description ? 
+          <p>{house.house.description}</p> 
+          : ""}
           </div>
           <div className='cardButtons'>
             <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>

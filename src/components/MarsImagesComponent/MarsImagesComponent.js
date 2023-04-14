@@ -65,7 +65,7 @@ const MarsImagesComponent = () => {
     <div className="MarsSection">
       {MarsInfo.info.map(info =>{
         return (
-          <article className='MarsInfo'>
+          <article className='MarsInfo' key={info.title}>
             <h4>{info.title}</h4>
             <p>{info.text}</p>
           </article>

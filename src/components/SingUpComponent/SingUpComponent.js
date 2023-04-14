@@ -79,7 +79,6 @@ const SingUpComponent = () => {
 
        {/* USERNAME */}
        <fieldset>
-       {/* <label htmlFor="username">Username</label> */}
         <input
           id="username"
           name="username"
@@ -95,7 +94,6 @@ const SingUpComponent = () => {
 
       {/* EMAIL */}
       <fieldset>
-      {/* <label htmlFor="email">Email Address</label> */}
        <input
          id="email"
          name="email"
@@ -111,7 +109,6 @@ const SingUpComponent = () => {
 
       {/* PASSWORD */}
       <fieldset>
-        {/* <label htmlFor="password">Password</label> */}
         <input
           id="password"
           name="password"
@@ -129,7 +126,6 @@ const SingUpComponent = () => {
 
        {/* FIRST NAME */}
        <fieldset>
-        {/* <label htmlFor="firstname">First name</label> */}
           <input
             id="firstname"
             name="firstname"

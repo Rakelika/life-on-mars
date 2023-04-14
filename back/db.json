@@ -458,6 +458,78 @@
     },
     {
       "house": {
+        "id": 9,
+        "name": "Mars Ice Home",
+        "architects": "Clouds AO",
+        "image": "/assets/houses/mars-ice-home.webp",
+        "gallery": [
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-1.jpg",
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-2.jpg",
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-3.jpg",
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-4.jpg",
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-5.jpg",
+          "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-6.jpg"
+        ],
+        "material": [
+          "hielo",
+          "estructura inflable"
+        ],
+        "information": [
+          {
+            "info": "Clouds AO, Mars Ice Home is a revolutionary deployable habitat concept designed for future Martian exploration missions. This innovative habitat is designed to incorporate ice made from water found on Mars as a structural component and radiation shield. The design was developed by a team of experts from Clouds AO, a private space architecture firm."
+          },
+          {
+            "info": "The inflatable structure of the Clouds AO, Mars Ice Home makes it a perfect fit for Martian exploration missions. It can be easily transported and deployed on the planet's surface, providing a reliable and safe shelter for astronauts. The structure is designed to withstand the harsh Martian environment, including high winds, extreme temperatures, and radiation."
+          },
+          {
+            "info": "The use of Martian ice as a structural component and radiation shield is a unique and innovative feature of the Clouds AO design. This not only reduces the weight and cost of transporting building materials to Mars but also provides an eco-friendly solution that utilizes resources available on the planet. With the development of this groundbreaking concept, the future of Martian exploration and colonization seems to be a step closer to reality."
+          }
+        ],
+        "title": "A Cutting-Edge Deployable Habitat Concept for Martian Exploration",
+        "video": "https://youtu.be/JQcx2vlgDeQ",
+        "description": "The design of Clouds AO, Mars Ice Home has been developed by a team of experts and NASA Langley Research Center. It is a deployable habitat concept. It is based on an inflatable structure that incorporates ice, made of water from the Red Planet itself, as a radiation shield and structural component.",
+        "rooms": 3,
+        "bathrooms": 1,
+        "garden": "Yes"
+      },
+      "userId": 8,
+      "id": 13
+    },
+    {
+      "house": {
+        "id": 7,
+        "name": "Sfero by Fabulous",
+        "architects": "Fabulous",
+        "image": "/assets/houses/sfero-faboluous.webp",
+        "gallery": [
+          "/assets/houses/sfero-gallery/sfero-gallery-1.jpg",
+          "/assets/houses/sfero-gallery/sfero-gallery-2.jpg",
+          "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"
+        ],
+        "material": [
+          "impresión 3D",
+          "óxido de hierro"
+        ],
+        "information": [
+          {
+            "info": "Fabulous, a French 3D printing company, has developed an innovative concept for a Mars habitation: a bubble house that can be built using iron oxide found on the planet's surface. The structure is designed to be built by a 3D printing robot once it has landed on Mars."
+          },
+          {
+            "info": "The bubble house has a helical staircase that connects two floors and is made of layers of iron oxide powder that are fused together by a 3D printing robot using a laser. The process is known as sintering and it creates a solid structure that is able to withstand the harsh conditions on the Martian surface."
+          },
+          {
+            "info": "By using the planet's own materials, the bubble house is a sustainable solution for a Mars habitation. The concept was developed as part of a NASA competition to design a 3D printed habitat for Mars, and it demonstrates how 3D printing technology can be used to create sustainable and adaptable structures in extreme environments."
+          }
+        ],
+        "title": "Fabulous designs bubble house for Mars using planet's own materials",
+        "video": "https://youtu.be/Mqsg2KM9gSw",
+        "description": "French 3D printing company Fabulous designed a bubble house that, once landed on Mars, would start to build itself from the iron oxide found on the planet's surface. A futuristic structure with a helical staircase connecting two floors."
+      },
+      "userId": 8,
+      "id": 14
+    },
+    {
+      "house": {
         "id": 1,
         "name": "The Crater House",
         "architects": "Amey Kandalgaonkar",
@@ -485,46 +557,7 @@
         "video": "https://youtu.be/ZtdDzaQbzUk",
         "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined."
       },
-      "userId": 8,
-      "id": 14
-    },
-    {
-      "house": {
-        "id": 5,
-        "name": "Mars Incubator",
-        "architects": "Nasa",
-        "image": "/assets/houses/mars-incubator.webp",
-        "gallery": [
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-1.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-2.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-3.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-4.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-5.jpg",
-          "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
-        ],
-        "material": [
-          "plástico de regolito",
-          "fibra de basalto"
-        ],
-        "information": [
-          {
-            "info": "The model with a design of four spherical modules connected by one larger module in the center presents a unique solution for spacecrafts that require increased protection against radiation. The central module acts as a hub, allowing the crew to move between the different modules using bridges without leaving the structure. This design is particularly useful for long-term space missions, where the crew may need to spend extended periods of time in space and require a safe and comfortable environment."
-          },
-          {
-            "info": "One of the main advantages of this design is its resistance to radiation. The support structure is made of a combination of regolith plastic and polyethylene with basalt fiber. These materials provide excellent protection against high levels of radiation and can withstand extreme conditions in space. The use of these innovative materials ensures that the structure is durable and can withstand the harsh environment of space."
-          },
-          {
-            "info": "The modular design of the structure also offers flexibility and adaptability. The individual modules can be customized and equipped with different systems and equipment, depending on the mission requirements. This allows for more efficient use of space and resources and ensures that the spacecraft is optimized for its specific mission. The bridges connecting the modules also provide additional space for storage and equipment, further enhancing the overall functionality of the structure. Overall, this model presents a practical and innovative solution for space missions that require a durable and adaptable spacecraft."
-          }
-        ],
-        "title": "Modular spherical structure design with radiation resistance and innovative materials",
-        "video": "https://youtu.be/7GgPFFzn8hg",
-        "description": "Model featuring a design of four spherical modules connected by a larger one in the centre. Each of the modules is connected by bridges that allow the crew to move between the different modules without leaving the structure. Radiation resistant, its supports are made of regolith plastic and polyethylene with basalt fibre.",
-        "rooms": 3,
-        "bathrooms": 2,
-        "garden": "Yes"
-      },
-      "userId": 8,
+      "userId": 9,
       "id": 15
     }
   ],
@@ -618,28 +651,31 @@
       "id": 7
     },
     {
-      "email": "asteroide@mars.com",
+      "email": "",
       "password": "$2a$10$5mc0uA.QI3.1rell7fcraewoys.MYfo0TkJCSsbMw7kUeaajUYhAa",
-      "username": "asteroide",
+      "username": "asteroide9076",
       "firstname": "Beatriz",
       "lastname": "Muñoz",
-      "currentcity": "Barcelona",
+      "currentcity": "Madrid",
       "birthyear": 1990,
       "id": 8,
-      "occupation": "Singer",
+      "occupation": "Doctor",
       "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
     },
     {
-      "email": "satelite@mars.com",
-      "password": "$2a$10$MnXGdBbwlQv.KVCB.udAqOFq7gW4Lrtyiguwk.DfTuWHR8AqGUngW",
-      "username": "satelite98",
+      "email": "satelite98@mars.com",
+      "password": "$2a$10$ockzAOHUrjGAupxdo3Lwbu1xeTcmLqYexuCggyn7SQjcs4T0W4lO6",
+      "username": "satelite :)",
       "firstname": "Alba",
       "lastname": "Sánchez",
-      "currentcity": "Madrid",
+      "currentcity": "Granada",
       "birthyear": 1998,
       "acceptPrivacyPolicy": true,
-      "id": 9
+      "id": 9,
+      "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "occupation": "Teacher",
+      "userabout": "I love Mars and I want to live there because I'd have enough of living on Earth :DD"
     }
   ]
 }

@@ -13,6 +13,7 @@ const NavComponent = () => {
     <nav>
       <div><h3><Link to="/">Life on Mars</Link></h3></div>
         <ul>
+          <li><Link to="/red-planet">Red Planet</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/houses">Houses</Link></li>
           <li><Link to="/contact">Contact</Link></li>

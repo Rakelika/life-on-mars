@@ -14,11 +14,11 @@ export default function HousesPage() {
             <div className="Container">
                 <h1 className="centerText ">Discover our houses on Mars</h1>
                 <div className="navFiltersHouses">
-                    <MaterialFilterComponent 
+                    <MaterialFilterComponent className="FilterContainer"
                         setSelectedMaterials = {setSelectedMaterials}   
                         selectedMaterials = {selectedMaterials}>
                     </MaterialFilterComponent>
-                    <SearchComponent 
+                    <SearchComponent  className="SearchContainer"
                         setSearch={setSearch}>
                     </SearchComponent>
                 </div>

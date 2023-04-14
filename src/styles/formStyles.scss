@@ -23,6 +23,24 @@ label, textarea {
     font-family: $font-stack;
 }
 
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+    
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+    
+::-webkit-scrollbar-thumb {
+  background-color: $secondary-color;
+  border-radius: 20px;
+}
+
+
 .simpleInput {
     background-color: transparent;
     border: 0px;

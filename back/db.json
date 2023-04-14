@@ -676,6 +676,28 @@
       "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "occupation": "Teacher",
       "userabout": "I love Mars and I want to live there because I'd have enough of living on Earth :DD"
+    },
+    {
+      "email": "anna@mars.com",
+      "password": "$2a$10$Vg1tGeP0yuEiaaliyc0LUOKCLvl4Uuoptsg2VHF5hX05xyeVdADee",
+      "username": "anna90",
+      "firstname": "Anna",
+      "lastname": "Busquets",
+      "currentcity": "Badalona",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 10
+    },
+    {
+      "email": "vilma@mars.com",
+      "password": "$2a$10$o6OZmkC/nmqTtCX0gCQPVOV6nAtA4ccXGiAFw8H/key9Ny1f1MIPa",
+      "username": "vilma99",
+      "firstname": "Vilma",
+      "lastname": "Lopez",
+      "currentcity": "Madrid",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 11
     }
   ]
 }

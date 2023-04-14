@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
 import './SingUpComponent.scss';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { doSignUp } from '../../store/users/actions';
 import classnames from 'classnames';
 
 const SingUpComponent = () => {
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -67,9 +68,7 @@ const SingUpComponent = () => {
     validate,
     onSubmit: (values) => {
       alert("welcome!!")
-      dispatch(doSignUp(values)).then(() => {
-        navigate('/profile');
-      });
+      dispatch(doSignUp(values).then(navigate('/profile')))
     },
   });
 

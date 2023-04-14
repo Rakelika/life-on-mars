@@ -7,6 +7,7 @@ import ReactPlayer from 'react-player';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 
 const SingleHouseComponent = () => {
@@ -20,6 +21,16 @@ const SingleHouseComponent = () => {
 
   function sendFavorites(){
     dispatch(addFavorites({house: singleHouse, userId: userID}))
+    showAlert()
+  }
+
+  function showAlert() {
+    Swal.fire({
+      title: 'Done :)',
+      text: 'You can find this house now in your profile',
+      icon: 'success',
+      confirmButtonText: 'Ok'
+    })
   }
 
   const [activeTab, setActiveTab] = useState(0);
@@ -99,7 +110,7 @@ return(
 
     </div>
     <button className='ReserveBtn' 
-      onClick={userID ? sendFavorites : () => navigate("/signup")}>+
+      onClick={userID ? sendFavorites : () =>  navigate("/signup")}>+
     </button>
   </div>
 )

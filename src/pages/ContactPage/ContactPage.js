@@ -43,10 +43,10 @@ export default function ContactPage() {
         validate,
         onSubmit: (values, { resetForm }) => {
             Swal.fire({
-                title: 'Formulario enviado!',
-                text: 'Tu formulario ha sido enviado exitosamente.',
+                title: 'Form submitted!',
+                text: 'Your form has been submitted successfully',
                 icon: 'success',
-                confirmButtonText: 'Aceptar'
+                confirmButtonText: 'Ok'
               });
             console.log(values)
             resetForm();

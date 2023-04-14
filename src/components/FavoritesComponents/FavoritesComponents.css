@@ -49,14 +49,17 @@ p {
   padding: 30px;
   border-radius: 16px;
   background-color: #B26ADC;
-  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
 }
 .FavoritesComponents .cardHouse {
   width: 38.5vw;
   border-radius: 16px;
   margin-bottom: 40px;
   padding-bottom: 10px;
-  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .FavoritesComponents .cardHouse img {
   width: 100%;
@@ -65,13 +68,17 @@ p {
 }
 .FavoritesComponents .cardHouse .cardResume {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 30px;
 }
+.FavoritesComponents .cardHouse .customItems {
+  display: flex;
+}
 .FavoritesComponents .cardHouse .cardButtons {
   display: flex;
-  padding: 0 30px;
+  padding: 0 30px 10px 30px;
+  justify-content: center;
 }
 .FavoritesComponents .cardHouse .customTag {
   max-width: 105px;
@@ -89,4 +96,25 @@ p {
   font-size: 1.2em;
   color: #202124;
   font-weight: 700;
+}
+
+.favCardItem {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+  align-items: center;
+}
+.favCardItem p {
+  margin: 10px 0;
+  color: #B26ADC;
+  font-size: 1em;
+  text-align: left;
+}
+
+.favCardIcon {
+  height: 20px;
+}
+
+.favPadding {
+  padding: 0 30px;
 }/*# sourceMappingURL=FavoritesComponents.css.map */

@@ -1,0 +1,87 @@
+@import '../../styles/globalStyles.scss';
+
+.AboutBanner {
+    width: 100%;
+    height: 470px;
+    background-image: url("../../assets/banner-life-on-mars-3.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-color;
+
+    .AboutTitles {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.17);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.3px);
+      -webkit-backdrop-filter: blur(8.3px);
+      border: 0px solid rgba(255, 255, 255, 0.3);
+      padding: 4em;
+
+      h1 {
+        margin: 0;
+      }
+
+      h2 {
+        margin: 0px;
+        font-weight: $light-weight;
+      }
+    }
+  }
+
+.AboutSection {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0 20px 0;
+
+    h2 {
+        font-weight: $light-weight;
+        margin-bottom: 100px;
+    }
+
+    .TeamCard {
+        width: 300px;
+        margin-bottom: 80px;
+        -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 0px 2em;
+
+        img {
+            width: 100%;
+            border-bottom:2px solid $secondary-color;
+            margin-top: -50px;
+            margin-bottom: 0px;
+        }
+
+        .InfoCardTeam {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 30px;
+
+            h4 {
+                color: $secondary-color;
+                margin:10px 0px
+              }
+
+            p {
+                margin: 0px;
+            }  
+        }
+      }
+}
+
+  

@@ -184,12 +184,12 @@ textarea {
 .swal2-styled.swal2-confirm {
     background-color: $secondary-color !important;
     border-radius: 3px;
-    color: $dark-color;
+    color: $dark-color !important;
     border: 2px solid $secondary-color;
     font-family: $font-stack;
     width: 180px;
     font-weight: $bold-weight;
-    padding: 5px;
+    padding: 8px;
     margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 0.05em;

@@ -10,7 +10,6 @@ const EditUserFormComponent = () => {
 
   const user = useSelector((state) => state.UserReducer)
   const userId = useSelector((state) => state.UserReducer.user.id)
-  const [showEditForm, setShowEditForm] = useState(true)
 
   const navigate = useNavigate()
   const dispatch = useDispatch();
@@ -18,11 +17,15 @@ const EditUserFormComponent = () => {
   const validate = values => {
     const errors = {};
 
-    // if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    //   errors.email = 'Invalid email address';
-    // }
+    if (values.username && values.username.length < 3) {
+      errors.username = 'Must be 3 characters or more'
+    }
+    
+    if (values.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      errors.email = 'Invalid email address';
+    }
 
-    if (!/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
+    if (values.password && !/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
       errors.password = 'Must be at least 5 characters and only contain letters and numbers';
     }
     return errors
@@ -42,7 +45,6 @@ const EditUserFormComponent = () => {
     onSubmit: (values) => {
       if (userId && values) {
         dispatch(editUser(userId, values)).then(()=> {
-          setShowEditForm(!showEditForm)
           navigate('/profile')
           alert("has modificado tu perfil con éxito! :D")
         })
@@ -50,9 +52,6 @@ const EditUserFormComponent = () => {
     }
   })
 
-  if (showEditForm === false) {
-    return ""
-  }
 
   const handleReset = (formik) => {
     formik.resetForm();
@@ -66,7 +65,6 @@ const EditUserFormComponent = () => {
         <form className='EditUserForm' onSubmit={formik.handleSubmit}>
         {/* USERNAME */}
           <fieldset>
-            {/* <label htmlFor="username">Username</label> */}
             <input 
               id="username"
               name="username"
@@ -74,14 +72,14 @@ const EditUserFormComponent = () => {
               placeholder="New Username"
               className='simpleInput'
               value={formik.values.username}
-              onBlur={formik.handleBlur}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('username', user.username);} formik.handleBlur(e);}}
               onChange={formik.handleChange}
             />
+            {formik.touched.username && formik.errors.username ? (<div className='errorMessage'>{formik.errors.username}</div>) : null}
           </fieldset>
           
           {/* EMAIL */}
           <fieldset>
-            {/* <label htmlFor="email">Email</label> */}
             <input
               id="email"
               name="email"
@@ -89,15 +87,14 @@ const EditUserFormComponent = () => {
               placeholder="New Email"
               className='simpleInput'
               onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('email', user.email);} formik.handleBlur(e);}}
               value={formik.values.email}
             />
-            {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
+            {formik.touched.email && formik.errors.email ? (<div className='errorMessage'>{formik.errors.email}</div>) : null}
           </fieldset>
 
           {/* PASSWORD */}
           <fieldset>
-            {/* <label htmlFor="password">Password</label> */}
             <input
               id="password"
               name="password"
@@ -105,15 +102,14 @@ const EditUserFormComponent = () => {
               placeholder="New Password"
               className='simpleInput'
               onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.password}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('password', user.password);} formik.handleBlur(e);}}
+              value={formik.values.password || user.password}
             />
-            {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
+            {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
           </fieldset>
 
           {/* CURRENT CITY */}
           <fieldset>
-            {/* <label htmlFor="currentcity">Current city</label> */}
             <input 
               id="currentcity"
               name="currentcity"
@@ -127,7 +123,6 @@ const EditUserFormComponent = () => {
           
           {/* OCCUPATION */}
           <fieldset>
-            {/* <label htmlFor="occupation">Occupation</label> */}
             <input 
               id="occupation"
               name="occupation"
@@ -141,7 +136,6 @@ const EditUserFormComponent = () => {
 
           {/* AVATAR */}
           <fieldset>
-            {/* <label htmlFor="useravatar">Avatar</label> */}
             <input 
               id="useravatar"
               name="useravatar"
@@ -156,7 +150,6 @@ const EditUserFormComponent = () => {
 
           {/* ABOUT */}
           <fieldset>
-            {/* <label htmlFor="userabout">About me</label> */}
             <textarea 
               id="userabout"
               name="userabout"

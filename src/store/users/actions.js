@@ -43,6 +43,7 @@ export function actionDoLoginFail(error){
     };
 }
 
+
 export function doLogin(loginUserData) {
   return async (dispatch) => {
     dispatch(actionDoLogin(loginUserData));
@@ -55,7 +56,6 @@ export function doLogin(loginUserData) {
       } 
     } catch (error) {
       dispatch(actionDoLoginFail(error.response.data));
-      console.log(error.response.data)
     }
   };
 }

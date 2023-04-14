@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
 import './SingUpComponent.scss';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { doSignUp } from '../../store/users/actions';
+import classnames from 'classnames';
 
 const SingUpComponent = () => {
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -35,18 +37,18 @@ const SingUpComponent = () => {
 
     if (!values.firstname) {
       errors.firstname = 'Required';
-    } else if (values.firstname.length > 15) {
-      errors.firstname = 'Must be 15 characters or less';
+    } else if (values.firstname.length < 2) {
+      errors.firstname = 'Must be 2 characters or more';
     }
   
     if (!values.lastname) {
       errors.lastname = 'Required';
-    } else if (values.lastname.length > 20) {
-      errors.lastname = 'Must be 20 characters or less';
+    } else if (values.lastname.length < 2) {
+      errors.lastname = 'Must be 2 characters or more';
     }
 
-    if (isNaN(birthYear) || birthYear < 1900 || birthYear > currentYear) {
-      errors.birthyear = 'Are you sure about this? Insert a valid year';
+    if (isNaN(birthYear) || birthYear < 1920 || birthYear > currentYear) {
+      errors.birthyear = 'Insert a valid year';
     } else if (age < 18) {
       errors.birthyear = 'You must be at least 18 years old to register';
     }
@@ -66,9 +68,7 @@ const SingUpComponent = () => {
     validate,
     onSubmit: (values) => {
       alert("welcome!!")
-      dispatch(doSignUp(values)).then(() => {
-        navigate('/profile');
-      });
+      dispatch(doSignUp(values).then(navigate('/profile')))
     },
   });
 
@@ -78,13 +78,12 @@ const SingUpComponent = () => {
 
        {/* USERNAME */}
        <fieldset>
-       {/* <label htmlFor="username">Username</label> */}
         <input
           id="username"
           name="username"
           type="text"
           placeholder='Username *'
-          className='simpleInput'
+          className={classnames('simpleInput', {'errorInput': formik.touched.username && formik.errors.username})}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.username}
@@ -94,29 +93,27 @@ const SingUpComponent = () => {
 
       {/* EMAIL */}
       <fieldset>
-      {/* <label htmlFor="email">Email Address</label> */}
        <input
          id="email"
          name="email"
          type="email"
          placeholder='Email *'
-         className='simpleInput'
+         className={classnames('simpleInput', {'errorInput': formik.touched.email && formik.errors.email})}
          onChange={formik.handleChange}
          onBlur={formik.handleBlur}
          value={formik.values.email}
        />
-       {formik.touched.email && formik.errors.email ? <div className='errorMessage'>{formik.errors.email}</div> : null}
+       {formik.touched.email && formik.errors.email ? (<div className='errorMessage'>{formik.errors.email}</div>) : null}
       </fieldset>
 
       {/* PASSWORD */}
       <fieldset>
-        {/* <label htmlFor="password">Password</label> */}
         <input
           id="password"
           name="password"
           type="password"
           placeholder='Password *'
-          className='simpleInput'
+          className={classnames('simpleInput', {'errorInput': formik.touched.password && formik.errors.password})}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.password}
@@ -124,30 +121,31 @@ const SingUpComponent = () => {
         {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
       </fieldset>
 
+      <div className='twoColumns'>
+
        {/* FIRST NAME */}
-       <fieldset className='TwoColumnsFieldset'>
-        {/* <label htmlFor="firstname">First name</label> */}
+       <fieldset>
           <input
             id="firstname"
             name="firstname"
             type="text"
             placeholder='First name *'
-            className='simpleInput simpleHalfWidthInput'
+            className={classnames('simpleInput', {'errorInput': formik.touched.firstname && formik.errors.firstname})}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.firstname}
           />
           {formik.touched.firstname && formik.errors.firstname ? (<div className='errorMessage'>{formik.errors.firstname}</div>) : null}
-
+      </fieldset>
         
        {/* LAST NAME */}
-        {/* <label htmlFor="lastname">Last name</label> */}
+       <fieldset>
           <input
             id="lastname"
             name="lastname"
             type="text"
             placeholder='Last name *'
-            className='simpleInput simpleHalfWidthInput'
+            className={classnames('simpleInput', {'errorInput': formik.touched.lastname && formik.errors.lastname})}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.lastname}
@@ -155,34 +153,39 @@ const SingUpComponent = () => {
           {formik.touched.lastname && formik.errors.lastname ? (<div className='errorMessage'>{formik.errors.lastname}</div>) : null}
       </fieldset>
 
+      </div>
+      <div className='twoColumns'>
+
       {/*BIRTHYEAR*/}
-      <fieldset className='TwoColumnsFieldset'>
-          {/* <label>Birthyear:</label> */}
+      <fieldset>
+          <div>
           <input 
             id= 'birthyear'
             type='number'
             name='birthyear'
             placeholder='Birth year *'
-            className='simpleInput simpleHalfWidthInput'
+            className={classnames('simpleInput', {'errorInput': formik.touched.birthyear && formik.errors.birthyear})}
             value={formik.values.birthyear}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           />
           {formik.touched.birthyear && formik.errors.birthyear ? (<div className='errorMessage'>{formik.errors.birthyear}</div>) : null}
-
+          </div>
+          </fieldset>
       {/* CURRENT CITY */}
-        {/* <label htmlFor="currentcity">Current city</label> */}
+      <fieldset>
           <input
             id="currentcity"
             name="currentcity"
             type="text"
             placeholder='Current city'
-            className='simpleInput simpleHalfWidthInput'
+            className='simpleInput'
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.currentcity}
           />
       </fieldset>
+      </div>
       {/* ACCEPT PRIVACY POLICY */}
       <fieldset>
           <label htmlFor="acceptPrivacyPolicy">
@@ -194,11 +197,12 @@ const SingUpComponent = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.acceptPrivacyPolicy}
+              required
           />
           I have read and accept the <Link to="/privacy-policy">privacy policy</Link>.
           </label>
           </fieldset>
-      <button type="submit" className='primary-btn' disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
+      <button type="submit" className={`${!(formik.isValid && formik.dirty && formik.values.acceptPrivacyPolicy) ? 'primary-btn disabled-btn' : 'primary-btn'}`} disabled={!(formik.isValid && formik.dirty)}>Sign Up</button>
     </form>
     </div>
   )}

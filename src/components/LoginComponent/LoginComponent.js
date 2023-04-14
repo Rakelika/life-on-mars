@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './LoginComponent.scss';
 import { Link, Navigate, useFormAction, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,10 +6,22 @@ import { Formik, Form, useFormik } from 'formik';
 import { doLogin } from '../../store/users/actions';
 
 const LoginComponent = () => {
-  const { loadingUser } = useSelector((state) => state.UserReducer);
-  // const error = useSelector((state) => state.UserReducer.error.message)
+  const { loadingUser, error, userAuth } = useSelector((state) => state.UserReducer);
+  const [loginError, setLoginError] = useState('')
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (error) {
+      setLoginError(error.message);
+    }
+  }, [error]);
+
+  useEffect(() => {
+    if (userAuth) {
+      navigate('/profile');
+    }
+  }, [userAuth]);
 
   const validate = values => {
     const errors = {};
@@ -34,9 +46,14 @@ const LoginComponent = () => {
     initialValues: {
       email: '',
       password: '',
-    }, validate,
-    onSubmit: (values) => {
-      dispatch(doLogin(values)).then(() => navigate('/profile'));
+    },
+    validate,
+    onSubmit: async (values) => {
+      try {
+        dispatch(doLogin(values));
+      } catch (error) {
+        setLoginError(error.message);
+      }
     },
   });
 
@@ -50,7 +67,6 @@ const LoginComponent = () => {
     <div className="LoginComponent">
           <form className='LoginForm' onSubmit={formik.handleSubmit}>
             <fieldset>
-              {/* <label htmlFor="email">Email:</label> */}
               <input
                 id="email"
                 name="email"
@@ -58,13 +74,13 @@ const LoginComponent = () => {
                 placeholder="Email"
                 className='simpleInput'
                 onChange={formik.handleChange}
+                onFocus={() => setLoginError('')}
                 onBlur={formik.handleBlur}
                 value={formik.values.email}
               />
               {formik.touched.email && formik.errors.email ? <div className='errorMessage'>{formik.errors.email}</div> : null}
             </fieldset>
             <fieldset>
-              {/* <label htmlFor="password">Password:</label> */}
               <input
                 id="password"
                 name="password"
@@ -72,13 +88,14 @@ const LoginComponent = () => {
                 placeholder="Password"
                 className='simpleInput'
                 onChange={formik.handleChange}
+                onFocus={() => setLoginError('')}
                 onBlur={formik.handleBlur}
                 value={formik.values.password}
               />
               {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
             </fieldset>
-            <button type="submit"  className='primary-btn' disabled={!(formik.isValid && formik.dirty)}>Login</button>
-            {/* {error ? <div>{error}</div> : ""} */}
+            {loginError && <div className='errorMessage'>{loginError}</div>}
+            <button type="submit" className={`${!(formik.isValid && formik.dirty) ? 'primary-btn disabled-btn' : 'primary-btn'}`} disabled={!(formik.isValid && formik.dirty)}>Login</button>
           </form>
     </div>
   );

@@ -56,8 +56,8 @@ export default function ProfilePage() {
                 </div>
                 <div className="ProfileInfo">
                   <h3>{user.firstname} {user.lastname}</h3>
-                  <p><span>Occupation: </span>{user.occupation}</p>
                   <p><span>Current city: </span>{user.currentcity}</p>
+                  <p><span>Occupation: </span>{user.occupation}</p>
                   <p><span>About me: </span>{user.userabout}</p>
                 </div>
           </div>

@@ -458,44 +458,40 @@
     },
     {
       "house": {
-        "id": 5,
-        "name": "Mars Incubator",
-        "architects": "La Nasa",
-        "image": "/assets/houses/mars-incubator.webp",
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
         "gallery": [
-          "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
-          "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
-          "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+          "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
         ],
         "material": [
-          "plástico de regolito",
-          "fibra de basalto"
+          "impresión 3D",
+          "elementos geológicos",
+          "bioplástico renovable"
         ],
         "information": [
           {
-            "info": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer began work on the design of a UFO-shaped dwelling housed in a Martian crater."
+            "info": "The Zopherus home is an incredible feat of engineering that is inspired by terrestrial biologies such as honeycombs and spider webs. The design is both innovative and practical, with a focus on creating a livable space on Mars that is both sustainable and functional. The use of 3D printing technology and autonomous robots allows for the construction of the structure using materials gathered from the Martian environment, making the project more self-sufficient."
           },
           {
-            "info": "Imagination knows no bounds and is capable of placing buildings in natural formations that you would never have imagined."
+            "info": "One of the most impressive features of the Zopherus home is its ability to land in the right place and deploy autonomous robots to collect and gather useful materials. This is a significant step towards creating a self-sustaining and autonomous human settlement on Mars. The robots are equipped with advanced sensors and tools that allow them to identify and gather the right materials needed for construction."
           },
           {
-            "info": "Amey, through his Instagram account, has been sharing the progress of Elon Musk's idea, to take civilisation to Mars."
-          },
-          {
-            "info": "This work is quite extravagant for what we are used to seeing as real constructions; nevertheless it is interesting to learn about his concept and, of course, to see beyond what we already know."
-          },
-          {
-            "info": "'In real life, I have designed many architectural projects for the companies I have worked for in the past, but for some reason none of those projects became reality', says the architect. So Musk took a chance and trusted him."
-          },
-          {
-            "info": "According to Amey, he loves to create and bring different elements together to explore the relationship that emerges from them. In this project he wanted to bring together a meteorite crater and a spacecraft-like object, such as a UFO. both are located in space, but they are two different things."
+            "info": "The Zopherus home is designed with practicality in mind, including storage cubicles and facilities that prevent air leakage. These features are crucial for survival on Mars, where resources are limited and the environment is hostile. The structure is designed to be both comfortable and functional, providing a livable space for humans that is both safe and sustainable. As we look towards the future of space exploration, projects like Zopherus offer a glimpse into the possibilities of human settlement on other planets."
           }
         ],
-        "title": "Indian architect's boundless creativity for a UFO-shaped home",
-        "video": "https://www.youtube.com/embed/ZtdDzaQbzUk",
-        "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
+        "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
+        "video": "https://youtu.be/r79vdlDsjrM",
+        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage.",
+        "rooms": 4
       },
-      "userId": 8,
+      "userId": 11,
       "id": 13
     }
   ],
@@ -589,17 +585,40 @@
       "id": 7
     },
     {
-      "email": "asteroide@mars.com",
-      "password": "$2a$10$5mc0uA.QI3.1rell7fcraewoys.MYfo0TkJCSsbMw7kUeaajUYhAa",
-      "username": "asteroide",
-      "firstname": "Beatriz",
-      "lastname": "Muñoz",
-      "currentcity": "Barcelona",
-      "birthyear": 1990,
-      "id": 8,
-      "occupation": "Singer",
+      "email": "satelite98@mars.com",
+      "password": "$2a$10$ockzAOHUrjGAupxdo3Lwbu1xeTcmLqYexuCggyn7SQjcs4T0W4lO6",
+      "username": "satelite :)",
+      "firstname": "Alba",
+      "lastname": "Sánchez",
+      "currentcity": "Granada",
+      "birthyear": 1998,
+      "acceptPrivacyPolicy": true,
+      "id": 9,
       "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-      "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
+      "occupation": "Teacher",
+      "userabout": "I love Mars and I want to live there because I'd have enough of living on Earth :DD"
+    },
+    {
+      "email": "anna@mars.com",
+      "password": "$2a$10$Vg1tGeP0yuEiaaliyc0LUOKCLvl4Uuoptsg2VHF5hX05xyeVdADee",
+      "username": "anna90",
+      "firstname": "Anna",
+      "lastname": "Busquets",
+      "currentcity": "Badalona",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 10
+    },
+    {
+      "email": "vilma@mars.com",
+      "password": "$2a$10$o6OZmkC/nmqTtCX0gCQPVOV6nAtA4ccXGiAFw8H/key9Ny1f1MIPa",
+      "username": "vilma99",
+      "firstname": "Vilma",
+      "lastname": "Lopez",
+      "currentcity": "Madrid",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 11
     }
   ]
 }

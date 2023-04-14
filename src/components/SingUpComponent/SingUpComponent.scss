@@ -3,9 +3,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 350px;
+
+    button {
+        margin: 10px auto;
+    }
 }
 
-.TwoColumnsFieldset {
+.twoColumns {
     display: flex;
     justify-content: space-between;
 }

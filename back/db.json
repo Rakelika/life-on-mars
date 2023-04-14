@@ -629,6 +629,17 @@
       "occupation": "Singer",
       "useravatar": "https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. "
+    },
+    {
+      "email": "satelite@mars.com",
+      "password": "$2a$10$MnXGdBbwlQv.KVCB.udAqOFq7gW4Lrtyiguwk.DfTuWHR8AqGUngW",
+      "username": "satelite98",
+      "firstname": "Alba",
+      "lastname": "Sánchez",
+      "currentcity": "Madrid",
+      "birthyear": 1998,
+      "acceptPrivacyPolicy": true,
+      "id": 9
     }
   ]
 }

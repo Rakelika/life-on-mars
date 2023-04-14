@@ -43,6 +43,10 @@ label, textarea {
     }
 }
 
+.formRow {
+    display: block;
+}
+
 .simpleHalfWidthInput {
     width: 48%;
 }
@@ -51,18 +55,53 @@ label, textarea {
     width: 70%;
 }
 
-.errorMessage {
-    color: $error-color;
-    font-size: $small-size;
-    & .simpleInput {
-        border-bottom: 1px solid $error-color;
-    }
-}
 
 .FormButtonsRow {
     display: flex;
     gap: 20px;
 }
+
+// Errores
+
+.errorInput {
+    border-bottom: 1px solid $error-color;
+}
+
+.errorMessage {
+    color: $error-color;
+    font-size: $small-size;
+    display: block;
+}
+
+// Accept checkbox:
+
+.acceptCheckbox {
+    appearance: none;
+    margin: 10px 10px 10px 0;
+    border: 1px solid $light-color;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .acceptCheckbox:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: $secondary-color;
+    border-radius: 1px;
+  }
+
+
 
 // Range input
 .rangeInput {
@@ -99,4 +138,5 @@ label, textarea {
     background-color: $secondary-color;
   }
   
+
   

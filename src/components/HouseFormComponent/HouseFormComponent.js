@@ -6,6 +6,7 @@ import { editFavHouse, getSingleFavorite } from '../../store/houses/actions';
 import { useFormik } from 'formik';
 import { Navigate, useNavigate } from 'react-router-dom';
 import CustomHousePreviewComponent from '../CustomHousePreviewComponent/CustomHousePreviewComponent'
+import Swal from 'sweetalert2';
 
 const HouseFormComponent = () => {
 
@@ -32,7 +33,12 @@ const HouseFormComponent = () => {
         }
         dispatch(editFavHouse(singleFavorite.id, {house:updatedHouse})).then(()=> {
           navigate('/profile')
-          alert("has modificado tu casa con éxito! :D")
+          Swal.fire({
+            title: 'House updated',
+            text: 'Your house has been customized',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+          });
         })
       }
     }

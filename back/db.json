@@ -422,6 +422,46 @@
         "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
       },
       "id": 12
+    },
+    {
+      "house": {
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
+        "gallery": [
+          "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
+        ],
+        "material": [
+          "impresión 3D",
+          "elementos geológicos",
+          "bioplástico renovable"
+        ],
+        "information": [
+          {
+            "info": "The Zopherus home is an incredible feat of engineering that is inspired by terrestrial biologies such as honeycombs and spider webs. The design is both innovative and practical, with a focus on creating a livable space on Mars that is both sustainable and functional. The use of 3D printing technology and autonomous robots allows for the construction of the structure using materials gathered from the Martian environment, making the project more self-sufficient."
+          },
+          {
+            "info": "One of the most impressive features of the Zopherus home is its ability to land in the right place and deploy autonomous robots to collect and gather useful materials. This is a significant step towards creating a self-sustaining and autonomous human settlement on Mars. The robots are equipped with advanced sensors and tools that allow them to identify and gather the right materials needed for construction."
+          },
+          {
+            "info": "The Zopherus home is designed with practicality in mind, including storage cubicles and facilities that prevent air leakage. These features are crucial for survival on Mars, where resources are limited and the environment is hostile. The structure is designed to be both comfortable and functional, providing a livable space for humans that is both safe and sustainable. As we look towards the future of space exploration, projects like Zopherus offer a glimpse into the possibilities of human settlement on other planets."
+          }
+        ],
+        "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
+        "video": "https://youtu.be/r79vdlDsjrM",
+        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage.",
+        "rooms": 8,
+        "bathrooms": 2,
+        "garden": "Yes"
+      },
+      "userId": 10,
+      "id": 13
     }
   ],
   "users": [
@@ -530,13 +570,14 @@
     {
       "email": "anna@mars.com",
       "password": "$2a$10$Vg1tGeP0yuEiaaliyc0LUOKCLvl4Uuoptsg2VHF5hX05xyeVdADee",
-      "username": "anna90",
+      "username": "lolololo",
       "firstname": "Anna",
       "lastname": "Busquets",
       "currentcity": "Badalona",
       "birthyear": 1990,
       "acceptPrivacyPolicy": true,
-      "id": 10
+      "id": 10,
+      "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
   ]
 }

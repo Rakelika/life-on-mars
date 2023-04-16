@@ -67,8 +67,10 @@ const SingUpComponent = () => {
     },
     validate,
     onSubmit: (values) => {
-      alert("welcome!!")
-      dispatch(doSignUp(values).then(navigate('/profile')))
+      dispatch(doSignUp(values)).then(() => {
+        alert("welcome!!")
+        navigate('/profile');
+      });
     },
   });
 

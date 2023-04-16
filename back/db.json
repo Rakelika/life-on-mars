@@ -463,42 +463,41 @@
     },
     {
       "house": {
-        "id": 3,
-        "name": "Marsha",
-        "architects": "AI SpaceFactory",
-        "image": "/assets/houses/marsha.webp",
+        "id": 4,
+        "name": "Ice House",
+        "architects": "SEArch y Clouds AO",
+        "image": "/assets/houses/ice-house.webp",
         "gallery": [
-          "/assets/houses/marsha-gallery/marsha-gallery-1.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-2.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-3.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-4.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-5.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-6.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-7.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-8.jpg",
-          "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
+          "/assets/houses/ice-house-gallery/ice-house-gallery-1.jpg",
+          "/assets/houses/ice-house-gallery/ice-house-gallery-2.jpg",
+          "/assets/houses/ice-house-gallery/ice-house-gallery-3.jpg",
+          "/assets/houses/ice-house-gallery/ice-house-gallery-4.jpg",
+          "/assets/houses/ice-house-gallery/ice-house-gallery-5.jpg",
+          "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
         ],
         "material": [
-          "impresión 3D",
-          "fibra de basalto",
-          "bioplástico renovable"
+          "hielo",
+          "elementos geológicos"
         ],
         "information": [
           {
-            "info": "The Marsha Project by AI SpaceFactory is a groundbreaking proposal for a 3D printed house optimized for construction on Mars. This innovative project represents a significant step forward in our efforts to establish a permanent human settlement on the red planet. The project is designed to leverage the latest technologies and materials to create a sustainable and self-sufficient habitat that can withstand the harsh Martian environment."
+            "info": "SEArch and Clouds AO, two innovative architectural firms, have developed a groundbreaking design for a 'house made of ice' that could revolutionize the way we build intergalactic habitats. Their design is based on the use of surface ice, which is abundant on Mars and could provide an ideal building material for human habitats on the red planet. The ice would serve as a natural shield against radiation, protecting the inhabitants of the house from the harmful effects of space radiation."
           },
           {
-            "info": "One of the key features of the Marsha Project is the use of a composite of basalt fiber and renewable bioplastic. This material can be sourced from rocks and plants that can be grown on Mars, making the project more self-sustaining and less reliant on external resources. The composite is lightweight, durable, and highly resistant to radiation, making it ideal for use in the construction of a Martian habitat."
+            "info": "The 'ice house' design by SEArch and Clouds AO features a vertical ice shell that encases the living quarters of the house. The ice is reinforced with a structural frame made of lightweight materials, creating a strong and durable structure that can withstand the harsh Martian environment. The interior of the house is designed to provide a comfortable and livable environment for its inhabitants, with features such as living spaces, sleeping quarters, and storage areas."
           },
           {
-            "info": "The Marsha Project is the result of extensive research and development by AI SpaceFactory, a company at the forefront of innovation in space technology. The project represents a significant collaboration with NASA and other key players in the space industry. As we continue to explore the possibilities of human settlement on Mars, projects like the Marsha Project offer a glimpse into the future of space exploration and the potential for sustainable, self-sufficient human habitats beyond Earth."
+            "info": "The use of ice as a building material for intergalactic habitats is a groundbreaking concept that could transform the way we think about space exploration and human settlement beyond Earth. By leveraging the abundant resources of other planets, we can create sustainable and self-sufficient habitats that can support human life in space. The 'ice house' design by SEArch and Clouds AO represents a significant step forward in this effort, demonstrating the potential for innovative and sustainable solutions to the challenges of building homes in space."
           }
         ],
-        "title": "The innovative 3D-printed house to inhabit Mars with local materials",
-        "video": "https://youtu.be/XnrVV0w2jrE",
-        "description": "AI SpaceFactory's The Marsha Project is NASA's proposal for a 3D printed house optimised for construction on Mars.  The company has researched and developed a composite of basalt fibre (which can be extracted from rocks on Mars) and a renewable bioplastic that can be sourced from plants that can be grown on the red planet."
+        "title": " The Innovative Design for a Mars Habitat by SEArch and Clouds AO",
+        "video": "https://vimeo.com/142099027",
+        "description": "One of the most suitable building materials for intergalactic dwellings is ice, and it was on this material that SEArch and Clouds AO based the design of this 'ice house'. Surface ice is abundant on Mars, and this house with a vertical ice shell would be able to protect its inhabitants from radiation.",
+        "rooms": 4,
+        "bathrooms": 1,
+        "garden": "Yes"
       },
-      "userId": 6,
+      "userId": 11,
       "id": 14
     }
   ],
@@ -625,7 +624,8 @@
       "currentcity": "Madrid",
       "birthyear": 1990,
       "acceptPrivacyPolicy": true,
-      "id": 11
+      "id": 11,
+      "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
   ]
 }

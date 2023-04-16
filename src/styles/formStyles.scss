@@ -157,7 +157,7 @@ textarea {
   }
   
   //ALERTS
-  .swal2-title{
+  .swal2-title, .swal2-styled.swal2-cancel{
     font-family: $font-stack !important;
   }
 
@@ -196,4 +196,18 @@ textarea {
     &:hover {
         cursor:pointer;
     }  
+}
+
+.swal2-styled.swal2-cancel {
+  border-radius: 3px;
+    padding: 8px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    &:hover {
+        cursor:pointer;
+    }  
+}
+
+.swal2-footer a {
+  font-family: $font-stack;
 }

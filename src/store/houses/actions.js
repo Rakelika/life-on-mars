@@ -162,7 +162,6 @@ export function getFavorites(userId) {
       try {
         const res = await axios.get(`http://localhost:3000/favorites/?userId=${userId}`);
         dispatch(actionGetFavoritesOk(res.data))
-        console.log(res.data)
       } catch (error) {
         dispatch(actionGetFavoritesFail(error))
       }
@@ -197,7 +196,6 @@ export function getSingleFavorite(houseId){
         try {
             const response = await axios.get(`http://localhost:3000/favorites/${houseId}`)
             dispatch(actionGeSingleFavoriteOk(response.data))
-            console.log(response.data)
         } catch(error){
             dispatch(actionGeSingleFavoriteFail(error))
         }

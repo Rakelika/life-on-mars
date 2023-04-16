@@ -422,83 +422,6 @@
         "description": "Modelo que presenta un diseño de cuatro módulos esféricos conectados por uno de mayor tamaño situado en el centro. Cada uno de los módulos está conectado por puentes que permiten moverse a la tripulación entre los diferentes módulos sin salir de la estructura. Resistente a la radiación, sus soportes están hechos de plástico de regolito y polietileno con fibra de basalto."
       },
       "id": 12
-    },
-    {
-      "house": {
-        "id": 2,
-        "name": "Zopherus",
-        "architects": "Zopherus of Rogers",
-        "image": "/assets/houses/zopherus.webp",
-        "gallery": [
-          "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
-          "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
-        ],
-        "material": [
-          "impresión 3D",
-          "elementos geológicos",
-          "bioplástico renovable"
-        ],
-        "information": [
-          {
-            "info": "The Zopherus home is an incredible feat of engineering that is inspired by terrestrial biologies such as honeycombs and spider webs. The design is both innovative and practical, with a focus on creating a livable space on Mars that is both sustainable and functional. The use of 3D printing technology and autonomous robots allows for the construction of the structure using materials gathered from the Martian environment, making the project more self-sufficient."
-          },
-          {
-            "info": "One of the most impressive features of the Zopherus home is its ability to land in the right place and deploy autonomous robots to collect and gather useful materials. This is a significant step towards creating a self-sustaining and autonomous human settlement on Mars. The robots are equipped with advanced sensors and tools that allow them to identify and gather the right materials needed for construction."
-          },
-          {
-            "info": "The Zopherus home is designed with practicality in mind, including storage cubicles and facilities that prevent air leakage. These features are crucial for survival on Mars, where resources are limited and the environment is hostile. The structure is designed to be both comfortable and functional, providing a livable space for humans that is both safe and sustainable. As we look towards the future of space exploration, projects like Zopherus offer a glimpse into the possibilities of human settlement on other planets."
-          }
-        ],
-        "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
-        "video": "https://youtu.be/r79vdlDsjrM",
-        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage.",
-        "rooms": 4
-      },
-      "userId": 11,
-      "id": 13
-    },
-    {
-      "house": {
-        "id": 4,
-        "name": "Ice House",
-        "architects": "SEArch y Clouds AO",
-        "image": "/assets/houses/ice-house.webp",
-        "gallery": [
-          "/assets/houses/ice-house-gallery/ice-house-gallery-1.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-2.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-3.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-4.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-5.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
-        ],
-        "material": [
-          "hielo",
-          "elementos geológicos"
-        ],
-        "information": [
-          {
-            "info": "SEArch and Clouds AO, two innovative architectural firms, have developed a groundbreaking design for a 'house made of ice' that could revolutionize the way we build intergalactic habitats. Their design is based on the use of surface ice, which is abundant on Mars and could provide an ideal building material for human habitats on the red planet. The ice would serve as a natural shield against radiation, protecting the inhabitants of the house from the harmful effects of space radiation."
-          },
-          {
-            "info": "The 'ice house' design by SEArch and Clouds AO features a vertical ice shell that encases the living quarters of the house. The ice is reinforced with a structural frame made of lightweight materials, creating a strong and durable structure that can withstand the harsh Martian environment. The interior of the house is designed to provide a comfortable and livable environment for its inhabitants, with features such as living spaces, sleeping quarters, and storage areas."
-          },
-          {
-            "info": "The use of ice as a building material for intergalactic habitats is a groundbreaking concept that could transform the way we think about space exploration and human settlement beyond Earth. By leveraging the abundant resources of other planets, we can create sustainable and self-sufficient habitats that can support human life in space. The 'ice house' design by SEArch and Clouds AO represents a significant step forward in this effort, demonstrating the potential for innovative and sustainable solutions to the challenges of building homes in space."
-          }
-        ],
-        "title": " The Innovative Design for a Mars Habitat by SEArch and Clouds AO",
-        "video": "https://vimeo.com/142099027",
-        "description": "One of the most suitable building materials for intergalactic dwellings is ice, and it was on this material that SEArch and Clouds AO based the design of this 'ice house'. Surface ice is abundant on Mars, and this house with a vertical ice shell would be able to protect its inhabitants from radiation.",
-        "rooms": 4,
-        "bathrooms": 1,
-        "garden": "Yes"
-      },
-      "userId": 11,
-      "id": 14
     }
   ],
   "users": [
@@ -614,18 +537,6 @@
       "birthyear": 1990,
       "acceptPrivacyPolicy": true,
       "id": 10
-    },
-    {
-      "email": "vilma@mars.com",
-      "password": "$2a$10$o6OZmkC/nmqTtCX0gCQPVOV6nAtA4ccXGiAFw8H/key9Ny1f1MIPa",
-      "username": "vilma99",
-      "firstname": "Vilma",
-      "lastname": "Lopez",
-      "currentcity": "Madrid",
-      "birthyear": 1990,
-      "acceptPrivacyPolicy": true,
-      "id": 11,
-      "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
   ]
 }

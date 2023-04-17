@@ -96,3 +96,32 @@
 .favPadding {
     padding: 0 30px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .FavoritesComponents {
+        justify-content: center;
+        margin: 40px 0 0 0;
+
+        .cardHouse {
+            width: 95%;
+
+            .cardButtons {
+                justify-content: space-between;
+            }
+
+            .cardResume{
+                flex-direction: column;
+                justify-content: left;
+            }
+        }
+
+        .noHouses {
+            text-align: center;
+            width: 80%;
+        }
+
+    }
+
+    
+}

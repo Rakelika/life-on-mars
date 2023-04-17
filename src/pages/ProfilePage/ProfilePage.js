@@ -4,6 +4,8 @@ import { deleteUser, doLogout } from "../../store/users/actions";
 import FavoritesComponents from "../../components/FavoritesComponents/FavoritesComponents";
 import NasaPictureDayComponent from "../../components/NasaPictureDayComponent/NasaPictureDayComponent";
 import "./profilePageStyles.scss"
+import noavatar from "../../assets/no-avatar.svg"
+import Swal from 'sweetalert2';
 
 export default function ProfilePage() {
 
@@ -20,14 +22,21 @@ export default function ProfilePage() {
     }
 
     function deleteAccount() {
-      const confirmDelete = window.confirm('Wait... are you sure you want to delete your account?');
-      if (confirmDelete) {
-        dispatch(deleteUser(user.id)).then(()=> {
-          dispatch(doLogout())
-          navigate('/')
-          alert("Oh no :( Your account has been deleted")
-        });
-      }
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Delete my account',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          dispatch(deleteUser(user.id)).then(()=> {
+            dispatch(doLogout())
+            Swal.fire('Your account has been deleted', '', 'success')
+            navigate('/')
+          });
+        }
+      })
     }
 
     if (loadingUser) {
@@ -41,7 +50,7 @@ export default function ProfilePage() {
             <div className="ProfilePageUserInfoContainer">
             <header className="ProfilePageUserHeader">
               <div className="userAvatarContainer">
-              {user.useravatar ? <img src={user.useravatar} alt={user.name} className="userAvatarImage"></img> : <img src="https://e7.pngegg.com/pngimages/84/165/png-clipart-united-states-avatar-organization-information-user-avatar-service-computer-wallpaper.png" alt={user.name} width={300}></img>}
+              {user.useravatar ? <img src={user.useravatar} alt={user.name} className="userAvatarImage"></img> : <img src={noavatar} alt={user.name} className="userNoAvatarImage"></img>}
               </div>
             </header>
             <div className="ProfileRow">

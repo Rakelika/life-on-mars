@@ -11,7 +11,7 @@
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
       ],
       "material": [
-        "Geological elements"
+        "elementos geológicos"
       ],
       "information": [
         {
@@ -42,9 +42,9 @@
         "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
       ],
       "material": [
-        "3D printing",
-        "Geological elements",
-        "Renewable bioplastic"
+        "impresión 3D",
+        "elementos geológicos",
+        "bioplástico renovable"
       ],
       "information": [
         {
@@ -78,9 +78,9 @@
         "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
       ],
       "material": [
-        "3D printing",
-        "Basalt fibre",
-        "Renewable bioplastic"
+        "impresión 3D",
+        "fibra de basalto",
+        "bioplástico renovable"
       ],
       "information": [
         {
@@ -111,8 +111,8 @@
         "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
       ],
       "material": [
-        "Ice",
-        "Geological elements"
+        "hielo",
+        "elementos geológicos"
       ],
       "information": [
         {
@@ -143,9 +143,8 @@
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
       ],
       "material": [
-        "Regolith plastic",
-        "Basalt fibre",
-        "3D printing"
+        "plástico de regolito",
+        "fibra de basalto"
       ],
       "information": [
         {
@@ -176,8 +175,7 @@
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-6.jpg"
       ],
       "material": [
-        "3D printing",
-        "Regolith plastic"
+        "impresión 3D"
       ],
       "information": [
         {
@@ -205,8 +203,8 @@
         "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"
       ],
       "material": [
-        "3D printing",
-        "Iron oxide"
+        "impresión 3D",
+        "óxido de hierro"
       ],
       "information": [
         {
@@ -240,8 +238,7 @@
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-9.jpg"
       ],
       "material": [
-        "Renewable bioplastic",
-        "3D printing"
+        "bioplástico renovable"
       ],
       "information": [
         {
@@ -272,9 +269,8 @@
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-6.jpg"
       ],
       "material": [
-        "Ice",
-        "Geological elements",
-        "Inflatable structure"
+        "hielo",
+        "estructura inflable"
       ],
       "information": [
         {
@@ -305,8 +301,7 @@
         "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"
       ],
       "material": [
-        "3D printing",
-        "Basalt fibre"
+        "impresión 3D"
       ],
       "information": [
         {
@@ -334,9 +329,8 @@
         "/assets/houses/archab-gallery/archab-gallery-3.jpg"
       ],
       "material": [
-        "Iron oxide",
-        "3D printing",
-        "Regolith plastic"
+        "óxido de hierro",
+        "impresión 3D"
       ],
       "information": [
         {
@@ -367,9 +361,8 @@
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"
       ],
       "material": [
-        "Basalt fibre",
-        "Renewable bioplastic",
-        "3D printing"
+        "fibra de basalto",
+        "bioplástico renovable"
       ],
       "information": [
         {
@@ -463,48 +456,48 @@
         "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
         "video": "https://youtu.be/r79vdlDsjrM",
         "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage.",
-        "rooms": 4
+        "rooms": 8,
+        "bathrooms": 2,
+        "garden": "Yes"
       },
-      "userId": 11,
+      "userId": 10,
       "id": 13
     },
     {
       "house": {
-        "id": 4,
-        "name": "Ice House",
-        "architects": "SEArch y Clouds AO",
-        "image": "/assets/houses/ice-house.webp",
+        "id": 2,
+        "name": "Zopherus",
+        "architects": "Zopherus of Rogers",
+        "image": "/assets/houses/zopherus.webp",
         "gallery": [
-          "/assets/houses/ice-house-gallery/ice-house-gallery-1.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-2.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-3.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-4.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-5.jpg",
-          "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
+          "/assets/houses/zopherus-gallery/zopherus-gallery-1.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-2.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-3.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-4.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-5.jpg",
+          "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
         ],
         "material": [
-          "hielo",
-          "elementos geológicos"
+          "impresión 3D",
+          "elementos geológicos",
+          "bioplástico renovable"
         ],
         "information": [
           {
-            "info": "SEArch and Clouds AO, two innovative architectural firms, have developed a groundbreaking design for a 'house made of ice' that could revolutionize the way we build intergalactic habitats. Their design is based on the use of surface ice, which is abundant on Mars and could provide an ideal building material for human habitats on the red planet. The ice would serve as a natural shield against radiation, protecting the inhabitants of the house from the harmful effects of space radiation."
+            "info": "The Zopherus home is an incredible feat of engineering that is inspired by terrestrial biologies such as honeycombs and spider webs. The design is both innovative and practical, with a focus on creating a livable space on Mars that is both sustainable and functional. The use of 3D printing technology and autonomous robots allows for the construction of the structure using materials gathered from the Martian environment, making the project more self-sufficient."
           },
           {
-            "info": "The 'ice house' design by SEArch and Clouds AO features a vertical ice shell that encases the living quarters of the house. The ice is reinforced with a structural frame made of lightweight materials, creating a strong and durable structure that can withstand the harsh Martian environment. The interior of the house is designed to provide a comfortable and livable environment for its inhabitants, with features such as living spaces, sleeping quarters, and storage areas."
+            "info": "One of the most impressive features of the Zopherus home is its ability to land in the right place and deploy autonomous robots to collect and gather useful materials. This is a significant step towards creating a self-sustaining and autonomous human settlement on Mars. The robots are equipped with advanced sensors and tools that allow them to identify and gather the right materials needed for construction."
           },
           {
-            "info": "The use of ice as a building material for intergalactic habitats is a groundbreaking concept that could transform the way we think about space exploration and human settlement beyond Earth. By leveraging the abundant resources of other planets, we can create sustainable and self-sufficient habitats that can support human life in space. The 'ice house' design by SEArch and Clouds AO represents a significant step forward in this effort, demonstrating the potential for innovative and sustainable solutions to the challenges of building homes in space."
+            "info": "The Zopherus home is designed with practicality in mind, including storage cubicles and facilities that prevent air leakage. These features are crucial for survival on Mars, where resources are limited and the environment is hostile. The structure is designed to be both comfortable and functional, providing a livable space for humans that is both safe and sustainable. As we look towards the future of space exploration, projects like Zopherus offer a glimpse into the possibilities of human settlement on other planets."
           }
         ],
-        "title": " The Innovative Design for a Mars Habitat by SEArch and Clouds AO",
-        "video": "https://vimeo.com/142099027",
-        "description": "One of the most suitable building materials for intergalactic dwellings is ice, and it was on this material that SEArch and Clouds AO based the design of this 'ice house'. Surface ice is abundant on Mars, and this house with a vertical ice shell would be able to protect its inhabitants from radiation.",
-        "rooms": 4,
-        "bathrooms": 1,
-        "garden": "Yes"
+        "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
+        "video": "https://youtu.be/r79vdlDsjrM",
+        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage."
       },
-      "userId": 11,
+      "userId": 6,
       "id": 14
     }
   ],
@@ -583,7 +576,7 @@
       "currentcity": "Barcelona",
       "birthyear": 1990,
       "id": 6,
-      "useravatar": "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "useravatar": "https://images.unsplash.com/photo-1601814933824-fd0b574dd592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80",
       "userabout": " I have always been fascinated by the idea of exploring space and finding a new home on another planet. Buying a house on Mars is not only an investment in our future but also a step towards making humanity a multi-planetary species.\n\nIn my free time, I enjoy researching about the latest developments in space exploration and technology. ",
       "occupation": "Teacher"
     },
@@ -614,24 +607,13 @@
     {
       "email": "anna@mars.com",
       "password": "$2a$10$Vg1tGeP0yuEiaaliyc0LUOKCLvl4Uuoptsg2VHF5hX05xyeVdADee",
-      "username": "anna90",
+      "username": "lolololo",
       "firstname": "Anna",
       "lastname": "Busquets",
       "currentcity": "Badalona",
       "birthyear": 1990,
       "acceptPrivacyPolicy": true,
-      "id": 10
-    },
-    {
-      "email": "vilma@mars.com",
-      "password": "$2a$10$o6OZmkC/nmqTtCX0gCQPVOV6nAtA4ccXGiAFw8H/key9Ny1f1MIPa",
-      "username": "vilma99",
-      "firstname": "Vilma",
-      "lastname": "Lopez",
-      "currentcity": "Madrid",
-      "birthyear": 1990,
-      "acceptPrivacyPolicy": true,
-      "id": 11,
+      "id": 10,
       "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }
   ]

@@ -30,7 +30,8 @@ const SingleHouseComponent = () => {
       title: 'Done :)',
       text: 'You can find this house now in your profile',
       icon: 'success',
-      confirmButtonText: 'Ok'
+      confirmButtonText: 'Keep exploring',
+      footer: '<a href="/profile">Go to my profile</a>'
     })
   }
 

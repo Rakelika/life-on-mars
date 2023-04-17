@@ -48,7 +48,6 @@ export default function ContactPage() {
                 icon: 'success',
                 confirmButtonText: 'Ok'
               });
-            console.log(values)
             resetForm();
         }
     })

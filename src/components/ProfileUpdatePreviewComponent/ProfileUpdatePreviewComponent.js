@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ProfileUpdatePreviewComponent.scss';
 import { useSelector } from 'react-redux';
+import noavatar from "../../assets/no-avatar.svg"
 
 const ProfileUpdatePreviewComponent = ({ values }) => {
 
@@ -12,7 +13,7 @@ const ProfileUpdatePreviewComponent = ({ values }) => {
   <section className="ProfileUpdatePreviewComponent">
     <article className='EditUserPreviewCard'>
       <div className="userAvatarContainer">
-        {values.useravatar ? <img src={values.useravatar} alt="profileimg" /> : <img src={user.useravatar} alt="profileimg" />}
+        {values.useravatar ? <img src={values.useravatar} alt="profileimg" /> : user.useravatar ? <img src={user.useravatar} alt="profileimg" /> : <img src={noavatar} alt={user.name} className="userNoAvatarImage"></img>}
       </div>
       {values.username ? <h3>{values.username}</h3> : <h3>{user.username}</h3> }
       <p>Email: {values.email ? <span>{values.email}</span> : <span>{user.email}</span>}</p>

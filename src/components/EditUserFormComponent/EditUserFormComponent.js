@@ -5,6 +5,7 @@ import { editUser } from '../../store/users/actions';
 import { useNavigate } from 'react-router';
 import { useFormik } from 'formik';
 import ProfileUpdatePreviewComponent from '../ProfileUpdatePreviewComponent/ProfileUpdatePreviewComponent';
+import Swal from 'sweetalert2';
 
 const EditUserFormComponent = () => {
 
@@ -45,8 +46,13 @@ const EditUserFormComponent = () => {
     onSubmit: (values) => {
       if (userId && values) {
         dispatch(editUser(userId, values)).then(()=> {
+          Swal.fire({
+            title: 'Changes saved',
+            text: 'Your profile data has been modified',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+          });
           navigate('/profile')
-          alert("has modificado tu perfil con éxito! :D")
         })
       }
     }

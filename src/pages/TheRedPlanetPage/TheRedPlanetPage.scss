@@ -64,3 +64,28 @@
         }
       }
   }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .Container {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .MarsSection {
+      width: 90%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 0 20px 0;
+    }
+
+    .MarsBanner {
+      .BannerTitles {
+        width: 60%;
+      }
+    }
+}

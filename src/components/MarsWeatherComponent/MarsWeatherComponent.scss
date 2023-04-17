@@ -14,7 +14,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
         background: rgba(255, 255, 255, 0.17);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -24,6 +23,8 @@
         padding: 4em;
         margin-left: 5%;
         color: $dark-color;
+        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 2.3s;
 
         h2 {
             margin-top: 0;
@@ -65,3 +66,36 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    
+    .MarsWeatherComponent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 470px;
+        text-align: center;
+
+        .MarsWeatherCard {
+            width: 80%;
+            padding: 2em 1em;
+            margin: 0 auto;
+
+            .MarsWeatherItem {
+                width: 100px;
+                height: 100px;
+
+                .h3Number {
+                    font-size: 1.2em;
+                }
+
+                img {
+                    width: 30px;
+                }
+
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

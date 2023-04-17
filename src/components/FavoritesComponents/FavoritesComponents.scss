@@ -17,6 +17,15 @@
     -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 500ms;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
 }
 
 .cardHouse {
@@ -30,6 +39,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 500ms;
 
     img {
         width: 100%;
@@ -41,7 +52,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 30px;
     }
 
     .customItems{
@@ -51,7 +61,7 @@
     .cardButtons {
         display: flex;
         padding: 0 30px 10px 30px;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .customTag {

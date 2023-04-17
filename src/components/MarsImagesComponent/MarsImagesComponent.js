@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './MarsImagesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMarsImages } from '../../store/nasa/actions';
+import { Orbit } from '@uiball/loaders'
 
 const MarsImagesComponent = () => {
 
@@ -15,8 +16,12 @@ const MarsImagesComponent = () => {
 
   if (loadingMarsImages) {
     return (
-      <div>
-        <p>Loading...</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }

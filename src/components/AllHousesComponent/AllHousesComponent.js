@@ -20,10 +20,11 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
 
   if(loadingHouses){
     return (
-      <div className='Container centerText'>
+      <div className='loadingOrbit'>
        <Orbit 
           size={25}
           speed={1.5} 
+          color="#f5f5f5"
         />
       </div>
     )

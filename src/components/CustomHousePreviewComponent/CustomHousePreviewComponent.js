@@ -2,16 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CustomHousePreviewComponent.scss';
 import { useSelector } from 'react-redux';
-import bedroom from "../../assets/bedroom.svg"
-import bathroom from "../../assets/bathroom.svg"
-import garden from "../../assets/garden.svg"
+import bedroom from "../../assets/bedroom.svg";
+import bathroom from "../../assets/bathroom.svg";
+import garden from "../../assets/garden.svg";
+import { Orbit } from '@uiball/loaders'
 
 const CustomHousePreviewComponent = ( {values} ) => {
 
   const {singleFavorite, loadingSingleFavorite} = useSelector((state) => state.HousesReducer)
 
   if (loadingSingleFavorite) {
-      <div>Loading...</div>
+    <div className='loadingOrbit'>
+    <Orbit 
+       size={25}
+       speed={1.5} 
+       color="#f5f5f5"
+     />
+   </div>
   }
   
   return (

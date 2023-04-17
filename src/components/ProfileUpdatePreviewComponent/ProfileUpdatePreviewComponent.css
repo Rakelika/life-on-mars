@@ -66,4 +66,13 @@ p {
   border-radius: 100%;
   width: 80%;
   height: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .ProfileUpdatePreviewComponent {
+    width: 100%;
+  }
+  .ProfileUpdatePreviewComponent .userAvatarContainer {
+    margin: -50px auto 30px auto;
+  }
 }/*# sourceMappingURL=ProfileUpdatePreviewComponent.css.map */

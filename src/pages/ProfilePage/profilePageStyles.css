@@ -106,6 +106,10 @@ p {
   height: 80%;
 }
 
+.userNoAvatarImage {
+  opacity: 0.4;
+}
+
 .ProfileButtonsContainer {
   display: flex;
   flex-direction: column;
@@ -118,4 +122,30 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .ProfileRow {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 55px 30px 40px 30px;
+  }
+  .ProfileButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-third-btn {
+    text-align: center;
+  }
+  .ProfilePageUserInfoContainer .ProfilePageUserHeader {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    padding-left: 0;
+    margin: -30px 0 0 0px;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=profilePageStyles.css.map */

@@ -4,7 +4,8 @@ import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../../store/houses/actions';
 import { Link } from 'react-router-dom';
-import { Orbit } from '@uiball/loaders'
+import { Orbit } from '@uiball/loaders';
+import { FaSearch } from "react-icons/fa";
 
 
 const AllHousesComponent = ({ search, selectedMaterials }) => {
@@ -74,8 +75,8 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
                     (material) => house.material.includes(material)
                 ))
         }).length === 0 && (
-        <div className='Container'>
-          <p className='centerText'>(｡•́︿•̀｡)</p> 
+        <div className='noHouses centerText'>
+          <FaSearch> </FaSearch> 
           <p className='centerText'>Sorry, there are no houses with these characteristics</p>
         </div>
     )

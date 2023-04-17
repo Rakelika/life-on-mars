@@ -64,13 +64,18 @@ p {
   color: #B26ADC;
 }
 
+.noHouses {
+  width: 80%;
+  margin: 60px auto;
+}
+
 @media only screen and (max-width: 768px) {
   .AllHousesComponent {
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .AllHousesComponent .cardHouse {
-    width: 95vw;
+    width: 90vw;
   }
   .AllHousesComponent .cardHouse img {
     width: 100%;

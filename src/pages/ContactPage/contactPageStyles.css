@@ -1,5 +1,42 @@
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 .contactPageContainer {
-  background-image: url("../../assets/banner-life-on-mars-4.jpg");
+  background-image: url("../../assets/contact-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -22,9 +59,9 @@
   display: flex;
   flex-direction: column;
   padding: 50px 0;
-  background: rgba(255, 255, 255, 0.17);
+  background: linear-gradient(0deg, rgba(25, 24, 24, 0.9) 20%, rgba(25, 24, 24, 0.02) 100%);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(5.3px);
   -webkit-backdrop-filter: blur(8.3px);
   border: 0px solid rgba(255, 255, 255, 0.3);

@@ -4,8 +4,11 @@
   flex-wrap: wrap;
   width: 350px;
 }
+.SignUpForm button {
+  margin: 10px auto;
+}
 
-.TwoColumnsFieldset {
+.twoColumns {
   display: flex;
   justify-content: space-between;
 }/*# sourceMappingURL=SingUpComponent.css.map */

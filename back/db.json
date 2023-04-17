@@ -11,7 +11,7 @@
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
       ],
       "material": [
-        "elementos geológicos"
+        "Geological elements"
       ],
       "information": [
         {
@@ -42,9 +42,9 @@
         "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "elementos geológicos",
-        "bioplástico renovable"
+        "3D printing",
+        "Geological elements",
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -78,9 +78,9 @@
         "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "fibra de basalto",
-        "bioplástico renovable"
+        "3D printing",
+        "Basalt fibre",
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -111,8 +111,8 @@
         "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
       ],
       "material": [
-        "hielo",
-        "elementos geológicos"
+        "Ice",
+        "Geological elements"
       ],
       "information": [
         {
@@ -143,8 +143,9 @@
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
       ],
       "material": [
-        "plástico de regolito",
-        "fibra de basalto"
+        "Regolith plastic",
+        "Basalt fibre",
+        "3D printing"
       ],
       "information": [
         {
@@ -175,7 +176,8 @@
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D"
+        "3D printing",
+        "Regolith plastic"
       ],
       "information": [
         {
@@ -203,8 +205,8 @@
         "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "óxido de hierro"
+        "3D printing",
+        "Iron oxide"
       ],
       "information": [
         {
@@ -238,7 +240,8 @@
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-9.jpg"
       ],
       "material": [
-        "bioplástico renovable"
+        "Renewable bioplastic",
+        "3D printing"
       ],
       "information": [
         {
@@ -269,8 +272,9 @@
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-6.jpg"
       ],
       "material": [
-        "hielo",
-        "estructura inflable"
+        "Ice",
+        "Geological elements",
+        "Inflatable structure"
       ],
       "information": [
         {
@@ -301,7 +305,8 @@
         "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D"
+        "3D printing",
+        "Basalt fibre"
       ],
       "information": [
         {
@@ -329,8 +334,9 @@
         "/assets/houses/archab-gallery/archab-gallery-3.jpg"
       ],
       "material": [
-        "óxido de hierro",
-        "impresión 3D"
+        "Iron oxide",
+        "3D printing",
+        "Regolith plastic"
       ],
       "information": [
         {
@@ -361,8 +367,9 @@
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"
       ],
       "material": [
-        "fibra de basalto",
-        "bioplástico renovable"
+        "Basalt fibre",
+        "Renewable bioplastic",
+        "3D printing"
       ],
       "information": [
         {

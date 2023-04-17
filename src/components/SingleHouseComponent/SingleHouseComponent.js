@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Orbit } from '@uiball/loaders';
 
 
 const SingleHouseComponent = () => {
@@ -40,8 +41,12 @@ const SingleHouseComponent = () => {
 
   if(loadingSingleHouse){
     return (
-      <div>
-        <p>searching house</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }

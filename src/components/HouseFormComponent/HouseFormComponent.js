@@ -4,7 +4,7 @@ import './HouseFormComponent.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { editFavHouse, getSingleFavorite } from '../../store/houses/actions';
 import { useFormik } from 'formik';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import CustomHousePreviewComponent from '../CustomHousePreviewComponent/CustomHousePreviewComponent'
 import Swal from 'sweetalert2';
 
@@ -100,8 +100,11 @@ const HouseFormComponent = () => {
             />
           </fieldset>
           {/* GARDEN */}
-          <fieldset>
-          <label htmlFor="garden">Do you want a garden?
+          
+          <label className='titleGarden'>Do you want a garden?</label>
+          <fieldset className='switchFieldset'>
+          <div className='switchForm'>
+          <label className="switch">
             <input
               type="radio"
               name="garden"
@@ -110,9 +113,12 @@ const HouseFormComponent = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            Yes
+            <span className="slider round"></span>
+            <span className="materialLabel">Yes</span>
           </label>
-          <label>
+          </div>
+          <div className='switchForm'>
+          <label  className="switch">
             <input
               type="radio"
               name="garden"
@@ -121,8 +127,10 @@ const HouseFormComponent = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            No
+            <span className="slider round"></span>
+            <span className="materialLabel">No</span>
           </label>
+          </div>
           </fieldset> 
           <div className='FormButtonsRow'>
             <button type="submit" className='primary-btn'>Submit Changes</button>

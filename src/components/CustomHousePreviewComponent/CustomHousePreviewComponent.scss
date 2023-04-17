@@ -56,3 +56,9 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .CustomHousePreviewComponent {
+        width: 100%;
+    }
+}

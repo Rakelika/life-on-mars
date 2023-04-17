@@ -25,6 +25,12 @@ footer {
         }
         a {
             color: $light-color;
+            transition: all 300ms ease-out;
+
+            &:hover {
+                color: $secondary-color;
+                transition: all 300ms ease-out;
+            }
         }
 
     }
@@ -49,6 +55,12 @@ footer {
     font-size: 1.1rem;
     a {
         color: $light-color;
+        transition: all 300ms ease-out;
+
+        &:hover {
+            color: $secondary-color;
+            transition: all 300ms ease-out;
+        }
     }
 }
 

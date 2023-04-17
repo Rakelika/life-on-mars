@@ -495,10 +495,56 @@
         ],
         "title": "Martian home inspired by terrestrial biologies and 3D printing technology",
         "video": "https://youtu.be/r79vdlDsjrM",
-        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage."
+        "description": "The Zopherus home is inspired by terrestrial biologies such as honeycombs and spider webs. Zopherus is able to land in the right place and deploy autonomous robots that collect useful materials from the environment and use them to create a structure through 3D printing. Included in this Martian house design are storage cubicles and facilities that prevent air leakage.",
+        "rooms": 7,
+        "bathrooms": 4,
+        "garden": "Yes"
       },
       "userId": 6,
       "id": 14
+    },
+    {
+      "house": {
+        "id": 3,
+        "name": "Marsha",
+        "architects": "AI SpaceFactory",
+        "image": "/assets/houses/marsha.webp",
+        "gallery": [
+          "/assets/houses/marsha-gallery/marsha-gallery-1.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-2.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-3.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-4.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-5.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-6.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-7.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-8.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
+        ],
+        "material": [
+          "impresión 3D",
+          "fibra de basalto",
+          "bioplástico renovable"
+        ],
+        "information": [
+          {
+            "info": "The Marsha Project by AI SpaceFactory is a groundbreaking proposal for a 3D printed house optimized for construction on Mars. This innovative project represents a significant step forward in our efforts to establish a permanent human settlement on the red planet. The project is designed to leverage the latest technologies and materials to create a sustainable and self-sufficient habitat that can withstand the harsh Martian environment."
+          },
+          {
+            "info": "One of the key features of the Marsha Project is the use of a composite of basalt fiber and renewable bioplastic. This material can be sourced from rocks and plants that can be grown on Mars, making the project more self-sustaining and less reliant on external resources. The composite is lightweight, durable, and highly resistant to radiation, making it ideal for use in the construction of a Martian habitat."
+          },
+          {
+            "info": "The Marsha Project is the result of extensive research and development by AI SpaceFactory, a company at the forefront of innovation in space technology. The project represents a significant collaboration with NASA and other key players in the space industry. As we continue to explore the possibilities of human settlement on Mars, projects like the Marsha Project offer a glimpse into the future of space exploration and the potential for sustainable, self-sufficient human habitats beyond Earth."
+          }
+        ],
+        "title": "The innovative 3D-printed house to inhabit Mars with local materials",
+        "video": "https://youtu.be/XnrVV0w2jrE",
+        "description": "AI SpaceFactory's The Marsha Project is NASA's proposal for a 3D printed house optimised for construction on Mars.  The company has researched and developed a composite of basalt fibre (which can be extracted from rocks on Mars) and a renewable bioplastic that can be sourced from plants that can be grown on the red planet.",
+        "rooms": 3,
+        "bathrooms": 1,
+        "garden": "Yes"
+      },
+      "userId": 6,
+      "id": 15
     }
   ],
   "users": [

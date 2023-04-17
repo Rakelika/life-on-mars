@@ -12,8 +12,12 @@
     margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 0.05em;
+    transition: all 300ms ease-out;
     &:hover {
         cursor:pointer;
+        transform: translate(0px, -3px);
+        transition: all 300ms ease-out;
+        box-shadow: -1px 4px 7px 0px rgba(25, 24, 24, 0.75);
     }  
 }
 
@@ -29,8 +33,11 @@
     margin: 10px 0px;
     font-size: 15px;
     letter-spacing: 0.05em;
+    transition: all 500ms ease-out;
     &:hover {
         cursor:pointer;
+        border: 2px solid $light-color;
+        transition: all 500ms ease-out;
     }     
 }
 
@@ -62,9 +69,13 @@
     margin: 10px auto;
     font-size: 15px;
     letter-spacing: 0.05em;
+    transition: all 500ms ease-out;
+    
     &:hover {
         cursor:pointer;
-    }   
+        transition: all 500ms ease-out;
+        color: $light-color;
+    }  
 }
 
 .fourth-btn {
@@ -92,7 +103,12 @@
     padding: 10px 10px 10px 0;
     font-size: 15px;
     letter-spacing: 0.05em;
+    transition: all 500ms ease-out;
+    
     &:hover {
         cursor:pointer;
+        transition: all 500ms ease-out;
+        color: $light-color;
     }  
 }
+

@@ -20,6 +20,8 @@
 
         .heroHouseImg {
             width: 70%;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 200ms;
 
             img {
                 width: 100%;
@@ -35,6 +37,8 @@
             border-radius: 16px;
             padding: 3em;
             margin-left: -8em;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 500ms;
         }
     }
 

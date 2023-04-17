@@ -39,40 +39,42 @@ const FavoritesComponents = () => {
       return (
         <article key={house.id} className='cardHouse'>
             <img src={house.house.image} alt={house.name}/>
-            {house.house.rooms || house.house.bathrooms || house.house.garden ? <div className='customTag'><p>Customized</p></div> : ''}
-          <div className='cardResume'>
-          {house.house.name ? <h3>{house.house.name}</h3> : ""}
-          <section className='customItems'>
-          {house.house.rooms ? 
-          <div className='favCardItem'>
-          <img className='favCardIcon' src={bedroom} alt='bedrooms'/>
-          <p>{house.house.rooms}</p>
-          </div>
-           : ""}
-           {house.house.bathrooms ? 
-          <div className='favCardItem'>
-          <img className='favCardIcon' src={bathroom} alt='bedrooms'/>
-          <p>{house.house.bathrooms}</p>
-          </div>
-           : ""}
-           {house.house.garden ? 
-          <div className='favCardItem'>
-          <img className='favCardIcon' src={garden} alt='bedrooms'/>
-          <p>{house.house.garden}</p>
-          </div>
-           : ""}
-           </section>
-          </div>
-          <div className='favPadding'>
-          {house.house.title ?
-          <h5>{house.house.title}</h5> : ""}
-          {house.house.description ? 
-          <p>{house.house.description}</p> 
-          : ""}
-          </div>
-          <div className='cardButtons'>
-            <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>
-            <button className='secondary-btn centerText' onClick={() => removeFavorite(house.id)}>Remove this house</button>
+            <span>{house.house.rooms || house.house.bathrooms || house.house.garden ? <div className='customTag'><p>Customized</p></div> : ''}</span>
+          <div className='cardInfo'>
+            <div className='cardResume'>
+              {house.house.name ? <h3>{house.house.name}</h3> : ""}
+              <section className='customItems'>
+              {house.house.rooms ? 
+              <div className='favCardItem'>
+              <img className='favCardIcon' src={bedroom} alt='bedrooms'/>
+              <p>{house.house.rooms}</p>
+              </div>
+              : ""}
+              {house.house.bathrooms ? 
+              <div className='favCardItem'>
+              <img className='favCardIcon' src={bathroom} alt='bedrooms'/>
+              <p>{house.house.bathrooms}</p>
+              </div>
+              : ""}
+              {house.house.garden ? 
+              <div className='favCardItem'>
+              <img className='favCardIcon' src={garden} alt='bedrooms'/>
+              <p>{house.house.garden}</p>
+              </div>
+              : ""}
+              </section>
+            </div>
+            <div>
+              {house.house.title ?
+              <h5>{house.house.title}</h5> : ""}
+              {house.house.description ? 
+              <p>{house.house.description}</p> 
+              : ""}
+            </div>
+            <div className='cardButtons'>
+              <Link to={`/house-form/${house.id}`} className='secondary-btn centerText'>Custom house</Link>
+              <button className='secondary-btn centerText' onClick={() => removeFavorite(house.id)}>Remove this house</button>
+            </div>
           </div>
         </article>
       )

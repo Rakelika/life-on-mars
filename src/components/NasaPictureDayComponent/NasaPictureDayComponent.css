@@ -65,4 +65,21 @@ p {
 }
 .NasaPictureDayComponent .NasaImgContainer .NasaPictureDayTitle {
   color: #B26ADC;
+}
+
+@media only screen and (max-width: 768px) {
+  .NasaPictureDayComponent .NasaImgContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .NasaPictureDayComponent .NasaImgContainer .NasaPictureDayDescription {
+    width: 85%;
+    padding: 1em 1.5em;
+    margin: -40px auto 0 auto;
+  }
+  .NasaPictureDayComponent .NasaImgContainer .NasaPictureDayImg {
+    width: 100%;
+  }
 }/*# sourceMappingURL=NasaPictureDayComponent.css.map */

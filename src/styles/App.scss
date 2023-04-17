@@ -4,6 +4,10 @@
 @import 'formStyles.scss';
 @import 'animations.scss';
 
+body {
+  margin:0px
+}
+
 .App {
   background-color: $dark-color;
   color: $light-color;

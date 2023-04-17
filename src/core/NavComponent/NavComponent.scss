@@ -6,15 +6,19 @@
     box-shadow: 11px 0px 20px 17px rgba(0, 0, 0, 0.55);
     z-index: 10;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 10%;
 }
 
 nav {
     display: flex;
-    width: 80%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
+
     
     ul {
         display: flex;
@@ -52,4 +56,21 @@ nav {
     background-color: greenyellow;
     border-radius: 100%;
     margin: 0 5px 0 0;
+}
+
+
+/* MENU MOVIL*/
+
+.bm-menu-wrap {
+    background-color: #202124;
+    padding: 2em;
+
+    span {
+        background-color: $secondary-color;
+    }
+}
+
+nav.bm-item-list {
+    display: flex;
+    flex-direction: column;
 }

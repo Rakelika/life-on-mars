@@ -117,4 +117,25 @@ p {
 
 .favPadding {
   padding: 0 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .FavoritesComponents {
+    justify-content: center;
+    margin: 40px 0 0 0;
+  }
+  .FavoritesComponents .cardHouse {
+    width: 95%;
+  }
+  .FavoritesComponents .cardHouse .cardButtons {
+    justify-content: space-between;
+  }
+  .FavoritesComponents .cardHouse .cardResume {
+    flex-direction: column;
+    justify-content: left;
+  }
+  .FavoritesComponents .noHouses {
+    text-align: center;
+    width: 80%;
+  }
 }/*# sourceMappingURL=FavoritesComponents.css.map */

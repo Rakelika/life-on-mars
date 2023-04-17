@@ -99,8 +99,7 @@
         z-index: 500;
 
         &:hover {
-            background-color: $secondary-color;
-            opacity: 0.8;
+            background-color: #b783d6;
             cursor: pointer;
         }
     }
@@ -109,6 +108,35 @@
 
 @media only screen and (max-width: 768px) { 
 
+    .SingleHouseComponent {
 
+    h2 {
+        margin:0px
+    }
+
+    .heroHouse {
+        flex-direction: column;
+
+        .heroHouseImg {
+            width: 100%;
+            margin-top:20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .heroHouseDescription {
+            width: 80%;
+            margin:20px auto
+        }
+    }
+
+    .galleryHouses {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top:0px;
+    }
+    }
 }
 

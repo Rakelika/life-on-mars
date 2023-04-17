@@ -22,6 +22,8 @@
         border: 0px solid rgba(255, 255, 255, 0.3);
         padding: 4em;
         margin-right: 5%;
+        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 300ms;
 
         h1 {
             color: $dark-color;

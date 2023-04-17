@@ -19,6 +19,8 @@
     padding: 55px 50px 40px 50px;
     margin: -90px auto 0 auto;
     background-color: $dark-color;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 300ms;
         h1 {
             padding-bottom: 0.6em;
             border-bottom: 2px solid rgba(202, 202, 202, 0.25);
@@ -48,6 +50,8 @@
         z-index: 3;
         padding-left: 40px;
         margin: -30px 0 0 75px;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 300ms;
     }
 
     .ProfileCol {

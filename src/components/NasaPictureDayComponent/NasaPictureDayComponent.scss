@@ -13,6 +13,8 @@
         .NasaPictureDayImg{
             width: 70%;
             height: 400px;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 1.5s;
             img {
                 object-fit: cover;
                 width:100%;
@@ -28,6 +30,8 @@
             border-radius: 16px;
             padding: 1.5em 3em;
             margin-left: -8em;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 2s;
         }
 
         .NasaPictureDayTitle{

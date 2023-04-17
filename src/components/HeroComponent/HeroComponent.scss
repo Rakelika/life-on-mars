@@ -39,3 +39,18 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .HeroComponent {
+        justify-content: center;
+        height: 470px;
+        text-align: center;
+
+        .titleHero {
+            width: 60%;
+            padding: 3em;
+            margin: 0 auto;
+        }
+    }
+}

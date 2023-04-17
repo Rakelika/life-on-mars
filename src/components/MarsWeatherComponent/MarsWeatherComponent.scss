@@ -65,3 +65,36 @@
 }
 
 
+@media only screen and (max-width: 768px) {
+    
+    .MarsWeatherComponent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 470px;
+        text-align: center;
+
+        .MarsWeatherCard {
+            width: 80%;
+            padding: 2em 1em;
+            margin: 0 auto;
+
+            .MarsWeatherItem {
+                width: 100px;
+                height: 100px;
+
+                .h3Number {
+                    font-size: 1.2em;
+                }
+
+                img {
+                    width: 30px;
+                }
+
+                h4 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

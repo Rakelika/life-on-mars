@@ -19,6 +19,13 @@
     box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
 }
 
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
 .cardHouse {
     width: 38.5vw;
     border-radius: 16px;
@@ -41,7 +48,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0 30px;
     }
 
     .customItems{
@@ -51,7 +57,7 @@
     .cardButtons {
         display: flex;
         padding: 0 30px 10px 30px;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .customTag {

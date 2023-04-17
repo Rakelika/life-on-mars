@@ -36,3 +36,16 @@
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .HowToUseComponent {
+    .processGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .processCard {
+            width: 90%;
+        }
+    }
+}}

@@ -30,3 +30,12 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .swiper-wrapper{
     padding: 30px;
 }
+  
+  @media screen and (max-width: 768px) {
+    .swiper-wrapper {
+        width: 80%;
+        .TestimonialCard {
+            width: 65%;
+        }
+    }
+  }

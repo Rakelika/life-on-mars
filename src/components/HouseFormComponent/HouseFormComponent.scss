@@ -105,3 +105,24 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  @media only screen and (max-width: 768px) {
+    .HouseFormComponent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      
+      .EditHouseForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .Col {
+        width: 80%;
+      }
+    }
+  }

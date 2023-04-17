@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './NasaPictureDayComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPicture } from '../../store/nasa/actions';
+import { Orbit } from '@uiball/loaders'
 
 const NasaPictureDayComponent = () => {
   const {nasaPictureDay,loadingImages} = useSelector((state)=> state.NasaReducer)
@@ -14,8 +15,12 @@ const NasaPictureDayComponent = () => {
 
   if (loadingImages) {
     return (
-      <div>
-        <p>Loading...</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }

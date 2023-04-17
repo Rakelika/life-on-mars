@@ -1,5 +1,6 @@
 @import '../../styles/globalStyles.scss';
 
+
 .AllHousesComponent {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +47,7 @@
         justify-content: space-between;
     
         .cardHouse {
-            width: 95vw;
+            width: 90vw;
     
             img {
                 width: 100%;

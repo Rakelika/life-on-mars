@@ -5,10 +5,15 @@ import exporeHouses from "../../assets/process-explore-houses.jpg";
 import signupHouses from "../../assets/process-signup-houses.jpg";
 import customizeHouses from "../../assets/process-customize-houses.jpg"
 import { useNavigate} from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const HowToUseComponent = () => {
 
   const navigate = useNavigate ();
+
+  const {user} = useSelector ((state) => state.UserReducer);
+
+  const userID = user.id;
 
 return(
   <div className="HowToUseComponent">
@@ -30,7 +35,7 @@ return(
         <img src={customizeHouses} alt=""></img>
         <span className='fases'>Customise your home</span>
         <p>It's time to customise them to your liking. Our team of professionals can also help you find the best configuration for your lifestyle on the Red Planet.¡ Personalise your home now and make it truly yours!</p>
-        <button className='secondary-btn' onClick={() => navigate ("/profile")}>Profile</button>
+        <button className='secondary-btn' onClick={() => {userID ? navigate ("/profile") : navigate ("/login") }}>Profile</button>
       </div>
      </div>
   </div>

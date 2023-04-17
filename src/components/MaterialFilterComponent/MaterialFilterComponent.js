@@ -15,112 +15,112 @@ return (
         <label className="switch">      
           <input
           type="checkbox"
-          value="impresión 3D"
+          value="3D printing"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }} />
           <span className="slider round"></span>
-          <span className="materialLabel">Impresión 3D</span>
+          <span className="materialLabel">3D printing</span>
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="elementos geológicos"
+          value="Geological elements"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }} />
           <span className="slider round"></span>
-          <span className="materialLabel">Elementos geológicos</span>      
+          <span className="materialLabel">Geological elements</span>      
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="bioplástico renovable"
+          value="Renewable bioplastic"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }} />
           <span className="slider round"></span>
-          <span className="materialLabel">Bioplástico renovable</span>  
+          <span className="materialLabel">Renewable bioplastic</span>  
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="hielo"
+          value="Ice"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }} />
           <span className="slider round"></span>
-          <span className="materialLabel">Hielo</span>  
+          <span className="materialLabel">Ice</span>  
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="fibra de basalto"
+          value="Basalt fibre"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }}/>
           <span className="slider round"></span>
-          <span className="materialLabel">Fibra de basalto</span> 
+          <span className="materialLabel">Basalt fibre</span> 
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="plástico de regolito"
+          value="Regolith plastic"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }}/>
           <span className="slider round"></span>
-          <span className="materialLabel">Plástico de regolito</span> 
+          <span className="materialLabel">Regolith plastic</span> 
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="óxido de hierro"
+          value="Iron oxide"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }}/>
           <span className="slider round"></span>
-          <span className="materialLabel">Óxido de hierro</span>
+          <span className="materialLabel">Iron oxide</span>
         </label>
       </form>
       <form>
         <label  className="switch">
           <input 
           type="checkbox"
-          value="estructura inflable"
+          value="Inflatable structure"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
           }}/>
           <span className="slider round"></span>
-          <span className="materialLabel">Estructura inflable</span> 
+          <span className="materialLabel">Inflatable structure</span> 
         </label>
       </form>
       </AccordionItem>

@@ -4,6 +4,7 @@ import { Link, Navigate, useFormAction, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Formik, Form, useFormik } from 'formik';
 import { doLogin } from '../../store/users/actions';
+import { Orbit } from '@uiball/loaders'
 
 const LoginComponent = () => {
   const { loadingUser, error, userAuth } = useSelector((state) => state.UserReducer);
@@ -59,7 +60,13 @@ const LoginComponent = () => {
 
   if (loadingUser) {
     return (
-      <div>Loading...</div>
+      <div className='loadingOrbit'>
+      <Orbit 
+         size={25}
+         speed={1.5} 
+         color="#f5f5f5"
+       />
+     </div>
     )
   }
 

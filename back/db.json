@@ -538,7 +538,10 @@
         ],
         "title": "The innovative 3D-printed house to inhabit Mars with local materials",
         "video": "https://youtu.be/XnrVV0w2jrE",
-        "description": "AI SpaceFactory's The Marsha Project is NASA's proposal for a 3D printed house optimised for construction on Mars.  The company has researched and developed a composite of basalt fibre (which can be extracted from rocks on Mars) and a renewable bioplastic that can be sourced from plants that can be grown on the red planet."
+        "description": "AI SpaceFactory's The Marsha Project is NASA's proposal for a 3D printed house optimised for construction on Mars.  The company has researched and developed a composite of basalt fibre (which can be extracted from rocks on Mars) and a renewable bioplastic that can be sourced from plants that can be grown on the red planet.",
+        "rooms": 3,
+        "bathrooms": 1,
+        "garden": "Yes"
       },
       "userId": 6,
       "id": 15

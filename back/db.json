@@ -11,7 +11,7 @@
         "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
       ],
       "material": [
-        "elementos geológicos"
+        "Geological elements"
       ],
       "information": [
         {
@@ -42,9 +42,9 @@
         "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "elementos geológicos",
-        "bioplástico renovable"
+        "3D printing",
+        "Geological elements",
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -78,9 +78,9 @@
         "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "fibra de basalto",
-        "bioplástico renovable"
+        "3D printing",
+        "Basalt fibre",
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -111,8 +111,8 @@
         "/assets/houses/ice-house-gallery/ice-house-gallery-6.jpg"
       ],
       "material": [
-        "hielo",
-        "elementos geológicos"
+        "Ice",
+        "Geological elements"
       ],
       "information": [
         {
@@ -143,8 +143,8 @@
         "/assets/houses/mars-incubator-gallery/mars-incubator-gallery-6.jpg"
       ],
       "material": [
-        "plástico de regolito",
-        "fibra de basalto"
+        "Regolith plastic",
+        "Basalt fibre"
       ],
       "information": [
         {
@@ -175,7 +175,7 @@
         "/assets/houses/kahn-yatees-gallery/kahn-yatees-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D"
+        "3D printing"
       ],
       "information": [
         {
@@ -203,8 +203,8 @@
         "/assets/houses/sfero-gallery/sfero-gallery-3.jpg"
       ],
       "material": [
-        "impresión 3D",
-        "óxido de hierro"
+        "3D printing",
+        "Iron oxide"
       ],
       "information": [
         {
@@ -238,7 +238,7 @@
         "/assets/houses/xiaomi-mars-case-gallery/xiaomi-mars-case-gallery-9.jpg"
       ],
       "material": [
-        "bioplástico renovable"
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -269,8 +269,8 @@
         "/assets/houses/mars-ice-home-gallery/mars-ice-home-gallery-6.jpg"
       ],
       "material": [
-        "hielo",
-        "estructura inflable"
+        "Ice",
+        "Inflatable structure"
       ],
       "information": [
         {
@@ -301,7 +301,7 @@
         "/assets/houses/xarc-gallery/xarc-gallery-6.jpg"
       ],
       "material": [
-        "impresión 3D"
+        "3D printing"
       ],
       "information": [
         {
@@ -329,8 +329,8 @@
         "/assets/houses/archab-gallery/archab-gallery-3.jpg"
       ],
       "material": [
-        "óxido de hierro",
-        "impresión 3D"
+        "Iron oxide",
+        "3D printing"
       ],
       "information": [
         {
@@ -361,8 +361,8 @@
         "/assets/houses/spacehabs-gallery/spacehabs-gallery-6.jpg"
       ],
       "material": [
-        "fibra de basalto",
-        "bioplástico renovable"
+        "Basalt fibre",
+        "Renewable bioplastic"
       ],
       "information": [
         {
@@ -388,7 +388,7 @@
         "architects": "Kahn Yatees",
         "image": "/assets/houses/kahn-yatees.webp",
         "material": [
-          "impresión 3D"
+          "3D printing"
         ],
         "description": "Uno de los diseños de casas en Marte más relevantes proviene del equipo de Kahn Yatees de Mississippi a quienes se les ocurrió está curiosa estructura de una posible habitación en Marte. El diseño ha sido creado específicamente para resistir tormentas de polvo y clima adverso que se pueden dar en Marte. Una estructura etérea diseñada para construirse a sí misma una vez que aterriza de forma segura en la superficie marciana."
       },
@@ -403,7 +403,7 @@
         "image": "/assets/houses/zopherus.webp",
         "material": [
           "impresión 3D",
-          "elementos geológicos"
+          "Geological elements"
         ],
         "description": "El hogar de Zopherus está inspirado en biologías terrestres como los panales y las telas de araña. Zopherus es capaz de aterrizar en el lugar adecuado y desplegar robots autónomos que recolecten materiales útiles del entorno para utilizarlos y crear una estructura a través de la impresión 3D. En este diseño de casa marciana se incluyen cubículos de almacenamiento e instalaciones que evitan escapes de aire."
       },
@@ -438,9 +438,9 @@
           "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
         ],
         "material": [
-          "impresión 3D",
-          "elementos geológicos",
-          "bioplástico renovable"
+          "3D printing",
+          "Geological elements",
+          "Renewable bioplastic"
         ],
         "information": [
           {
@@ -478,7 +478,7 @@
           "/assets/houses/zopherus-gallery/zopherus-gallery-6.jpg"
         ],
         "material": [
-          "impresión 3D",
+          "3D printing",
           "elementos geológicos",
           "bioplástico renovable"
         ],
@@ -521,7 +521,7 @@
           "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
         ],
         "material": [
-          "impresión 3D",
+          "3D printing",
           "fibra de basalto",
           "bioplástico renovable"
         ],
@@ -545,6 +545,81 @@
       },
       "userId": 6,
       "id": 15
+    },
+    {
+      "house": {
+        "id": 1,
+        "name": "Mi fantasia de casa",
+        "architects": "Amey Kandalgaonkar",
+        "image": "/assets/houses/casa-crater.webp",
+        "gallery": [
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-1.jpg",
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-2.jpg",
+          "/assets/houses/casa-crater-gallery/casa-crater-gallery-3.jpg"
+        ],
+        "material": [
+          "elementos geológicos"
+        ],
+        "information": [
+          {
+            "info": "Amey Kandalgaonkar is a visionary architect and photographer who is known for his utopian projects. In response to Elon Musk's announcement about inhabiting Mars, Amey set out to design a UFO-shaped house that would be located in a Martian crater. The design is both innovative and practical, with a focus on creating a livable space that can withstand the harsh environment of Mars."
+          },
+          {
+            "info": "What sets Amey apart from other architects is his ability to merge natural formations with his designs. He is not afraid to think outside the box and has a knack for placing buildings in places you would never have imagined. His unique perspective on architecture and design has earned him numerous accolades and awards, cementing his position as one of the most talented architects of his generation."
+          },
+          {
+            "info": "Amey's passion for architecture and design extends beyond just creating beautiful buildings. He is deeply committed to sustainability and believes that architecture should have a positive impact on the environment. His designs incorporate green technologies and materials, with a focus on minimizing waste and reducing carbon emissions. As the world becomes more conscious of the impact of climate change, architects like Amey are leading the way in creating sustainable, innovative designs that have the potential to transform the way we live."
+          }
+        ],
+        "title": "Indian architect's boundless creativity for a UFO-shaped home",
+        "video": "https://youtu.be/ZtdDzaQbzUk",
+        "description": "Amey Kandalgaonkar is known for his striking utopian projects. The Indian architect and photographer, following Elon Musk's declarations last May in which he stated that there was no point in having possessions on Earth and that his next goal would be to inhabit Mars, Amey set to work on the design of a UFO-shaped house housed in a Martian crater. For this Indian architect, imagination knows no bounds and he is capable of placing buildings in natural formations that you would never have imagined.",
+        "rooms": 3,
+        "bathrooms": 5,
+        "garden": "Yes"
+      },
+      "userId": 14,
+      "id": 16
+    },
+    {
+      "house": {
+        "id": 3,
+        "name": "Marsha",
+        "architects": "AI SpaceFactory",
+        "image": "/assets/houses/marsha.webp",
+        "gallery": [
+          "/assets/houses/marsha-gallery/marsha-gallery-1.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-2.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-3.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-4.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-5.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-6.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-7.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-8.jpg",
+          "/assets/houses/marsha-gallery/marsha-gallery-9.jpg"
+        ],
+        "material": [
+          "impresión 3D",
+          "fibra de basalto",
+          "bioplástico renovable"
+        ],
+        "information": [
+          {
+            "info": "The Marsha Project by AI SpaceFactory is a groundbreaking proposal for a 3D printed house optimized for construction on Mars. This innovative project represents a significant step forward in our efforts to establish a permanent human settlement on the red planet. The project is designed to leverage the latest technologies and materials to create a sustainable and self-sufficient habitat that can withstand the harsh Martian environment."
+          },
+          {
+            "info": "One of the key features of the Marsha Project is the use of a composite of basalt fiber and renewable bioplastic. This material can be sourced from rocks and plants that can be grown on Mars, making the project more self-sustaining and less reliant on external resources. The composite is lightweight, durable, and highly resistant to radiation, making it ideal for use in the construction of a Martian habitat."
+          },
+          {
+            "info": "The Marsha Project is the result of extensive research and development by AI SpaceFactory, a company at the forefront of innovation in space technology. The project represents a significant collaboration with NASA and other key players in the space industry. As we continue to explore the possibilities of human settlement on Mars, projects like the Marsha Project offer a glimpse into the future of space exploration and the potential for sustainable, self-sufficient human habitats beyond Earth."
+          }
+        ],
+        "title": "The innovative 3D-printed house to inhabit Mars with local materials",
+        "video": "https://youtu.be/XnrVV0w2jrE",
+        "description": "AI SpaceFactory's The Marsha Project is NASA's proposal for a 3D printed house optimised for construction on Mars.  The company has researched and developed a composite of basalt fibre (which can be extracted from rocks on Mars) and a renewable bioplastic that can be sourced from plants that can be grown on the red planet."
+      },
+      "userId": 14,
+      "id": 17
     }
   ],
   "users": [
@@ -661,6 +736,51 @@
       "acceptPrivacyPolicy": true,
       "id": 10,
       "useravatar": "https://images.unsplash.com/photo-1549313861-33587f3d2956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGFsaWVufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "email": "raquel@mars.com",
+      "password": "$2a$10$poZ/246OgsRbI8WbTSSMxOE2./1I006bg9eOBU4uwqEKIKkRvxjzS",
+      "username": "Raquel",
+      "firstname": "Raquel",
+      "lastname": "Sanchez",
+      "currentcity": "Albacete",
+      "birthyear": 1985,
+      "acceptPrivacyPolicy": true,
+      "id": 11
+    },
+    {
+      "email": "mairam@mars.com",
+      "password": "$2a$10$tHa8IhCoJRPt5dHa6SgBleSLd3S74xHHsbR5OXfExSQU6AIlFwRam",
+      "username": "Prueba",
+      "firstname": "Prueba",
+      "lastname": "Prueba",
+      "currentcity": "Marte",
+      "birthyear": 1970,
+      "acceptPrivacyPolicy": true,
+      "id": 12
+    },
+    {
+      "email": "ana@gmail.com",
+      "password": "$2a$10$BbosNXadmGWrBon7ANpuCe4chSXTZvvIsBm74jCYHN90og8pWMZuu",
+      "username": "Raquel",
+      "firstname": "Ana",
+      "lastname": "fslkdfj",
+      "currentcity": "Londres",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 13
+    },
+    {
+      "email": "satelite00@mars.com",
+      "password": "$2a$10$BPBNVpSisytxF63yDgSBjOl1LYnJSvXcWUUQWFCJdiO..SnYKML7W",
+      "username": "saturna99",
+      "firstname": "Saturna",
+      "lastname": "Lopez",
+      "currentcity": "Madrid",
+      "birthyear": 1990,
+      "acceptPrivacyPolicy": true,
+      "id": 14,
+      "useravatar": "https://t2.ea.ltmcdn.com/es/posts/5/8/1/cuidados_de_una_capibara_20185_orig.jpg"
     }
   ]
 }

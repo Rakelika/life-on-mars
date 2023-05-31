@@ -6,6 +6,9 @@ import { addFavorites } from '../../store/houses/actions';
 import ReactPlayer from 'react-player';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { Orbit } from '@uiball/loaders';
 
 
 const SingleHouseComponent = () => {
@@ -19,14 +22,31 @@ const SingleHouseComponent = () => {
 
   function sendFavorites(){
     dispatch(addFavorites({house: singleHouse, userId: userID}))
+    showAlert()
+  }
+
+  function showAlert() {
+    Swal.fire({
+      title: 'Done :)',
+      text: 'You can find this house now in your profile',
+      icon: 'success',
+      confirmButtonText: 'Keep exploring',
+      footer: '<a href="/profile">Go to my profile</a>'
+    })
   }
 
   const [activeTab, setActiveTab] = useState(0);
 
+  const navigate = useNavigate ();
+
   if(loadingSingleHouse){
     return (
-      <div>
-        <p>searching house</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }
@@ -95,7 +115,9 @@ return(
     </div>
 
     </div>
-    <button className='ReserveBtn' onClick={sendFavorites}>+</button>
+    <button className='ReserveBtn' 
+      onClick={userID ? sendFavorites : () =>  navigate("/signup")}>+
+    </button>
   </div>
 )
 };

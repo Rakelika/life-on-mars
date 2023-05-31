@@ -1,1 +1,85 @@
-/*# sourceMappingURL=NasaPictureDayComponent.css.map */
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.NasaPictureDayComponent {
+  padding-bottom: 50px;
+}
+.NasaPictureDayComponent .NasaImgContainer {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.NasaPictureDayComponent .NasaImgContainer .NasaPictureDayImg {
+  width: 70%;
+  height: 400px;
+}
+.NasaPictureDayComponent .NasaImgContainer .NasaPictureDayImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.NasaPictureDayComponent .NasaImgContainer .NasaPictureDayDescription {
+  width: 30%;
+  background-color: #202124;
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+  border-radius: 16px;
+  padding: 1.5em 3em;
+  margin-left: -8em;
+}
+.NasaPictureDayComponent .NasaImgContainer .NasaPictureDayTitle {
+  color: #B26ADC;
+}
+
+@media only screen and (max-width: 768px) {
+  .NasaPictureDayComponent .NasaImgContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .NasaPictureDayComponent .NasaImgContainer .NasaPictureDayDescription {
+    width: 85%;
+    padding: 1em 1.5em;
+    margin: -40px auto 0 auto;
+  }
+  .NasaPictureDayComponent .NasaImgContainer .NasaPictureDayImg {
+    width: 100%;
+  }
+}/*# sourceMappingURL=NasaPictureDayComponent.css.map */

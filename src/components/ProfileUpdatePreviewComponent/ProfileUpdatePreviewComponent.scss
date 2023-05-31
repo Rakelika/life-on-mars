@@ -1,0 +1,51 @@
+@import '../../styles/globalStyles.scss';
+
+.ProfileUpdatePreviewComponent {
+        width: 70%;
+        background-color: $dark-color;
+        padding: 10px 30px;
+        border-radius: 16px;
+        -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+
+        p {
+            font-weight: $semibold-weight;
+        }
+
+        span {
+            font-weight: $regular-weight;
+        }
+
+    .userAvatarContainer {
+        border-radius: 100%;
+        width:160px;
+        height:160px;
+        background-color: $dark-color;
+        -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: -50px 0 20px 0;
+        
+            img {
+            object-fit: cover;
+            border-radius: 100%;
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .ProfileUpdatePreviewComponent {
+        width: 100%;
+        .userAvatarContainer {
+            margin: -50px auto 30px auto;
+        }
+    }
+}

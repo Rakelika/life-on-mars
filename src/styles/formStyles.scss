@@ -23,10 +23,29 @@ label, textarea {
     font-family: $font-stack;
 }
 
+textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+    
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+    
+::-webkit-scrollbar-thumb {
+  background-color: $secondary-color;
+  border-radius: 20px;
+}
+
+
 .simpleInput {
     background-color: transparent;
     border: 0px;
     border-bottom: 1px solid $light-color;
+    font-family: $font-stack;
     color: $light-color;
     width: 100%;
     margin: 2px 0;
@@ -42,6 +61,10 @@ label, textarea {
     }
 }
 
+.formRow {
+    display: block;
+}
+
 .simpleHalfWidthInput {
     width: 48%;
 }
@@ -50,11 +73,141 @@ label, textarea {
     width: 70%;
 }
 
+
+.FormButtonsRow {
+    display: flex;
+    gap: 20px;
+}
+
+// Errores
+
+.errorInput {
+    border-bottom: 1px solid $error-color;
+}
+
 .errorMessage {
     color: $error-color;
     font-size: $small-size;
-    & .simpleInput {
-        border-bottom: 1px solid $error-color;
-    }
+    display: block;
 }
 
+// Accept checkbox:
+
+.acceptCheckbox {
+    appearance: none;
+    margin: 10px 10px 10px 0;
+    border: 1px solid $light-color;
+    border-radius: 3px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  .acceptCheckbox:checked::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: $secondary-color;
+    border-radius: 1px;
+  }
+
+
+
+// Range input
+.rangeInput {
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    height: 10px;
+  }
+  
+  .rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $light-color;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  
+  .rangeInput::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $light-color;
+    cursor: pointer;
+  }
+  
+  .rangeInput::-webkit-slider-thumb:active {
+    background-color: $secondary-color;
+  }
+  
+  .rangeInput::-moz-range-thumb:active {
+    background-color: $secondary-color;
+  }
+  
+  //ALERTS
+  .swal2-title, .swal2-styled.swal2-cancel{
+    font-family: $font-stack !important;
+  }
+
+  .swal2-html-container {
+    z-index: 1;
+    justify-content: center;
+    margin: 1em 1.6em 0.3em;
+    padding: 0;
+    overflow: auto;
+    color: inherit;
+    font-size: 1.125em;
+    font-family: $font-stack!important;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+[class^=swal2] {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: $secondary-color !important;
+    border-radius: 3px;
+    color: $dark-color !important;
+    border: 2px solid $secondary-color;
+    font-family: $font-stack;
+    width: 180px;
+    font-weight: $bold-weight;
+    padding: 8px;
+    margin: 10px 0px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    &:hover {
+        cursor:pointer;
+    }  
+}
+
+.swal2-styled.swal2-cancel {
+  border-radius: 3px;
+    padding: 8px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    &:hover {
+        cursor:pointer;
+    }  
+}
+
+.swal2-footer a {
+  font-family: $font-stack;
+}

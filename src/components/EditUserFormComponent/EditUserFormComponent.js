@@ -4,12 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { editUser } from '../../store/users/actions';
 import { useNavigate } from 'react-router';
 import { useFormik } from 'formik';
+import ProfileUpdatePreviewComponent from '../ProfileUpdatePreviewComponent/ProfileUpdatePreviewComponent';
+import Swal from 'sweetalert2';
 
 const EditUserFormComponent = () => {
 
   const user = useSelector((state) => state.UserReducer)
   const userId = useSelector((state) => state.UserReducer.user.id)
-  const [showEditForm, setShowEditForm] = useState(true)
 
   const navigate = useNavigate()
   const dispatch = useDispatch();
@@ -17,11 +18,15 @@ const EditUserFormComponent = () => {
   const validate = values => {
     const errors = {};
 
-    // if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    //   errors.email = 'Invalid email address';
-    // }
+    if (values.username && values.username.length < 3) {
+      errors.username = 'Must be 3 characters or more'
+    }
+    
+    if (values.email && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      errors.email = 'Invalid email address';
+    }
 
-    if (!/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
+    if (values.password && !/^[A-Za-z0-9]{5,}$/i.test(values.password)) {
       errors.password = 'Must be at least 5 characters and only contain letters and numbers';
     }
     return errors
@@ -41,17 +46,18 @@ const EditUserFormComponent = () => {
     onSubmit: (values) => {
       if (userId && values) {
         dispatch(editUser(userId, values)).then(()=> {
-          setShowEditForm(!showEditForm)
+          Swal.fire({
+            title: 'Changes saved',
+            text: 'Your profile data has been modified',
+            icon: 'success',
+            confirmButtonText: 'Ok'
+          });
           navigate('/profile')
-          alert("has modificado tu perfil con éxito! :D")
         })
       }
     }
   })
 
-  if (showEditForm === false) {
-    return ""
-  }
 
   const handleReset = (formik) => {
     formik.resetForm();
@@ -60,114 +66,116 @@ const EditUserFormComponent = () => {
 
   return (
     <div className="EditUserFormComponent">
-      <form className='EditUserForm' onSubmit={formik.handleSubmit}>
-      {/* USERNAME */}
-        <fieldset>
-          {/* <label htmlFor="username">Username</label> */}
-          <input 
-            id="username"
-            name="username"
-            type="text"
-            placeholder="New Username"
-            className='simpleInput'
-            value={formik.values.username}
-            onBlur={formik.handleBlur}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
-        
-        {/* EMAIL */}
-        <fieldset>
-          {/* <label htmlFor="email">Email</label> */}
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="New Email"
-            className='simpleInput'
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          />
-          {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
-        </fieldset>
+      <section className='Col'>
+      <h2>Edit my profile</h2>
+        <form className='EditUserForm' onSubmit={formik.handleSubmit}>
+        {/* USERNAME */}
+          <fieldset>
+            <input 
+              id="username"
+              name="username"
+              type="text"
+              placeholder="New Username"
+              className='simpleInput'
+              value={formik.values.username}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('username', user.username);} formik.handleBlur(e);}}
+              onChange={formik.handleChange}
+            />
+            {formik.touched.username && formik.errors.username ? (<div className='errorMessage'>{formik.errors.username}</div>) : null}
+          </fieldset>
+          
+          {/* EMAIL */}
+          <fieldset>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="New Email"
+              className='simpleInput'
+              onChange={formik.handleChange}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('email', user.email);} formik.handleBlur(e);}}
+              value={formik.values.email}
+            />
+            {formik.touched.email && formik.errors.email ? (<div className='errorMessage'>{formik.errors.email}</div>) : null}
+          </fieldset>
 
-        {/* PASSWORD */}
-        <fieldset>
-          {/* <label htmlFor="password">Password</label> */}
-          <input
-            id="password"
-            name="password"
-            type="password"
-            placeholder="New Password"
-            className='simpleInput'
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.password}
-          />
-          {formik.touched.password && formik.errors.password ? (<div>{formik.errors.password}</div>) : null}
-        </fieldset>
+          {/* PASSWORD */}
+          <fieldset>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="New Password"
+              className='simpleInput'
+              onChange={formik.handleChange}
+              onBlur={(e) => {if (!e.target.value) {formik.setFieldValue('password', user.password);} formik.handleBlur(e);}}
+              value={formik.values.password || user.password}
+            />
+            {formik.touched.password && formik.errors.password ? (<div className='errorMessage'>{formik.errors.password}</div>) : null}
+          </fieldset>
 
-        {/* CURRENT CITY */}
-        <fieldset>
-          {/* <label htmlFor="currentcity">Current city</label> */}
-          <input 
-            id="currentcity"
-            name="currentcity"
-            type="text"
-            placeholder="Current city"
-            className='simpleInput'
-            value={formik.values.currentcity}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
-        
-        {/* OCCUPATION */}
-        <fieldset>
-          {/* <label htmlFor="occupation">Occupation</label> */}
-          <input 
-            id="occupation"
-            name="occupation"
-            type="text"
-            placeholder="Current occupation"
-            className='simpleInput'
-            value={formik.values.occupation}
-            onChange={formik.handleChange}
-          />
-        </fieldset>
+          {/* CURRENT CITY */}
+          <fieldset>
+            <input 
+              id="currentcity"
+              name="currentcity"
+              type="text"
+              placeholder="Current city"
+              className='simpleInput'
+              value={formik.values.currentcity}
+              onChange={formik.handleChange}
+            />
+          </fieldset>
+          
+          {/* OCCUPATION */}
+          <fieldset>
+            <input 
+              id="occupation"
+              name="occupation"
+              type="text"
+              placeholder="Current occupation"
+              className='simpleInput'
+              value={formik.values.occupation}
+              onChange={formik.handleChange}
+            />
+          </fieldset>
 
-         {/* AVATAR */}
-        <fieldset>
-          {/* <label htmlFor="useravatar">Avatar</label> */}
-          <input 
-            id="useravatar"
-            name="useravatar"
-            type="text"
-            placeholder="Insert an image URL"
-            className='simpleInput'
-            value={formik.values.useravatar}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-        </fieldset>
+          {/* AVATAR */}
+          <fieldset>
+            <input 
+              id="useravatar"
+              name="useravatar"
+              type="text"
+              placeholder="Insert an image URL"
+              className='simpleInput'
+              value={formik.values.useravatar}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+          </fieldset>
 
-        {/* ABOUT */}
-        <fieldset>
-          {/* <label htmlFor="userabout">About me</label> */}
-          <textarea 
-            id="userabout"
-            name="userabout"
-            type="text"
-            placeholder="Write something about you"
-            className='simpleInput'
-            value={formik.values.userabout}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-          />
-        </fieldset>
-        <button className='primary-btn' type="submit">Submit Changes</button>
-        <button className='secondary-btn' type="reset" onClick={() => handleReset(formik)}>Clear form</button>
-        </form>
+          {/* ABOUT */}
+          <fieldset>
+            <textarea 
+              id="userabout"
+              name="userabout"
+              type="text"
+              placeholder="Write something about you"
+              className='simpleInput'
+              value={formik.values.userabout}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            />
+          </fieldset>
+          <div className='FormButtonsRow'>
+          <button className='primary-btn' type="submit">Save Changes</button>
+          <button className='secondary-btn' type="reset" onClick={() => handleReset(formik)}>Clear form</button>
+          </div>
+          </form>
+        </section>
+        <section className='Col'>
+          <ProfileUpdatePreviewComponent values={formik.values} ></ProfileUpdatePreviewComponent>
+        </section>
         </div>
   )
 }

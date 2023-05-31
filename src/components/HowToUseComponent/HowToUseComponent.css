@@ -1,0 +1,33 @@
+.HowToUseComponent {
+  width: 80%;
+  margin: 60px auto;
+}
+.HowToUseComponent .processGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.HowToUseComponent .processGrid .processCard {
+  width: 30%;
+}
+.HowToUseComponent .processGrid .processCard img {
+  width: 100%;
+  border-radius: 16px;
+}
+.HowToUseComponent .processGrid .processCard .fases {
+  max-width: 105px;
+  padding: 5px 20px;
+  margin: -60px 0 40px 30px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 0px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  top: -60px;
+}
+.HowToUseComponent .processGrid .processCard p {
+  margin-top: 0px;
+}/*# sourceMappingURL=HowToUseComponent.css.map */

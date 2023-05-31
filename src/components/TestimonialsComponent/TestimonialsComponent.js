@@ -61,18 +61,26 @@ const TestimonialsComponent = () => {
       <h2 className='centerText'>What are people saying about us?</h2>
       <div className='TestimonialsComponent'>
       <Swiper
-        slidesPerView={3}
         spaceBetween={20}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        className="swiper-wrapper"
+        breakpoints={{
+          768: {
+            width: 768,
+            slidesPerView: 1,
+          },
+          800: {
+            slidesPerView: 3,
+          }
+        }}
       >
           {Testimonials.map(t => {
             return (
-              <SwiperSlide>
-              <div className='TestimonialCard' key={t.id}>
+              <SwiperSlide key={t.id}>
+              <div className='TestimonialCard'>
                 <h4>{t.name}</h4>
                 <p>{t.currentcity}</p>
                 <ReactRating

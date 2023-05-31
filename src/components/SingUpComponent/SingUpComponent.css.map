@@ -1,1 +1,1 @@
-{"version":3,"sources":["SingUpComponent.scss","SingUpComponent.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,eAAA;EACA,YAAA;ACCJ;;ADEA;EACI,aAAA;EACA,8BAAA;ACCJ","file":"SingUpComponent.css"}
+{"version":3,"sources":["SingUpComponent.scss","SingUpComponent.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,eAAA;EACA,YAAA;ACCJ;ADCI;EACI,iBAAA;ACCR;;ADGA;EACI,aAAA;EACA,8BAAA;ACAJ","file":"SingUpComponent.css"}

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './MarsImagesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMarsImages } from '../../store/nasa/actions';
+import { Orbit } from '@uiball/loaders'
 
 const MarsImagesComponent = () => {
 
@@ -15,23 +16,46 @@ const MarsImagesComponent = () => {
 
   if (loadingMarsImages) {
     return (
-      <div>
-        <p>Loading...</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }
 
     return (
-    <div className="MarsImagesComponent">
-      <h2>FOTOS DE MARTE</h2>
-      {marsImages.map(photo => {
-        return (
-          <div key={photo.id}>
-          <img src={photo.img_src} alt={photo.id} />
-          </div>
-        )
-      })}
-    </div>
+    <section className="MarsImagesComponent"> 
+      {marsImages && marsImages[0] && marsImages[0].camera ?
+      <h3>Exploring Mars: Stunning {marsImages[0].camera.full_name} images captured by NASA's {marsImages[0].rover.name} on Earth Day {marsImages[0].earth_date}, 
+      launched from Earth on {marsImages[0].rover.launch_date} and landed on Martian Soil on {marsImages[0].rover.landing_date}</h3>
+      : ""}
+      <article className='MarsGallery'>
+        {marsImages.slice(5,8).map(photo => {
+          return (
+            <div key={photo.id} className='MarsImage'>
+            <img src={photo.img_src} alt={photo.id} />
+            </div>
+          )
+        })}
+        {marsImages.slice(12, 15).map(photo => {
+          return (
+            <div key={photo.id} className='MarsImage'>
+            <img src={photo.img_src} alt={photo.id} />
+            </div>
+          )
+        })}
+        {marsImages.slice(56, 59).map(photo => {
+          return (
+            <div key={photo.id} className='MarsImage'>
+            <img src={photo.img_src} alt={photo.id} />
+            </div>
+          )
+        })}
+      </article>
+    </section>
     )
 };
 

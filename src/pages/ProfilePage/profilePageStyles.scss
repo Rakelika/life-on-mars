@@ -1,5 +1,7 @@
+@import '../../styles/globalStyles.scss';
+
 .ProfilePageMainBanner {
-    background: url("https://images.unsplash.com/photo-1630061937831-5b8bc0a58548?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background: url("../../assets/life-on-mars-profile-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,12 +10,28 @@
 
 .ProfileRow {
     display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.ProfileInfo {
-    min-width: 70%;
+    gap: 60px;
+    width: 80%;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 55px 50px 40px 50px;
+    margin: -90px auto 0 auto;
+    background-color: $dark-color;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 300ms;
+        h1 {
+            padding-bottom: 0.6em;
+            border-bottom: 2px solid rgba(202, 202, 202, 0.25);
+            margin: 0.5em 0;
+        }
+        h3 {
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin: 0.3em 0;
+        }
 }
 
 .ProfilePageUserInfoContainer {
@@ -22,34 +40,93 @@
     gap: 10px;
     flex-direction: column;
     text-align: left;
-    .boldLabel {
-        font-weight: 600;
+
+    span {
+        font-weight: $semibold-weight;
     }
     .ProfilePageUserHeader {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        gap: 30px;
+        z-index: 3;
+        padding-left: 40px;
+        margin: -30px 0 0 75px;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 300ms;
     }
+
+    .ProfileCol {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
     .userAvatarContainer {
         border-radius: 100%;
-        width:140px;
-        height:140px;
-        background-color: #F5F5F5;
+        width:160px;
+        height:160px;
+        background-color: $dark-color;
+        -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
             img {
             object-fit: cover;
             border-radius: 100%;
-            width: 85%;
-            height: 85%;
+            width: 80%;
+            height: 80%;
         }
     }
     
 }
 
+.userNoAvatarImage {
+    opacity: 0.4;
+}
+
 .ProfileButtonsContainer {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.ProfileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ProfileRow {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 55px 30px 40px 30px;
+    }
+
+    .ProfileButtonsContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-third-btn {
+        text-align: center;
+    }
+
+    .ProfilePageUserInfoContainer .ProfilePageUserHeader {
+        display: flex;
+        align-items: center;
+        z-index: 3;
+        padding-left: 0;
+        margin: -30px 0 0 0px;
+        justify-content: center;
+    }
 }

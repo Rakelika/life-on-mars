@@ -43,6 +43,7 @@ export function actionDoLoginFail(error){
     };
 }
 
+
 export function doLogin(loginUserData) {
   return async (dispatch) => {
     dispatch(actionDoLogin(loginUserData));
@@ -50,12 +51,9 @@ export function doLogin(loginUserData) {
       const res = await axios.post("http://localhost:3000/login", loginUserData);
       if (res) {
         dispatch(actionDoLoginOk(res.data.user));
-        console.log(res.data.user)
-        window.alert("LOGIN OK")
       } 
     } catch (error) {
       dispatch(actionDoLoginFail(error.response.data));
-      console.log(error.response.data)
     }
   };
 }

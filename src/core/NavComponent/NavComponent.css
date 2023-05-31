@@ -1,16 +1,56 @@
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
 .NavComponent {
   box-shadow: 11px 0px 20px 17px rgba(0, 0, 0, 0.55);
   z-index: 10;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 10%;
 }
 
 nav {
   display: flex;
-  width: 80%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
 }
 nav ul {
   display: flex;
@@ -25,10 +65,39 @@ nav ul a {
   align-items: center;
 }
 
+.SignUpBtn {
+  background-color: transparent;
+  border-radius: 3px;
+  color: #B26ADC;
+  border: 1px solid;
+  font-family: "Quicksand", sans-serif;
+  padding: 5px 20px;
+  margin: 10px auto;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+.SignUpBtn:hover {
+  cursor: pointer;
+}
+
 .greenCercle {
   width: 7px;
   height: 7px;
   background-color: greenyellow;
   border-radius: 100%;
   margin: 0 5px 0 0;
+}
+
+/* MENU MOVIL*/
+.bm-menu-wrap {
+  background-color: #202124;
+  padding: 2em;
+}
+.bm-menu-wrap span {
+  background-color: #B26ADC;
+}
+
+nav.bm-item-list {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=NavComponent.css.map */

@@ -1,5 +1,6 @@
 @import '../../styles/globalStyles.scss';
 
+
 .AllHousesComponent {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +15,8 @@
         -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
         -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
         box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.55);
+        animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation-delay: 200ms;
 
         &:hover {
 
@@ -39,6 +42,11 @@
     }
 }
 
+.noHouses {
+    width: 80%;
+    margin: 60px auto;
+}
+
 @media only screen and (max-width: 768px) {
 
     .AllHousesComponent {
@@ -46,7 +54,7 @@
         justify-content: space-between;
     
         .cardHouse {
-            width: 95vw;
+            width: 90vw;
     
             img {
                 width: 100%;

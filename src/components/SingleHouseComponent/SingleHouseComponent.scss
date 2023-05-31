@@ -1,5 +1,4 @@
 @import '../../styles/globalStyles.scss';
-@import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 .SingleHouseComponent {
     .titleContainer {
@@ -21,6 +20,8 @@
 
         .heroHouseImg {
             width: 70%;
+            animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 200ms;
 
             img {
                 width: 100%;
@@ -36,6 +37,8 @@
             border-radius: 16px;
             padding: 3em;
             margin-left: -8em;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 500ms;
         }
     }
 
@@ -96,10 +99,44 @@
         z-index: 500;
 
         &:hover {
-            background-color: $secondary-color;
-            opacity: 0.8;
+            background-color: #b783d6;
             cursor: pointer;
         }
+    }
+}
+
+
+@media only screen and (max-width: 768px) { 
+
+    .SingleHouseComponent {
+
+    h2 {
+        margin:0px
+    }
+
+    .heroHouse {
+        flex-direction: column;
+
+        .heroHouseImg {
+            width: 100%;
+            margin-top:20px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .heroHouseDescription {
+            width: 80%;
+            margin:20px auto
+        }
+    }
+
+    .galleryHouses {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top:0px;
+    }
     }
 }
 

@@ -1,1 +1,49 @@
-/*# sourceMappingURL=MarsImagesComponent.css.map */
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.MarsImagesComponent h3 {
+  font-weight: 300;
+  width: 80%;
+  margin: 0px auto 60px auto;
+}
+.MarsImagesComponent .MarsGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.MarsImagesComponent .MarsGallery img {
+  width: 100%;
+}/*# sourceMappingURL=MarsImagesComponent.css.map */

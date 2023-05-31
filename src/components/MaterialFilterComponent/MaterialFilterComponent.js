@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MaterialFilterComponent.scss';
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import { FaToggleOn } from "react-icons/fa"; 
 
 const MaterialFilterComponent = ({ setSelectedMaterials, selectedMaterials }) => {
 
@@ -9,87 +10,119 @@ const MaterialFilterComponent = ({ setSelectedMaterials, selectedMaterials }) =>
 return (
   <div className="MaterialFilterComponent">
    <Accordion>
-      <AccordionItem header="Select materials you prefer">
-      <label>
-        <input 
+      <AccordionItem header={<span><FaToggleOn className='IconAcordeon'/> Select materials you prefer</span>}>
+      <form>
+        <label className="switch">      
+          <input
           type="checkbox"
-          value="impresión 3D"
+          value="3D printing"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }} /> Impresión 3D
-      </label>
-      <label>
-        <input 
+          }} />
+          <span className="slider round"></span>
+          <span className="materialLabel">3D printing</span>
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="elementos geológicos"
+          value="Geological elements"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }} /> Elementos geológicos       
-      </label>
-      <label>
-        <input 
+          }} />
+          <span className="slider round"></span>
+          <span className="materialLabel">Geological elements</span>      
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="bioplástico renovable"
+          value="Renewable bioplastic"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }} /> Bioplástico renovable  
-      </label>
-      <label>
-        <input 
+          }} />
+          <span className="slider round"></span>
+          <span className="materialLabel">Renewable bioplastic</span>  
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="hielo"
+          value="Ice"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }} /> Hielo  
-      </label>
-      <label>
-        <input 
+          }} />
+          <span className="slider round"></span>
+          <span className="materialLabel">Ice</span>  
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="fibra de basalto"
+          value="Basalt fibre"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }}/> Fibra de basalto  
-      </label>
-      <label>
-        <input 
+          }}/>
+          <span className="slider round"></span>
+          <span className="materialLabel">Basalt fibre</span> 
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="plástico de regolito"
+          value="Regolith plastic"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }}/> Plástico de regolito 
-      </label>
-      <label>
-        <input 
+          }}/>
+          <span className="slider round"></span>
+          <span className="materialLabel">Regolith plastic</span> 
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="óxido de hierro"
+          value="Iron oxide"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }}/> Óxido de hierro 
-      </label>
-      <label>
-        <input 
+          }}/>
+          <span className="slider round"></span>
+          <span className="materialLabel">Iron oxide</span>
+        </label>
+      </form>
+      <form>
+        <label  className="switch">
+          <input 
           type="checkbox"
-          value="estructura inflable"
+          value="Inflatable structure"
           onClick={(e) => {
           e.target.checked 
           ? setSelectedMaterials([...selectedMaterials, e.target.value])
           : setSelectedMaterials(selectedMaterials.filter(material => material !== e.target.value));
-        }}/> Estructura inflable 
-      </label>
+          }}/>
+          <span className="slider round"></span>
+          <span className="materialLabel">Inflatable structure</span> 
+        </label>
+      </form>
       </AccordionItem>
       </Accordion>
   </div>

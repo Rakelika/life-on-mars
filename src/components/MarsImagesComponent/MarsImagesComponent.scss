@@ -1,1 +1,15 @@
-.MarsImagesComponent {}
+@import '../../styles/globalStyles.scss';
+.MarsImagesComponent {
+  h3 {
+    font-weight: $light-weight;
+    width: 80%;
+    margin: 0px auto 60px auto;
+  }
+  .MarsGallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        img {
+            width: 100%;
+        }
+  }
+}

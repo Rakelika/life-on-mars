@@ -1,1 +1,114 @@
-.MaterialFilterComponent {}
+@import '../../styles/globalStyles.scss';
+
+.MaterialFilterComponent {
+
+    .switch {
+        position: relative;
+        width: 40px;
+        height: 23px;
+        display: flex;
+        align-items: center;  
+      }
+      
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        border: 1px solid $secondary-color;
+        margin: 24px;
+      }
+      
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $secondary-color;
+        opacity: 0.3;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 4px;
+        bottom: 4px;
+        background-color: $light-color;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked + .slider {
+        background-color: $secondary-color;
+        opacity: 1;
+      }
+      
+      input:focus + .slider {
+        box-shadow: 0 0 1px $secondary-color;
+      }
+      
+      input:checked + .slider:before {
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+      }
+      
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+
+      .materialLabel {
+        min-width: 300px;
+      }
+
+      /*Acordeon*/
+
+      .szh-accordion__item-btn {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color:$light-color;
+        font-weight: 700;
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+        font-family:$font-stack;
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        .IconAcordeon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+      }
+
+      .szh-accordion__item-panel {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        form {
+            width: 250px;
+            padding: 3px 0px;
+        }
+      }
+}

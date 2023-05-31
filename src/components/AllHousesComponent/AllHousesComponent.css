@@ -1,5 +1,6 @@
 body {
   background-color: #202124;
+  overflow: x hidden;
 }
 
 ul {
@@ -24,6 +25,10 @@ p {
   text-align: center;
 }
 
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .Container {
     max-width: 95%;
@@ -38,7 +43,6 @@ p {
 }
 .AllHousesComponent .cardHouse {
   width: 38.5vw;
-  border: 1px solid #430a64;
   border-radius: 16px;
   margin-bottom: 40px;
   padding-bottom: 10px;
@@ -60,13 +64,18 @@ p {
   color: #B26ADC;
 }
 
+.noHouses {
+  width: 80%;
+  margin: 60px auto;
+}
+
 @media only screen and (max-width: 768px) {
   .AllHousesComponent {
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .AllHousesComponent .cardHouse {
-    width: 95vw;
+    width: 90vw;
   }
   .AllHousesComponent .cardHouse img {
     width: 100%;

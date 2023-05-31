@@ -1,1 +1,137 @@
-.FavoritesComponents {}
+@import '../../styles/globalStyles.scss';
+
+.FavoritesComponents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px auto;
+
+.noHouses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: $secondary-color;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 500ms;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.cardHouse {
+    width: 38.5vw;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 500ms;
+
+    img {
+        width: 100%;
+        border-top-right-radius: 16px ;
+        border-top-left-radius: 16px;
+    }
+
+    .cardResume {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .customItems{
+        display: flex;
+    }
+
+    .cardButtons {
+        display: flex;
+        padding: 0 30px 10px 30px;
+        justify-content: space-around;
+    }
+
+    .customTag {
+        max-width: 105px;
+        padding: 5px 20px;
+        margin: -60px 0 40px 30px; 
+        background: rgba(255, 255, 255, 0.17);
+        border-radius: 6px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.3px);
+        -webkit-backdrop-filter: blur(8.3px);
+        border: 0px solid rgba(255, 255, 255, 0.3);
+        
+        p {
+            margin: 0 auto;
+            font-size: 1.2em;
+            color: $dark-color;
+            font-weight: $bold-weight;
+        }
+    }
+}
+}
+
+.favCardItem {
+    display: flex;
+    flex-direction: row;
+    width: 80px;
+    align-items: center;
+
+    p {
+        margin: 10px 0;
+        color: $secondary-color;
+        font-size: 1em;
+        text-align: left;
+    }
+}
+
+.favCardIcon {
+    height: 20px;
+}
+
+.favPadding {
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .FavoritesComponents {
+        justify-content: center;
+        margin: 40px 0 0 0;
+
+        .cardHouse {
+            width: 95%;
+
+            .cardButtons {
+                justify-content: space-between;
+            }
+
+            .cardResume{
+                flex-direction: column;
+                justify-content: left;
+            }
+        }
+
+        .noHouses {
+            text-align: center;
+            width: 80%;
+        }
+
+    }
+
+    
+}

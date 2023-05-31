@@ -1,0 +1,78 @@
+body {
+  background-color: #202124;
+  overflow: x hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #B26ADC;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.Container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.PageRegularPadding {
+  padding: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+.ProfileUpdatePreviewComponent {
+  width: 70%;
+  background-color: #202124;
+  padding: 10px 30px;
+  border-radius: 16px;
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+}
+.ProfileUpdatePreviewComponent p {
+  font-weight: 600;
+}
+.ProfileUpdatePreviewComponent span {
+  font-weight: 400;
+}
+.ProfileUpdatePreviewComponent .userAvatarContainer {
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  background-color: #202124;
+  box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -50px 0 20px 0;
+}
+.ProfileUpdatePreviewComponent .userAvatarContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  width: 80%;
+  height: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .ProfileUpdatePreviewComponent {
+    width: 100%;
+  }
+  .ProfileUpdatePreviewComponent .userAvatarContainer {
+    margin: -50px auto 30px auto;
+  }
+}/*# sourceMappingURL=ProfileUpdatePreviewComponent.css.map */

@@ -1,0 +1,64 @@
+@import '../../styles/globalStyles.scss';
+
+.CustomHousePreviewComponent {
+    width: 70%;
+    background-color: $dark-color;
+    border-radius: 16px;
+    -webkit-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 2px 24px 2px rgba(0, 0, 0, 0.25);
+    padding-bottom: 20px;
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-top-right-radius: 16px ;
+        border-top-left-radius: 16px;
+    }
+
+    .CustomHouseDataBox {
+        display: flex;
+        padding: 30px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .CustomHouseDataItem{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin: 10px;
+            }
+
+            .customValue {
+                margin: 0px;
+                font-size: 1.2em;
+            }
+        }
+
+        .CustomHouseIcon {
+            width: 35px;
+            margin: 0;
+        }
+
+        .fullOpacity {
+            opacity: 1;
+        }
+
+        .lowOpacity {
+            opacity: 0.2;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .CustomHousePreviewComponent {
+        width: 100%;
+    }
+}

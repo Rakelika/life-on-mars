@@ -4,6 +4,9 @@ import './AllHousesComponent.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getHouses } from '../../store/houses/actions';
 import { Link } from 'react-router-dom';
+import { Orbit } from '@uiball/loaders';
+import { FaSearch } from "react-icons/fa";
+
 
 const AllHousesComponent = ({ search, selectedMaterials }) => {
 
@@ -18,8 +21,12 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
 
   if(loadingHouses){
     return (
-      <div>
-        <p>searching for houses</p>
+      <div className='loadingOrbit'>
+       <Orbit 
+          size={25}
+          speed={1.5} 
+          color="#f5f5f5"
+        />
       </div>
     )
   }
@@ -34,7 +41,7 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
               selectedMaterials.every(
                 (material) => house.material.includes(material)
               ) 
-        : // Si se está buscando por nombre, aplicar filtro por nombre y materiales seleccionados
+        : // Si se está buscando por nombre, aplicar filtro por nombre y material seleccionado
           house.name.toLowerCase().includes(search) &&
               (selectedMaterials.length === 0 ||
                 selectedMaterials.every(
@@ -68,8 +75,8 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
                     (material) => house.material.includes(material)
                 ))
         }).length === 0 && (
-        <div className='Container'>
-          <p className='centerText'>(｡•́︿•̀｡)</p> 
+        <div className='noHouses centerText'>
+          <FaSearch> </FaSearch> 
           <p className='centerText'>Sorry, there are no houses with these characteristics</p>
         </div>
     )

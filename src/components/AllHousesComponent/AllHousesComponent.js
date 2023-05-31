@@ -41,7 +41,7 @@ const AllHousesComponent = ({ search, selectedMaterials }) => {
               selectedMaterials.every(
                 (material) => house.material.includes(material)
               ) 
-        : // Si se está buscando por nombre, aplicar filtro por nombre y materiales seleccionados
+        : // Si se está buscando por nombre, aplicar filtro por nombre y material seleccionado
           house.name.toLowerCase().includes(search) &&
               (selectedMaterials.length === 0 ||
                 selectedMaterials.every(
